@@ -1,220 +1,184 @@
 Form,Lemma,Definition
-haec,"hic haec hoc",this (feminine nom / neuter pl)
-hoc,"hic haec hoc",this (neuter nom/acc)
-huius,"hic haec hoc",of this / his / hers / its
-huic,"hic haec hoc",to/for this
-hunc,"hic haec hoc",this (masculine acc)
-hanc,"hic haec hoc",this (feminine acc)
-hōc,"hic haec hoc",by/with/from this (masc/neut abl)
-hāc,"hic haec hoc",by/with/from this (feminine abl)
-hī,"hic haec hoc",these (masculine nom)
-hae,"hic haec hoc",these (feminine nom)
-hōrum,"hic haec hoc",of these (masc/neut gen)
-hārum,"hic haec hoc",of these (feminine gen)
-hōs,"hic haec hoc",these (masculine acc)
-hās,"hic haec hoc",these (feminine acc)
-hīs,"hic haec hoc",to/for/by/with/from these (dat/abl)
-cuius,"quī quae quod",whose / of whom / of which
-cui,"quī quae quod",to/for whom / to/for which
-quem,"quī quae quod",whom / which (masc acc)
-quam,"quī quae quod",whom / which (fem acc)
-quō,"quī quae quod",by/with/from whom/which (masc/neut abl)
-quā,"quī quae quod",by/with/from whom/which (fem abl)
-quōrum,"quī quae quod",whose / of whom/which (masc/neut gen pl)
-quārum,"quī quae quod",whose / of whom/which (fem gen pl)
-quibus,"quī quae quod",to/for/by/with/from whom/which (dat/abl)
-quōs,"quī quae quod",whom / which (masc acc pl)
-quās,"quī quae quod",whom / which (fem acc pl)
-cuius,"quis quid",whose? / of whom? / of what?
-cui,"quis quid",to/for whom? / to/for what?
-quem,"quis quid",whom? (masc/fem acc)
-quō,"quis quid",by/with/from whom/what? (ablative)
-eius,"is ea id",his / her / its / of that
-eī,"is ea id",to/for him/her/it/that (dat) OR they (masc nom pl)
-eum,"is ea id",him / that (masc acc)
-eam,"is ea id",her / that (fem acc)
-eō,"is ea id",by/with/from him/it/that (masc/neut abl)
-eā,"is ea id",by/with/from her/that (fem abl)
-iī,"is ea id",they / those (masc nom pl)
-eae,"is ea id",they / those (fem nom pl)
-eōrum,"is ea id",their / of those (masc/neut gen)
-eārum,"is ea id",their / of those (fem gen)
-eōs,"is ea id",them / those (masc acc pl)
-eās,"is ea id",them / those (fem acc pl)
-eīs,"is ea id",to/for/by/with/from them/those (dat/abl)
-iīs,"is ea id",to/for/by/with/from them/those (dat/abl)
-sum,"sum esse fuī futūrus",I am
-es,"sum esse fuī futūrus",you are
-est,"sum esse fuī futūrus",he/she/it is
-sumus,"sum esse fuī futūrus",we are
-estis,"sum esse fuī futūrus",y'all are
-sunt,"sum esse fuī futūrus",they are
-eram,"sum esse fuī futūrus",I was
-erās,"sum esse fuī futūrus",you were
-erat,"sum esse fuī futūrus",he/she/it was
-erāmus,"sum esse fuī futūrus",we were
-erātis,"sum esse fuī futūrus",y'all were
-erant,"sum esse fuī futūrus",they were
-erō,"sum esse fuī futūrus",I will be
-eris,"sum esse fuī futūrus",you will be
-erit,"sum esse fuī futūrus",he/she/it will be
-erimus,"sum esse fuī futūrus",we will be
-eritis,"sum esse fuī futūrus",y'all will be
-erunt,"sum esse fuī futūrus",they will be
-fuī,"sum esse fuī futūrus",I have been / I was
-fuistī,"sum esse fuī futūrus",you have been / you were
-fuit,"sum esse fuī futūrus",he/she/it has been / was
-fuimus,"sum esse fuī futūrus",we have been / were
-fuistis,"sum esse fuī futūrus",y'all have been / were
-fuērunt,"sum esse fuī futūrus",they have been / were
-fueram,"sum esse fuī futūrus",I had been
-fuerās,"sum esse fuī futūrus",you had been
-fuerat,"sum esse fuī futūrus",he/she/it had been
-fuerāmus,"sum esse fuī futūrus",we had been
-fuerātis,"sum esse fuī futūrus",y'all had been
-fuerant,"sum esse fuī futūrus",they had been
-fuerō,"sum esse fuī futūrus",I will have been
-fueris,"sum esse fuī futūrus",you will have been
-fuerit,"sum esse fuī futūrus",he/she/it will have been
-fuerimus,"sum esse fuī futūrus",we will have been
-fueritis,"sum esse fuī futūrus",y'all will have been
-fuerint,"sum esse fuī futūrus",they will have been (or perf subj)
-sim,"sum esse fuī futūrus",I may be (pres subj)
-sīs,"sum esse fuī futūrus",you may be (pres subj)
-sit,"sum esse fuī futūrus",he/she/it may be (pres subj)
-sīmus,"sum esse fuī futūrus",we may be (pres subj)
-sītis,"sum esse fuī futūrus",y'all may be (pres subj)
-sint,"sum esse fuī futūrus",they may be (pres subj)
-essem,"sum esse fuī futūrus",I might be (impf subj)
-essēs,"sum esse fuī futūrus",you might be (impf subj)
-esset,"sum esse fuī futūrus",he/she/it might be (impf subj)
-essēmus,"sum esse fuī futūrus",we might be (impf subj)
-essētis,"sum esse fuī futūrus",y'all might be (impf subj)
-essent,"sum esse fuī futūrus",they might be (impf subj)
-fuissem,"sum esse fuī futūrus",I might have been (plupf subj)
-fuissēs,"sum esse fuī futūrus",you might have been (plupf subj)
-fuisset,"sum esse fuī futūrus",he/she/it might have been (plupf subj)
-fuissēmus,"sum esse fuī futūrus",we might have been (plupf subj)
-fuissētis,"sum esse fuī futūrus",y'all might have been (plupf subj)
-fuissent,"sum esse fuī futūrus",they might have been (plupf subj)
-esse,"sum esse fuī futūrus",to be
-fuisse,"sum esse fuī futūrus",to have been
-fore,"sum esse fuī futūrus",to be about to be (fut infin)
-futūrus,"sum esse fuī futūrus",about to be
-eiusdem,"īdem eadem idem",of the same / his same / her same
-eīdem,"īdem eadem idem",to/for the same (dat sg) OR the same (masc nom pl)
-eundem,"īdem eadem idem",the same (masc acc)
-eandem,"īdem eadem idem",the same (fem acc)
-eōdem,"īdem eadem idem",by/with/from the same (masc/neut abl)
-eādem,"īdem eadem idem",by/with/from the same (fem abl)
-iīdem,"īdem eadem idem",the same (masc nom pl)
-eaedem,"īdem eadem idem",the same (fem nom pl)
-eōrundem,"īdem eadem idem",of the same (masc/neut gen pl)
-eārundem,"īdem eadem idem",of the same (fem gen pl)
-eōsdem,"īdem eadem idem",the same (masc acc pl)
-eāsdem,"īdem eadem idem",the same (fem acc pl)
-eīsdem,"īdem eadem idem",to/for/by/with/from the same (dat/abl)
-iīsdem,"īdem eadem idem",to/for/by/with/from the same (dat/abl)
-cuiusdam,"quīdam quaedam quoddam",of a certain / whose
-cuidam,"quīdam quaedam quoddam",to/for a certain
-quendam,"quīdam quaedam quoddam",a certain (masc acc)
-quandam,"quīdam quaedam quoddam",a certain (fem acc)
-quōdam,"quīdam quaedam quoddam",by/with/from a certain (masc/neut abl)
-quādam,"quīdam quaedam quoddam",by/with/from a certain (fem abl)
-quōrundam,"quīdam quaedam quoddam",of certain (masc/neut gen pl)
-quārundam,"quīdam quaedam quoddam",of certain (fem gen pl)
-quibusdam,"quīdam quaedam quoddam",to/for/by/with/from certain (dat/abl)
-quōsdam,"quīdam quaedam quoddam",certain (masc acc pl)
-quāsdam,"quīdam quaedam quoddam",certain (fem acc pl)
-quiddam,"quīdam quaedam quoddam",a certain thing (neut nom/acc)
-cuiuslibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",of anyone/anything you please
-cuilibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",to/for anyone/anything you please
-quemlibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",anyone you please (masc acc)
-quamlibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",anyone you please (fem acc)
-quōlibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",by/with/from anyone/anything you please (masc/neut abl)
-quālibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",by/with/from anyone you please (fem abl)
-quōrumlibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",of any you please (masc/neut gen pl)
-quārumlibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",of any you please (fem gen pl)
-quibuslibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",to/for/by/with/from any you please (dat/abl)
-quōslibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",any you please (masc acc pl)
-quāslibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",any you please (fem acc pl)
-quidlibet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",anything you please (neut nom/acc)
-cuiuslubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",of anyone/anything you please
-cuilubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",to/for anyone/anything you please
-quemlubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",anyone you please (masc acc)
-quamlubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",anyone you please (fem acc)
-quōlubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",by/with/from anyone/anything you please (masc/neut abl)
-quālubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",by/with/from anyone you please (fem abl)
-quōrumlubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",of any you please (masc/neut gen pl)
-quārumlubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",of any you please (fem gen pl)
-quibuslubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",to/for/by/with/from any you please (dat/abl)
-quōslubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",any you please (masc acc pl)
-quāslubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",any you please (fem acc pl)
-quidlubet,"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})",anything you please (neut nom/acc)
-reī,"rēs reī f.",of a thing / to/for a thing (gen/dat sg)
-rem,"rēs reī f.",thing / matter (acc sg)
-rē,"rēs reī f.",by/with/from a thing (abl sg)
-rērum,"rēs reī f.",of things / matters (gen pl)
-rēbus,"rēs reī f.",to/for/by/with/from things (dat/abl pl)
-vīs,"volō velle voluī",you want / you wish
-vult,"volō velle voluī",he/she/it wants / wishes
-volt,"volō velle voluī",he/she/it wants / wishes (older form)
-volumus,"volō velle voluī",we want / wish
-vultis,"volō velle voluī",y'all want / wish
-voltis,"volō velle voluī",y'all want / wish (older form)
-volunt,"volō velle voluī",they want / wish
-volēbam,"volō velle voluī",I was wanting
-volēbās,"volō velle voluī",you were wanting
-volēbat,"volō velle voluī",he/she/it was wanting
-volēbāmus,"volō velle voluī",we were wanting
-volēbātis,"volō velle voluī",y'all were wanting
-volēbant,"volō velle voluī",they were wanting
-volam,"volō velle voluī",I will want
-volēs,"volō velle voluī",you will want
-volet,"volō velle voluī",he/she/it will want
-volēmus,"volō velle voluī",we will want
-volētis,"volō velle voluī",y'all will want
-volent,"volō velle voluī",they will want
-voluistī,"volō velle voluī",you have wanted / you wanted
-voluit,"volō velle voluī",he/she/it has wanted / wanted
-voluimus,"volō velle voluī",we have wanted / wanted
-voluistis,"volō velle voluī",y'all have wanted / wanted
-voluērunt,"volō velle voluī",they have wanted / wanted
-voluēre,"volō velle voluī",they have wanted / wanted
-volueram,"volō velle voluī",I had wanted
-voluerās,"volō velle voluī",you had wanted
-voluerat,"volō velle voluī",he/she/it had wanted
-voluerāmus,"volō velle voluī",we had wanted
-voluerātis,"volō velle voluī",y'all had wanted
-voluerant,"volō velle voluī",they had wanted
-voluerō,"volō velle voluī",I will have wanted
-volueris,"volō velle voluī",you will have wanted
-voluerit,"volō velle voluī",he/she/it will have wanted
-voluerimus,"volō velle voluī",we will have wanted
-volueritis,"volō velle voluī",y'all will have wanted
-voluerint,"volō velle voluī",they will have wanted (or perf subj)
-velim,"volō velle voluī",I may want (pres subj)
-velīs,"volō velle voluī",you may want (pres subj)
-velit,"volō velle voluī",he/she/it may want (pres subj)
-velīmus,"volō velle voluī",we may want (pres subj)
-velītis,"volō velle voluī",y'all may want (pres subj)
-velint,"volō velle voluī",they may want (pres subj)
-vellem,"volō velle voluī",I might want (impf subj)
-vellēs,"volō velle voluī",you might want (impf subj)
-vellet,"volō velle voluī",he/she/it might want (impf subj)
-vellēmus,"volō velle voluī",we might want (impf subj)
-vellētis,"volō velle voluī",y'all might want (impf subj)
-vellent,"volō velle voluī",they might want (impf subj)
-voluissem,"volō velle voluī",I might have wanted (plupf subj)
-voluissēs,"volō velle voluī",you might have wanted (plupf subj)
-voluisset,"volō velle voluī",he/she/it might have wanted (plupf subj)
-voluissēmus,"volō velle voluī",we might have wanted (plupf subj)
-voluissētis,"volō velle voluī",y'all might have wanted (plupf subj)
-voluissent,"volō velle voluī",they might have wanted (plupf subj)
-voluisse,"volō velle voluī",to have wanted
-volēns,"volō velle voluī",wanting / willing (nom sg)
-volentis,"volō velle voluī",of wanting / of willing (gen sg)
-volentem,"volō velle voluī",wanting / willing (acc sg)
-volentēs,"volō velle voluī",wanting / willing (nom/acc pl)
-volentium,"volō velle voluī",of wanting / of willing (gen pl)
-volentibus,"volō velle voluī",to/for/by/with/from wanting (dat/abl pl)
+haec,"hic, haec, hoc",this (feminine nom / neuter pl)
+hoc,"hic, haec, hoc",this (neuter nom/acc)
+huius,"hic, haec, hoc",of this / his / hers / its
+huic,"hic, haec, hoc",to/for this
+hunc,"hic, haec, hoc",this (masculine acc)
+hanc,"hic, haec, hoc",this (feminine acc)
+hōc,"hic, haec, hoc",by/with/from this (masc/neut abl)
+hāc,"hic, haec, hoc",by/with/from this (feminine abl)
+hī,"hic, haec, hoc",these (masculine nom)
+hae,"hic, haec, hoc",these (feminine nom)
+hōrum,"hic, haec, hoc",of these (masc/neut gen)
+hārum,"hic, haec, hoc",of these (feminine gen)
+hōs,"hic, haec, hoc",these (masculine acc)
+hās,"hic, haec, hoc",these (feminine acc)
+hīs,"hic, haec, hoc",to/for/by/with/from these (dat/abl)
+cuius,"quī, quae, quod",whose / of whom / of which
+cui,"quī, quae, quod",to/for whom / to/for which
+quem,"quī, quae, quod",whom / which (masc acc)
+quam,"quī, quae, quod",whom / which (fem acc)
+quō,"quī, quae, quod",by/with/from whom/which (masc/neut abl)
+quā,"quī, quae, quod",by/with/from whom/which (fem abl)
+quōrum,"quī, quae, quod",whose / of whom/which (masc/neut gen pl)
+quārum,"quī, quae, quod",whose / of whom/which (fem gen pl)
+quibus,"quī, quae, quod",to/for/by/with/from whom/which (dat/abl)
+quōs,"quī, quae, quod",whom / which (masc acc pl)
+quās,"quī, quae, quod",whom / which (fem acc pl)
+cuius,"quis, quid",whose? / of whom? / of what?
+cui,"quis, quid",to/for whom? / to/for what?
+quem,"quis, quid",whom? (masc/fem acc)
+quō,"quis, quid",by/with/from whom/what? (ablative)
+eius,"is, ea, id",his / her / its / of that
+eī,"is, ea, id",to/for him/her/it/that (dat) OR they (masc nom pl)
+eum,"is, ea, id",him / that (masc acc)
+eam,"is, ea, id",her / that (fem acc)
+eō,"is, ea, id",by/with/from him/it/that (masc/neut abl)
+eā,"is, ea, id",by/with/from her/that (fem abl)
+iī,"is, ea, id",they / those (masc nom pl)
+eae,"is, ea, id",they / those (fem nom pl)
+eōrum,"is, ea, id",their / of those (masc/neut gen)
+eārum,"is, ea, id",their / of those (fem gen)
+eōs,"is, ea, id",them / those (masc acc pl)
+eās,"is, ea, id",them / those (fem acc pl)
+eīs,"is, ea, id",to/for/by/with/from them/those (dat/abl)
+iīs,"is, ea, id",to/for/by/with/from them/those (dat/abl)
+sum,"sum, esse, fuī, futūrum",I am
+es,"sum, esse, fuī, futūrum",you are
+est,"sum, esse, fuī, futūrum",he/she/it is
+sumus,"sum, esse, fuī, futūrum",we are
+estis,"sum, esse, fuī, futūrum",y'all are
+sunt,"sum, esse, fuī, futūrum",they are
+eram,"sum, esse, fuī, futūrum",I was
+erās,"sum, esse, fuī, futūrum",you were
+erat,"sum, esse, fuī, futūrum",he/she/it was
+erāmus,"sum, esse, fuī, futūrum",we were
+erātis,"sum, esse, fuī, futūrum",y'all were
+erant,"sum, esse, fuī, futūrum",they were
+erō,"sum, esse, fuī, futūrum",I will be
+eris,"sum, esse, fuī, futūrum",you will be
+erit,"sum, esse, fuī, futūrum",he/she/it will be
+erimus,"sum, esse, fuī, futūrum",we will be
+eritis,"sum, esse, fuī, futūrum",y'all will be
+erunt,"sum, esse, fuī, futūrum",they will be
+fuī,"sum, esse, fuī, futūrum",I have been / I was
+fuistī,"sum, esse, fuī, futūrum",you have been / you were
+fuit,"sum, esse, fuī, futūrum",he/she/it has been / was
+fuimus,"sum, esse, fuī, futūrum",we have been / were
+fuistis,"sum, esse, fuī, futūrum",y'all have been / were
+fuērunt,"sum, esse, fuī, futūrum",they have been / were
+fueram,"sum, esse, fuī, futūrum",I had been
+fuerās,"sum, esse, fuī, futūrum",you had been
+fuerat,"sum, esse, fuī, futūrum",he/she/it had been
+fuerāmus,"sum, esse, fuī, futūrum",we had been
+fuerātis,"sum, esse, fuī, futūrum",y'all had been
+fuerant,"sum, esse, fuī, futūrum",they had been
+fuerō,"sum, esse, fuī, futūrum",I will have been
+fueris,"sum, esse, fuī, futūrum",you will have been
+fuerit,"sum, esse, fuī, futūrum",he/she/it will have been
+fuerimus,"sum, esse, fuī, futūrum",we will have been
+fueritis,"sum, esse, fuī, futūrum",y'all will have been
+fuerint,"sum, esse, fuī, futūrum",they will have been (or perf subj)
+sim,"sum, esse, fuī, futūrum",I may be (pres subj)
+sīs,"sum, esse, fuī, futūrum",you may be (pres subj)
+sit,"sum, esse, fuī, futūrum",he/she/it may be (pres subj)
+sīmus,"sum, esse, fuī, futūrum",we may be (pres subj)
+sītis,"sum, esse, fuī, futūrum",y'all may be (pres subj)
+sint,"sum, esse, fuī, futūrum",they may be (pres subj)
+essem,"sum, esse, fuī, futūrum",I might be (impf subj)
+essēs,"sum, esse, fuī, futūrum",you might be (impf subj)
+esset,"sum, esse, fuī, futūrum",he/she/it might be (impf subj)
+essēmus,"sum, esse, fuī, futūrum",we might be (impf subj)
+essētis,"sum, esse, fuī, futūrum",y'all might be (impf subj)
+essent,"sum, esse, fuī, futūrum",they might be (impf subj)
+fuissem,"sum, esse, fuī, futūrum",I might have been (plupf subj)
+fuissēs,"sum, esse, fuī, futūrum",you might have been (plupf subj)
+fuisset,"sum, esse, fuī, futūrum",he/she/it might have been (plupf subj)
+fuissēmus,"sum, esse, fuī, futūrum",we might have been (plupf subj)
+fuissētis,"sum, esse, fuī, futūrum",y'all might have been (plupf subj)
+fuissent,"sum, esse, fuī, futūrum",they might have been (plupf subj)
+esse,"sum, esse, fuī, futūrum",to be
+fuisse,"sum, esse, fuī, futūrum",to have been
+fore,"sum, esse, fuī, futūrum",to be about to be (fut infin)
+futūrus,"sum, esse, fuī, futūrum",about to be
+eiusdem,"īdem, eadem, idem",of the same / his same / her same
+eīdem,"īdem, eadem, idem",to/for the same (dat sg) OR the same (masc nom pl)
+eundem,"īdem, eadem, idem",the same (masc acc)
+eandem,"īdem, eadem, idem",the same (fem acc)
+eōdem,"īdem, eadem, idem",by/with/from the same (masc/neut abl)
+eādem,"īdem, eadem, idem",by/with/from the same (fem abl)
+iīdem,"īdem, eadem, idem",the same (masc nom pl)
+eaedem,"īdem, eadem, idem",the same (fem nom pl)
+eōrundem,"īdem, eadem, idem",of the same (masc/neut gen pl)
+eārundem,"īdem, eadem, idem",of the same (fem gen pl)
+eōsdem,"īdem, eadem, idem",the same (masc acc pl)
+eāsdem,"īdem, eadem, idem",the same (fem acc pl)
+eīsdem,"īdem, eadem, idem",to/for/by/with/from the same (dat/abl)
+iīsdem,"īdem, eadem, idem",to/for/by/with/from the same (dat/abl)
+reī,"rēs, reī, {f.}",of a thing / to/for a thing (gen/dat sg)
+rem,"rēs, reī, {f.}",thing / matter (acc sg)
+rē,"rēs, reī, {f.}",by/with/from a thing (abl sg)
+rērum,"rēs, reī, {f.}",of things / matters (gen pl)
+rēbus,"rēs, reī, {f.}",to/for/by/with/from things (dat/abl pl)
+vīs,"volō, velle, voluī",you want / you wish
+vult,"volō, velle, voluī",he/she/it wants / wishes
+volt,"volō, velle, voluī",he/she/it wants / wishes (older form)
+volumus,"volō, velle, voluī",we want / wish
+vultis,"volō, velle, voluī",y'all want / wish
+voltis,"volō, velle, voluī",y'all want / wish (older form)
+volunt,"volō, velle, voluī",they want / wish
+volēbam,"volō, velle, voluī",I was wanting
+volēbās,"volō, velle, voluī",you were wanting
+volēbat,"volō, velle, voluī",he/she/it was wanting
+volēbāmus,"volō, velle, voluī",we were wanting
+volēbātis,"volō, velle, voluī",y'all were wanting
+volēbant,"volō, velle, voluī",they were wanting
+volam,"volō, velle, voluī",I will want
+volēs,"volō, velle, voluī",you will want
+volet,"volō, velle, voluī",he/she/it will want
+volēmus,"volō, velle, voluī",we will want
+volētis,"volō, velle, voluī",y'all will want
+volent,"volō, velle, voluī",they will want
+voluistī,"volō, velle, voluī",you have wanted / you wanted
+voluit,"volō, velle, voluī",he/she/it has wanted / wanted
+voluimus,"volō, velle, voluī",we have wanted / wanted
+voluistis,"volō, velle, voluī",y'all have wanted / wanted
+voluērunt,"volō, velle, voluī",they have wanted / wanted
+voluēre,"volō, velle, voluī",they have wanted / wanted
+volueram,"volō, velle, voluī",I had wanted
+voluerās,"volō, velle, voluī",you had wanted
+voluerat,"volō, velle, voluī",he/she/it had wanted
+voluerāmus,"volō, velle, voluī",we had wanted
+voluerātis,"volō, velle, voluī",y'all had wanted
+voluerant,"volō, velle, voluī",they had wanted
+voluerō,"volō, velle, voluī",I will have wanted
+volueris,"volō, velle, voluī",you will have wanted
+voluerit,"volō, velle, voluī",he/she/it will have wanted
+voluerimus,"volō, velle, voluī",we will have wanted
+volueritis,"volō, velle, voluī",y'all will have wanted
+voluerint,"volō, velle, voluī",they will have wanted (or perf subj)
+velim,"volō, velle, voluī",I may want (pres subj)
+velīs,"volō, velle, voluī",you may want (pres subj)
+velit,"volō, velle, voluī",he/she/it may want (pres subj)
+velīmus,"volō, velle, voluī",we may want (pres subj)
+velītis,"volō, velle, voluī",y'all may want (pres subj)
+velint,"volō, velle, voluī",they may want (pres subj)
+vellem,"volō, velle, voluī",I might want (impf subj)
+vellēs,"volō, velle, voluī",you might want (impf subj)
+vellet,"volō, velle, voluī",he/she/it might want (impf subj)
+vellēmus,"volō, velle, voluī",we might want (impf subj)
+vellētis,"volō, velle, voluī",y'all might want (impf subj)
+vellent,"volō, velle, voluī",they might want (impf subj)
+voluissem,"volō, velle, voluī",I might have wanted (plupf subj)
+voluissēs,"volō, velle, voluī",you might have wanted (plupf subj)
+voluisset,"volō, velle, voluī",he/she/it might have wanted (plupf subj)
+voluissēmus,"volō, velle, voluī",we might have wanted (plupf subj)
+voluissētis,"volō, velle, voluī",y'all might have wanted (plupf subj)
+voluissent,"volō, velle, voluī",they might have wanted (plupf subj)
+voluisse,"volō, velle, voluī",to have wanted
+volēns,"volō, velle, voluī",wanting / willing (nom sg)
+volentis,"volō, velle, voluī",of wanting / of willing (gen sg)
+volentem,"volō, velle, voluī",wanting / willing (acc sg)
+volentēs,"volō, velle, voluī",wanting / willing (nom/acc pl)
+volentium,"volō, velle, voluī",of wanting / of willing (gen pl)
+volentibus,"volō, velle, voluī",to/for/by/with/from wanting (dat/abl pl)
