@@ -28,10 +28,8 @@
 
     // --- Core & Data Functions ---
 
-    // NEW: Helper function to convert {comments} into styled HTML spans
     function formatHeadwordHTML(rawLatin) {
         if (!rawLatin) return '';
-        // Replaces {text} with a styled span without using bracketed regex
         return rawLatin.replace(/\{(.*?)\}/g, '<span class="headword-comment">$1</span>');
     }
 
@@ -41,7 +39,9 @@
             .toLowerCase()
             .normalize('NFD')
             .replace(/\p{Diacritic}/gu, '') 
-            .replace(/\u2013|-|\(|\)|=/g, ''); 
+            // Removes commas, dashes, parens, equals, periods, semicolons, colons, and brackets
+            .replace(/,|;|\.|:|-|\u2013|\u2014|\(|\)|=|>|</g, '')
+            .trim(); 
     }
 
     function parseCSV(data) {
@@ -85,7 +85,7 @@
                 }
 
                 records.push({
-                    latin: latin, // Keeps the raw {comments} intact for formatting later
+                    latin: latin, 
                     definition: definition,
                     frequency: frequency,
                     partOfSpeech: partOfSpeech,
@@ -136,7 +136,6 @@
         const fragment = document.createDocumentFragment();
         vocabulary.forEach(word => {
             const li = document.createElement('li');
-            // Formats {comments} for display in the word wheel
             li.innerHTML = formatHeadwordHTML(word.latin);
             li.dataset.latin = word.latin;
             fragment.appendChild(li);
@@ -175,7 +174,6 @@
             `;
         }
 
-        // Formats {comments} for the main header
         resultDisplay.innerHTML = `
             <div class="result-header">
                 <h2>${formatHeadwordHTML(word.latin)}</h2>
@@ -267,7 +265,12 @@
             studyListPlaceholder.style.display = 'block';
         } else {
             studyListPlaceholder.style.display = 'none';
-            studyList.sort((a, b) => a.localeCompare(b)).forEach(latinWord => {
+            // Smart sorting for the Study List
+            studyList.sort((a, b) => {
+                const keyA = normalizeForSearch(a.replace(/\{.*?\}/g, ''));
+                const keyB = normalizeForSearch(b.replace(/\{.*?\}/g, ''));
+                return keyA.localeCompare(keyB);
+            }).forEach(latinWord => {
                 const wordObject = vocabulary.find(w => w.latin === latinWord);
                 if (wordObject) {
                     const freqHtml = (wordObject.frequency !== null) ? `<span class="study-list-frequency">Frequency: ${wordObject.frequency}</span>` : '';
@@ -369,16 +372,24 @@
             return;
         }
 
+        // Reduces double spaces so multi-word searches remain robust
+        const collapsedSearch = normalizedSearchTerm.replace(/\s+/g, ' ');
+
         let matches = new Array();
         const addedDisplays = new Set();
 
-        // 1. Gather all matching headwords (lemmata) ignoring comments
+        // 1. Gather all matching headwords ignoring comments and punctuation
         vocabulary.forEach(word => {
             const cleanLatin = word.latin.replace(/\{.*?\}/g, ' '); 
+            const normalizedFullLemma = normalizeForSearch(cleanLatin);
+            const collapsedLemma = normalizedFullLemma.replace(/\s+/g, ' ');
+            
             const parts = cleanLatin.split(' ');
-            const matchesLemma = parts.some(part => {
+            
+            // Matches if search is contained in the full string, OR matches the prefix of any single word
+            const matchesLemma = collapsedLemma.includes(collapsedSearch) || parts.some(part => {
                 const normPart = normalizeForSearch(part);
-                return normPart.length > 0 && normPart.startsWith(normalizedSearchTerm);
+                return normPart.length > 0 && normPart.startsWith(collapsedSearch);
             });
             
             if (matchesLemma) {
@@ -395,7 +406,8 @@
 
         // 2. Gather matching inflected forms
         formsList.forEach(formObj => {
-            if (normalizeForSearch(formObj.form).startsWith(normalizedSearchTerm)) {
+            const collapsedForm = normalizeForSearch(formObj.form).replace(/\s+/g, ' ');
+            if (collapsedForm.startsWith(collapsedSearch)) {
                 const displayStr = `${formObj.form} > ${formObj.lemma}`;
                 if (!addedDisplays.has(displayStr)) {
                     const wordObj = vocabulary.find(w => w.latin === formObj.lemma);
@@ -414,7 +426,7 @@
             }
         });
 
-        // 3. Sort
+        // 3. Sort Results 
         matches.sort((a, b) => {
             const freqA = a.word.frequency !== null ? a.word.frequency : -1;
             const freqB = b.word.frequency !== null ? b.word.frequency : -1;
@@ -425,7 +437,11 @@
             if (a.isForm !== b.isForm) {
                 return a.isForm ? 1 : -1;
             }
-            return a.displayStr.localeCompare(b.displayStr);
+            
+            // Sort matches alphabetically if frequencies match
+            const keyA = normalizeForSearch(a.displayStr.replace(/\{.*?\}/g, ''));
+            const keyB = normalizeForSearch(b.displayStr.replace(/\{.*?\}/g, ''));
+            return keyA.localeCompare(keyB);
         });
 
         const topMatches = matches.slice(0, 10);
@@ -436,28 +452,25 @@
                 const div = document.createElement('div');
                 let innerHtml = "";
                 
-                // Safely separate {comments} from text blocks for bolding
                 const segments = match.text.split(/(\{.*?\})/g);
                 
                 segments.forEach(segment => {
                     if (segment.startsWith('{') && segment.endsWith('}')) {
-                        // Directly wrap the comment in our new CSS class
                         const innerText = segment.substring(1, segment.length - 1);
                         innerHtml += '<span class="headword-comment">' + innerText + '</span>';
                     } else {
-                        // Apply bolding logic only to the non-comment parts
                         const parts = segment.split(' ');
                         const htmlParts = parts.map(part => {
                             const normPart = normalizeForSearch(part);
-                            if (normPart.length > 0 && normPart.startsWith(normalizedSearchTerm)) {
+                            if (normPart.length > 0 && normPart.startsWith(collapsedSearch)) {
                                 let matchEndIndex = 0;
                                 for (let i = 1; i <= part.length; i++) {
-                                    if (normalizeForSearch(part.substring(0, i)) === normalizedSearchTerm) {
+                                    if (normalizeForSearch(part.substring(0, i)) === collapsedSearch) {
                                         matchEndIndex = i;
                                         break;
                                     }
                                 }
-                                if (matchEndIndex === 0 && normalizedSearchTerm.length > 0) matchEndIndex = rawSearchTerm.length;
+                                if (matchEndIndex === 0 && collapsedSearch.length > 0) matchEndIndex = rawSearchTerm.length;
 
                                 if (matchEndIndex > 0) {
                                     return '<strong>' + part.substring(0, matchEndIndex) + '</strong>' + part.substring(matchEndIndex);
@@ -542,7 +555,13 @@
                 word.forms = formsList.filter(f => f.lemma === word.latin);
             });
 
-            vocabulary.sort((a, b) => a.latin.localeCompare(b.latin));
+            // Smart sorting for the Word Wheel
+            vocabulary.sort((a, b) => {
+                const keyA = normalizeForSearch(a.latin.replace(/\{.*?\}/g, ''));
+                const keyB = normalizeForSearch(b.latin.replace(/\{.*?\}/g, ''));
+                return keyA.localeCompare(keyB);
+            });
+
             populateWordWheel();
             updateWordWheelStyles();
         })
