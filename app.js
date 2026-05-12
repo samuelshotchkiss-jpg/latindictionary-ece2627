@@ -265,7 +265,6 @@
             studyListPlaceholder.style.display = 'block';
         } else {
             studyListPlaceholder.style.display = 'none';
-            // Smart sorting for the Study List
             studyList.sort((a, b) => {
                 const keyA = normalizeForSearch(a.replace(/\{.*?\}/g, ''));
                 const keyB = normalizeForSearch(b.replace(/\{.*?\}/g, ''));
@@ -372,27 +371,22 @@
             return;
         }
 
-        // Reduces double spaces so multi-word searches remain robust
         const collapsedSearch = normalizedSearchTerm.replace(/\s+/g, ' ');
+        // Prepending a space guarantees we only match at the start of a word
+        const searchPattern = ' ' + collapsedSearch; 
+        const searchWords = collapsedSearch.split(' ');
 
         let matches = new Array();
         const addedDisplays = new Set();
 
-        // 1. Gather all matching headwords ignoring comments and punctuation
+        // 1. Gather matching headwords ignoring comments and punctuation
         vocabulary.forEach(word => {
             const cleanLatin = word.latin.replace(/\{.*?\}/g, ' '); 
             const normalizedFullLemma = normalizeForSearch(cleanLatin);
             const collapsedLemma = normalizedFullLemma.replace(/\s+/g, ' ');
+            const lemmaTarget = ' ' + collapsedLemma; 
             
-            const parts = cleanLatin.split(' ');
-            
-            // Matches if search is contained in the full string, OR matches the prefix of any single word
-            const matchesLemma = collapsedLemma.includes(collapsedSearch) || parts.some(part => {
-                const normPart = normalizeForSearch(part);
-                return normPart.length > 0 && normPart.startsWith(collapsedSearch);
-            });
-            
-            if (matchesLemma) {
+            if (lemmaTarget.includes(searchPattern)) {
                 matches.push({
                     type: 'lemma',
                     text: word.latin,
@@ -407,8 +401,10 @@
         // 2. Gather matching inflected forms
         formsList.forEach(formObj => {
             const collapsedForm = normalizeForSearch(formObj.form).replace(/\s+/g, ' ');
-            if (collapsedForm.startsWith(collapsedSearch)) {
-                const displayStr = `${formObj.form} > ${formObj.lemma}`;
+            const formTarget = ' ' + collapsedForm;
+            
+            if (formTarget.includes(searchPattern)) {
+                const displayStr = formObj.form + ' > ' + formObj.lemma;
                 if (!addedDisplays.has(displayStr)) {
                     const wordObj = vocabulary.find(w => w.latin === formObj.lemma);
                     if (wordObj) {
@@ -438,7 +434,6 @@
                 return a.isForm ? 1 : -1;
             }
             
-            // Sort matches alphabetically if frequencies match
             const keyA = normalizeForSearch(a.displayStr.replace(/\{.*?\}/g, ''));
             const keyB = normalizeForSearch(b.displayStr.replace(/\{.*?\}/g, ''));
             return keyA.localeCompare(keyB);
@@ -462,18 +457,36 @@
                         const parts = segment.split(' ');
                         const htmlParts = parts.map(part => {
                             const normPart = normalizeForSearch(part);
-                            if (normPart.length > 0 && normPart.startsWith(collapsedSearch)) {
-                                let matchEndIndex = 0;
-                                for (let i = 1; i <= part.length; i++) {
-                                    if (normalizeForSearch(part.substring(0, i)) === collapsedSearch) {
-                                        matchEndIndex = i;
+                            
+                            if (normPart.length > 0) {
+                                // Checks if the current dictionary word matches ANY of the student's search words
+                                let matchedSearchWord = '';
+                                for (let idx = 0; idx < searchWords.length; idx++) {
+                                    const sw = searchWords.slice(idx, idx + 1).pop();
+                                    if (sw.length > 0 && normPart.startsWith(sw)) {
+                                        matchedSearchWord = sw;
                                         break;
                                     }
                                 }
-                                if (matchEndIndex === 0 && collapsedSearch.length > 0) matchEndIndex = rawSearchTerm.length;
 
-                                if (matchEndIndex > 0) {
-                                    return '<strong>' + part.substring(0, matchEndIndex) + '</strong>' + part.substring(matchEndIndex);
+                                // Bolds the matched section while preserving original punctuation
+                                if (matchedSearchWord.length > 0) {
+                                    let matchEndIndex = 0;
+                                    let normCount = 0;
+                                    for (let i = 0; i < part.length; i++) {
+                                        const charNorm = normalizeForSearch(part.charAt(i));
+                                        if (charNorm.length > 0) {
+                                            normCount += charNorm.length;
+                                        }
+                                        if (normCount >= matchedSearchWord.length) {
+                                            matchEndIndex = i + 1;
+                                            break;
+                                        }
+                                    }
+
+                                    if (matchEndIndex > 0) {
+                                        return '<strong>' + part.substring(0, matchEndIndex) + '</strong>' + part.substring(matchEndIndex);
+                                    }
                                 }
                             }
                             return part;
@@ -555,7 +568,6 @@
                 word.forms = formsList.filter(f => f.lemma === word.latin);
             });
 
-            // Smart sorting for the Word Wheel
             vocabulary.sort((a, b) => {
                 const keyA = normalizeForSearch(a.latin.replace(/\{.*?\}/g, ''));
                 const keyB = normalizeForSearch(b.latin.replace(/\{.*?\}/g, ''));
