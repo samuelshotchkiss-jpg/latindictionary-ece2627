@@ -253,3 +253,23 @@ body {
     color: #888;
     font-size: 0.9em;
 }
+/* Definition Commentary */
+.def-comment {
+    font-style: italic;
+    color: #666; /* A soft gray to distinguish it from the black definition text */
+}
+
+/* Grammar Term Link */
+.grammar-link {
+    color: var(--danger-color); 
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.grammar-link:hover {
+    background-color: #fcebe9;
+    border-radius: 3px;
+}
