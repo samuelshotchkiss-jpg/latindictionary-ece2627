@@ -32,6 +32,22 @@
         if (!rawLatin) return '';
         return rawLatin.replace(/\{(.*?)\}/g, '<span class="headword-comment">$1</span>');
     }
+    function formatDefinitionHTML(rawDef) {
+        if (!rawDef) return '';
+        
+        let formatted = rawDef;
+        
+        // 1. Parse grammar links WITH an ID: {{Display Text|ID}}
+        formatted = formatted.replace(/\{\{(.*?)\|(.*?)\}\}/g, '<span class="grammar-link" data-pharr-id="$2">$1</span>');
+        
+        // 2. Parse grammar links WITHOUT an ID: {{Display Text}}
+        formatted = formatted.replace(/\{\{(.*?)\}\}/g, '<span class="grammar-link" data-pharr-id="pending">$1</span>');
+        
+        // 3. Parse commentary: {chatty explanatory text}
+        formatted = formatted.replace(/\{(.*?)\}/g, '<span class="def-comment">$1</span>');
+        
+        return formatted;
+    }
 
     function normalizeForSearch(str) {
         if (!str) return '';
@@ -180,7 +196,7 @@
                 ${buttonHtml}
             </div>
             ${posHtml}
-            <p>${word.definition}</p>
+            <p>${formatDefinitionHTML(word.definition)}</p>
             ${formsHtml}
             ${freqHtml}
             <div class="result-footer">${buttonHtml}</div>
@@ -277,7 +293,7 @@
                     li.innerHTML = `
                         <div class="study-list-item-content">
                             <span class="study-list-latin">${formatHeadwordHTML(wordObject.latin)}</span>
-                            <span class="study-list-definition">${wordObject.definition}</span>
+                            <span class="study-list-definition">${formatDefinitionHTML(wordObject.definition)}</span>
                             ${freqHtml}
                         </div>
                         <button class="remove-from-list-btn" data-word="${latinWord}" title="Remove from list">&times;</button>
@@ -610,6 +626,20 @@
         closeWordWheelBtn.addEventListener('click', closeMobileMenu);
         mobileMenuOverlay.addEventListener('click', closeMobileMenu);
     }
-
+// --- Grammar Link Click Handler (Placeholder) ---
+        resultDisplay.addEventListener('click', function(e) {
+            if (e.target && e.target.classList.contains('grammar-link')) {
+                const pharrId = e.target.getAttribute('data-pharr-id');
+                
+                if (pharrId === 'pending') {
+                    alert('Grammar link pending: We have not assigned a specific Pharr section to this term yet.');
+                } else {
+                    // STUB: This is where Claude will add the integration code later!
+                    // For example, he might change this to:
+                    // window.open('pharr-appendix.html#section-' + pharrId, '_blank');
+                    alert('Integration ready! This will eventually open Pharr Section: ' + pharrId);
+                }
+            }
+        });
     document.addEventListener('DOMContentLoaded', initialize);
 })();
