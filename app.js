@@ -45,6 +45,9 @@
         
         // 3. Parse commentary: {chatty explanatory text}
         formatted = formatted.replace(/\{(.*?)\}/g, '<span class="def-comment">$1</span>');
+
+        // 4. Parse Latin words in context: *terra*
+        formatted = formatted.replace(/\*(.*?)\*/g, '<span class="latin-in-context">$1</span>');
         
         return formatted;
     }
