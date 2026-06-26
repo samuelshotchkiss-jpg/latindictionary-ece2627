@@ -273,3 +273,9 @@ body {
     background-color: #fcebe9;
     border-radius: 3px;
 }
+/* Latin words within commentary */
+.latin-in-context {
+    font-style: normal; /* Breaks out of the commentary italics */
+    font-weight: 600; /* Makes it slightly bolder */
+    color: var(--text-color); /* Brings it back to the main dark text color */
+}
