@@ -32,23 +32,14 @@
         if (!rawLatin) return '';
         return rawLatin.replace(/\{(.*?)\}/g, '<span class="headword-comment">$1</span>');
     }
+
     function formatDefinitionHTML(rawDef) {
         if (!rawDef) return '';
-        
         let formatted = rawDef;
-        
-        // 1. Parse grammar links WITH an ID: {{Display Text|ID}}
         formatted = formatted.replace(/\{\{(.*?)\|(.*?)\}\}/g, '<span class="grammar-link" data-pharr-id="$2">$1</span>');
-        
-        // 2. Parse grammar links WITHOUT an ID: {{Display Text}}
         formatted = formatted.replace(/\{\{(.*?)\}\}/g, '<span class="grammar-link" data-pharr-id="pending">$1</span>');
-        
-        // 3. Parse commentary: {chatty explanatory text}
         formatted = formatted.replace(/\{(.*?)\}/g, '<span class="def-comment">$1</span>');
-
-        // 4. Parse Latin words in context: *terra*
         formatted = formatted.replace(/\*(.*?)\*/g, '<span class="latin-in-context">$1</span>');
-        
         return formatted;
     }
 
@@ -58,9 +49,43 @@
             .toLowerCase()
             .normalize('NFD')
             .replace(/\p{Diacritic}/gu, '') 
-            // Removes commas, dashes, parens, equals, periods, semicolons, colons, and brackets
             .replace(/,|;|\.|:|-|\u2013|\u2014|\(|\)|=|>|</g, '')
             .trim(); 
+    }
+
+    // NEW: One-Way Macron Strictness Checker
+    function checkOneWayMatch(targetRawStr, targetNormStr, searchRawStr, searchNormStr) {
+        let startIdx = 0;
+        let found = false;
+        while (startIdx < targetNormStr.length) {
+            const matchIdx = targetNormStr.indexOf(searchNormStr, startIdx);
+            if (matchIdx === -1) {
+                break; 
+            }
+
+            let isValid = true;
+            for (let i = 0; i < searchRawStr.length; i++) {
+                const sCharRaw = searchRawStr.charAt(i);
+                const sCharNorm = searchNormStr.charAt(i);
+                
+                // If the user typed a diacritic (it vanished during normalization)
+                if (sCharRaw !== sCharNorm) {
+                    const tCharRaw = targetRawStr.charAt(matchIdx + i);
+                    // The dictionary word MUST possess that exact diacritic
+                    if (sCharRaw !== tCharRaw) {
+                        isValid = false;
+                        break;
+                    }
+                }
+            }
+
+            if (isValid) {
+                found = true;
+                break;
+            }
+            startIdx = matchIdx + 1;
+        }
+        return found;
     }
 
     function parseCSV(data) {
@@ -390,28 +415,48 @@
             return;
         }
 
-        const collapsedSearch = normalizedSearchTerm.replace(/\s+/g, ' ');
-        // Prepending a space guarantees we only match at the start of a word
-        const searchPattern = ' ' + collapsedSearch; 
-        const searchWords = collapsedSearch.split(' ');
+        const searchNoPunct = rawSearchTerm.toLowerCase().replace(/,|;|\.|:|-|\u2013|\u2014|\(|\)|=|>|</g, '').trim();
+        const collapsedSearchRaw = searchNoPunct.replace(/\s+/g, ' ');
+        const searchPatternRaw = ' ' + collapsedSearchRaw;
+
+        const collapsedSearchNorm = normalizedSearchTerm.replace(/\s+/g, ' ');
+        const searchPatternNorm = ' ' + collapsedSearchNorm;
+
+        const searchWordsNorm = collapsedSearchNorm.split(' ');
 
         let matches = new Array();
         const addedDisplays = new Set();
 
-        // 1. Gather matching headwords ignoring comments and punctuation
+        // 1. Gather matching headwords (Lemmata)
         vocabulary.forEach(word => {
-            const cleanLatin = word.latin.replace(/\{.*?\}/g, ' '); 
-            const normalizedFullLemma = normalizeForSearch(cleanLatin);
-            const collapsedLemma = normalizedFullLemma.replace(/\s+/g, ' ');
-            const lemmaTarget = ' ' + collapsedLemma; 
+            const cleanLatinRaw = word.latin.toLowerCase().replace(/\{(.*?)\}/g, ' '); 
+            const rawLemmaNoPunct = cleanLatinRaw.replace(/,|;|\.|:|-|\u2013|\u2014|\(|\)|=|>|</g, '').trim();
+            const collapsedLemmaRaw = rawLemmaNoPunct.replace(/\s+/g, ' ');
+            const lemmaTargetRaw = ' ' + collapsedLemmaRaw;
+
+            const collapsedLemmaNorm = normalizeForSearch(cleanLatinRaw).replace(/\s+/g, ' ');
+            const lemmaTargetNorm = ' ' + collapsedLemmaNorm;
             
-            if (lemmaTarget.includes(searchPattern)) {
+            if (checkOneWayMatch(lemmaTargetRaw, lemmaTargetNorm, searchPatternRaw, searchPatternNorm)) {
+                
+                // Determine if this is an Exact Match
+                let isExact = false;
+                if (collapsedLemmaNorm === collapsedSearchNorm) {
+                    isExact = true;
+                } else {
+                    const words = collapsedLemmaNorm.split(' ');
+                    if (words.indexOf(collapsedSearchNorm) !== -1) {
+                        isExact = true;
+                    }
+                }
+
                 matches.push({
                     type: 'lemma',
                     text: word.latin,
                     displayStr: word.latin,
                     word: word,
-                    isForm: false
+                    isForm: false,
+                    isExact: isExact
                 });
                 addedDisplays.add(word.latin);
             }
@@ -419,21 +464,31 @@
 
         // 2. Gather matching inflected forms
         formsList.forEach(formObj => {
-            const collapsedForm = normalizeForSearch(formObj.form).replace(/\s+/g, ' ');
-            const formTarget = ' ' + collapsedForm;
+            const rawFormNoPunct = formObj.form.toLowerCase().replace(/,|;|\.|:|-|\u2013|\u2014|\(|\)|=|>|</g, '').trim();
+            const collapsedFormRaw = rawFormNoPunct.replace(/\s+/g, ' ');
+            const formTargetRaw = ' ' + collapsedFormRaw;
+
+            const collapsedFormNorm = normalizeForSearch(formObj.form).replace(/\s+/g, ' ');
+            const formTargetNorm = ' ' + collapsedFormNorm;
             
-            if (formTarget.includes(searchPattern)) {
+            if (checkOneWayMatch(formTargetRaw, formTargetNorm, searchPatternRaw, searchPatternNorm)) {
                 const displayStr = formObj.form + ' > ' + formObj.lemma;
                 if (!addedDisplays.has(displayStr)) {
                     const wordObj = vocabulary.find(w => w.latin === formObj.lemma);
                     if (wordObj) {
+                        let isExact = false;
+                        if (collapsedFormNorm === collapsedSearchNorm) {
+                            isExact = true;
+                        }
+
                         matches.push({
                             type: 'form',
                             text: formObj.form,
                             displayStr: displayStr,
                             word: wordObj,
                             formObj: formObj,
-                            isForm: true
+                            isForm: true,
+                            isExact: isExact
                         });
                         addedDisplays.add(displayStr);
                     }
@@ -441,18 +496,27 @@
             }
         });
 
-        // 3. Sort Results 
+        // 3. New Sorting Hierarchy
         matches.sort((a, b) => {
+            // Rule A: Exact Matches rise to the very top
+            if (a.isExact !== b.isExact) {
+                return a.isExact ? -1 : 1;
+            }
+
+            // Rule B: Standard Dictionary Lemmata beat Inflected Forms
+            if (a.isForm !== b.isForm) {
+                return a.isForm ? 1 : -1;
+            }
+
+            // Rule C: Frequency Ranking
             const freqA = a.word.frequency !== null ? a.word.frequency : -1;
             const freqB = b.word.frequency !== null ? b.word.frequency : -1;
             
             if (freqA !== freqB) {
                 return freqB - freqA; 
             }
-            if (a.isForm !== b.isForm) {
-                return a.isForm ? 1 : -1;
-            }
             
+            // Rule D: Alphabetical Tie-Breaker
             const keyA = normalizeForSearch(a.displayStr.replace(/\{.*?\}/g, ''));
             const keyB = normalizeForSearch(b.displayStr.replace(/\{.*?\}/g, ''));
             return keyA.localeCompare(keyB);
@@ -464,8 +528,13 @@
         if (topMatches.length > 0) {
             topMatches.forEach(match => {
                 const div = document.createElement('div');
-                let innerHtml = "";
                 
+                // Assigns receding visual style if it's an inflected form
+                if (match.isForm) {
+                    div.classList.add('is-form-match');
+                }
+
+                let innerHtml = "";
                 const segments = match.text.split(/(\{.*?\})/g);
                 
                 segments.forEach(segment => {
@@ -478,17 +547,15 @@
                             const normPart = normalizeForSearch(part);
                             
                             if (normPart.length > 0) {
-                                // Checks if the current dictionary word matches ANY of the student's search words
                                 let matchedSearchWord = '';
-                                for (let idx = 0; idx < searchWords.length; idx++) {
-                                    const sw = searchWords.slice(idx, idx + 1).pop();
+                                for (let idx = 0; idx < searchWordsNorm.length; idx++) {
+                                    const sw = searchWordsNorm.slice(idx, idx + 1).pop();
                                     if (sw.length > 0 && normPart.startsWith(sw)) {
                                         matchedSearchWord = sw;
                                         break;
                                     }
                                 }
 
-                                // Bolds the matched section while preserving original punctuation
                                 if (matchedSearchWord.length > 0) {
                                     let matchEndIndex = 0;
                                     let normCount = 0;
@@ -601,6 +668,19 @@
             resultDisplay.innerHTML = `<div class="placeholder-text"><p style="color:var(--danger-color);">Error: Could not load vocabulary.csv. Please ensure the file is in the same folder as index.html.</p></div>`;
         });
 
+        // --- Grammar Link Click Handler ---
+        resultDisplay.addEventListener('click', function(e) {
+            if (e.target && e.target.classList.contains('grammar-link')) {
+                const pharrId = e.target.getAttribute('data-pharr-id');
+                
+                if (pharrId === 'pending') {
+                    alert('Grammar link pending: We have not assigned a specific Pharr section to this term yet.');
+                } else {
+                    alert('Integration ready! This will eventually open Pharr Section: ' + pharrId);
+                }
+            }
+        });
+
         searchInput.addEventListener('input', onSearchInput);
         wordWheel.addEventListener('click', onWordWheelClick);
         searchInput.addEventListener('blur', () => setTimeout(() => { suggestionsList.style.display = 'none'; }, 150));
@@ -629,20 +709,6 @@
         closeWordWheelBtn.addEventListener('click', closeMobileMenu);
         mobileMenuOverlay.addEventListener('click', closeMobileMenu);
     }
-// --- Grammar Link Click Handler (Placeholder) ---
-        resultDisplay.addEventListener('click', function(e) {
-            if (e.target && e.target.classList.contains('grammar-link')) {
-                const pharrId = e.target.getAttribute('data-pharr-id');
-                
-                if (pharrId === 'pending') {
-                    alert('Grammar link pending: We have not assigned a specific Pharr section to this term yet.');
-                } else {
-                    // STUB: This is where Claude will add the integration code later!
-                    // For example, he might change this to:
-                    // window.open('pharr-appendix.html#section-' + pharrId, '_blank');
-                    alert('Integration ready! This will eventually open Pharr Section: ' + pharrId);
-                }
-            }
-        });
+
     document.addEventListener('DOMContentLoaded', initialize);
 })();
