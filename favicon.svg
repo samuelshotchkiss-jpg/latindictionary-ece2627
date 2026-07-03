@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- The main blue book cover, matching your app's accent color -->
+  <rect x="20" y="10" width="60" height="80" rx="8" fill="#4a69bd"/>
+  
+  <!-- The little white pages/bookmark -->
+  <path d="M 35 10 L 35 45 L 50 35 L 65 45 L 65 10 Z" fill="#e1e7f5"/>
+  
+  <!-- A cute bold 'L' for Latin -->
+  <text x="50" y="80" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="34" fill="#ffffff" text-anchor="middle">L</text>
+</svg>
