@@ -279,3 +279,14 @@ body {
     font-weight: 600; /* Makes it slightly bolder */
     color: var(--text-color); /* Brings it back to the main dark text color */
 }
+/* Demoted styling for inflected forms in the search dropdown */
+.is-form-match {
+    color: #666;
+    font-size: 0.95em;
+    background-color: #fafafa;
+    border-left: 4px solid var(--accent-secondary);
+    padding-left: 25px; /* Indents the form slightly */
+}
+.is-form-match:hover {
+    background-color: var(--primary-bg) !important;
+}
