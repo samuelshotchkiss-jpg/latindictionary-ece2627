@@ -290,3 +290,17 @@ body {
 .is-form-match:hover {
     background-color: var(--primary-bg) !important;
 }
+/* Idiom phrases */
+.idiom-phrase {
+    background-color: #f9f9fa; /* A very soft, neutral light gray, distinctly not blue */
+    border: 1px solid #e5e5e8; /* A much softer, less intrusive border */
+    padding: 1px 4px; /* Shaved down from 6px to close the visual gap with the semicolon */
+    margin: 0; /* Removed margin to prevent pushing adjacent punctuation away */
+    border-radius: 4px; /* Tighter corners so it feels more like text and less like a button */
+    font-size: 0.95em;
+    color: var(--text-color);
+    
+    /* Ensures the border and padding look good if it wraps to a new line */
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}

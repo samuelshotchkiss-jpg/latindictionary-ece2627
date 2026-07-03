@@ -33,13 +33,28 @@
         return rawLatin.replace(/\{(.*?)\}/g, '<span class="headword-comment">$1</span>');
     }
 
-    function formatDefinitionHTML(rawDef) {
+function formatDefinitionHTML(rawDef) {
         if (!rawDef) return '';
+        
         let formatted = rawDef;
+        
+        // 1. Parse grammar links WITH an ID: {{Display Text|ID}}
         formatted = formatted.replace(/\{\{(.*?)\|(.*?)\}\}/g, '<span class="grammar-link" data-pharr-id="$2">$1</span>');
+        
+        // 2. Parse grammar links WITHOUT an ID: {{Display Text}}
         formatted = formatted.replace(/\{\{(.*?)\}\}/g, '<span class="grammar-link" data-pharr-id="pending">$1</span>');
+        
+        // 3. Parse Idioms using Hex Codes to avoid Markdown UI bugs
+        // \x5b represents the left square bracket, \x5d represents the right
+        const idiomRegex = new RegExp('\\x5b\\x5b(.*?)\\x5d\\x5d', 'g');
+        formatted = formatted.replace(idiomRegex, '<span class="idiom-phrase">$1</span>');
+
+        // 4. Parse commentary: {chatty explanatory text}
         formatted = formatted.replace(/\{(.*?)\}/g, '<span class="def-comment">$1</span>');
+
+        // 5. Parse Latin words in context: *terra*
         formatted = formatted.replace(/\*(.*?)\*/g, '<span class="latin-in-context">$1</span>');
+        
         return formatted;
     }
 

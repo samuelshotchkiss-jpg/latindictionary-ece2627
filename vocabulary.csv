@@ -14,7 +14,7 @@ nōn,not,46,Adverb
 "dō, dare, dedī, datum","give, offer; grant, allow; cause, produce",45,Verb
 per,"through, throughout; during; by means of, by",45,Preposition
 ut,"as, like, when; in order that, so that, to; how",41,Conjunction
-"quis, quid","who, what; anyone, anything",38,Pronoun
+"quis, quid","who?; what?; why? {as the adverbial neuter *quid*}; [[*nesciō quis* "I don't know who" → "someone or other"]]; anyone, anything {as an indefinite after *sī, nisi, nē, num*}",38,Pronoun
 "videō, vidēre, vīdī, vīsum","see, look at; understand, perceive",38,Verb
 "amor, amōris, {m.}","love, affection; passion, desire",37,Noun
 "tuus, tua, tuum","your, yours (singular)",36,Adjective
@@ -45,7 +45,7 @@ dum,"while, as long as; until; provided that",18,Conjunction
 "ferō, ferre, tulī, lātum","bring, bear, carry; endure, suffer; report, say",18,Verb
 "habeō, habēre, habuī, habitum","have, hold; consider, regard; manage, keep",18,Verb
 "magnus, magna, magnum","large, great, big; powerful, mighty; important",18,Adjective
-"manus, manūs, {f.}","hand; power, authority",18,Noun
+"manus, manūs, {f.}","hand; handiwork {of artistry}; power {figuratively, of control}; [[*cōnserere manūs* "to entangle the hands" → "to fight hand-to-hand"]]; [[*inicere manūs* "to lay hands on" → "to lay legal claim to"]]",18,Noun
 "multus, multa, multum","much, many; abundant, great",18,Adjective
 "rēgnum, rēgnī, {n.}","kingdom, kingship; royal power, control; dominion, realm",18,Noun
 "veniō, venīre, vēnī, ventum","come, arrive; occur, happen",18,Verb
