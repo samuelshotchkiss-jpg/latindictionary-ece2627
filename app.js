@@ -33,26 +33,18 @@
         return rawLatin.replace(/\{(.*?)\}/g, '<span class="headword-comment">$1</span>');
     }
 
-function formatDefinitionHTML(rawDef) {
+    function formatDefinitionHTML(rawDef) {
         if (!rawDef) return '';
         
         let formatted = rawDef;
         
-        // 1. Parse grammar links WITH an ID: {{Display Text|ID}}
         formatted = formatted.replace(/\{\{(.*?)\|(.*?)\}\}/g, '<span class="grammar-link" data-pharr-id="$2">$1</span>');
-        
-        // 2. Parse grammar links WITHOUT an ID: {{Display Text}}
         formatted = formatted.replace(/\{\{(.*?)\}\}/g, '<span class="grammar-link" data-pharr-id="pending">$1</span>');
         
-        // 3. Parse Idioms using Hex Codes to avoid Markdown UI bugs
-        // \x5b represents the left square bracket, \x5d represents the right
         const idiomRegex = new RegExp('\\x5b\\x5b(.*?)\\x5d\\x5d', 'g');
         formatted = formatted.replace(idiomRegex, '<span class="idiom-phrase">$1</span>');
 
-        // 4. Parse commentary: {chatty explanatory text}
         formatted = formatted.replace(/\{(.*?)\}/g, '<span class="def-comment">$1</span>');
-
-        // 5. Parse Latin words in context: *terra*
         formatted = formatted.replace(/\*(.*?)\*/g, '<span class="latin-in-context">$1</span>');
         
         return formatted;
@@ -62,13 +54,14 @@ function formatDefinitionHTML(rawDef) {
         if (!str) return '';
         return str
             .toLowerCase()
+            .replace(/j/g, 'i') // i/j equivalence
             .normalize('NFD')
             .replace(/\p{Diacritic}/gu, '') 
             .replace(/,|;|\.|:|-|\u2013|\u2014|\(|\)|=|>|</g, '')
             .trim(); 
     }
 
-    // NEW: One-Way Macron Strictness Checker
+    // One-Way Macron Strictness Checker
     function checkOneWayMatch(targetRawStr, targetNormStr, searchRawStr, searchNormStr) {
         let startIdx = 0;
         let found = false;
@@ -80,12 +73,17 @@ function formatDefinitionHTML(rawDef) {
 
             let isValid = true;
             for (let i = 0; i < searchRawStr.length; i++) {
-                const sCharRaw = searchRawStr.charAt(i);
+                let sCharRaw = searchRawStr.charAt(i).toLowerCase();
+                let tCharRaw = targetRawStr.charAt(matchIdx + i).toLowerCase();
+                
+                // Allow i/j equivalence to bypass strictness rejection
+                if (sCharRaw === 'j') sCharRaw = 'i';
+                if (tCharRaw === 'j') tCharRaw = 'i';
+
                 const sCharNorm = searchNormStr.charAt(i);
                 
                 // If the user typed a diacritic (it vanished during normalization)
                 if (sCharRaw !== sCharNorm) {
-                    const tCharRaw = targetRawStr.charAt(matchIdx + i);
                     // The dictionary word MUST possess that exact diacritic
                     if (sCharRaw !== tCharRaw) {
                         isValid = false;
@@ -454,7 +452,6 @@ function formatDefinitionHTML(rawDef) {
             
             if (checkOneWayMatch(lemmaTargetRaw, lemmaTargetNorm, searchPatternRaw, searchPatternNorm)) {
                 
-                // Determine if this is an Exact Match
                 let isExact = false;
                 if (collapsedLemmaNorm === collapsedSearchNorm) {
                     isExact = true;
@@ -513,17 +510,12 @@ function formatDefinitionHTML(rawDef) {
 
         // 3. New Sorting Hierarchy
         matches.sort((a, b) => {
-            // Rule A: Exact Matches rise to the very top
             if (a.isExact !== b.isExact) {
                 return a.isExact ? -1 : 1;
             }
-
-            // Rule B: Standard Dictionary Lemmata beat Inflected Forms
             if (a.isForm !== b.isForm) {
                 return a.isForm ? 1 : -1;
             }
-
-            // Rule C: Frequency Ranking
             const freqA = a.word.frequency !== null ? a.word.frequency : -1;
             const freqB = b.word.frequency !== null ? b.word.frequency : -1;
             
@@ -531,7 +523,6 @@ function formatDefinitionHTML(rawDef) {
                 return freqB - freqA; 
             }
             
-            // Rule D: Alphabetical Tie-Breaker
             const keyA = normalizeForSearch(a.displayStr.replace(/\{.*?\}/g, ''));
             const keyB = normalizeForSearch(b.displayStr.replace(/\{.*?\}/g, ''));
             return keyA.localeCompare(keyB);
@@ -544,7 +535,6 @@ function formatDefinitionHTML(rawDef) {
             topMatches.forEach(match => {
                 const div = document.createElement('div');
                 
-                // Assigns receding visual style if it's an inflected form
                 if (match.isForm) {
                     div.classList.add('is-form-match');
                 }
@@ -683,7 +673,6 @@ function formatDefinitionHTML(rawDef) {
             resultDisplay.innerHTML = `<div class="placeholder-text"><p style="color:var(--danger-color);">Error: Could not load vocabulary.csv. Please ensure the file is in the same folder as index.html.</p></div>`;
         });
 
-        // --- Grammar Link Click Handler ---
         resultDisplay.addEventListener('click', function(e) {
             if (e.target && e.target.classList.contains('grammar-link')) {
                 const pharrId = e.target.getAttribute('data-pharr-id');
