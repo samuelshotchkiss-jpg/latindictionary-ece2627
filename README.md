@@ -8,16 +8,9 @@ Built entirely with Vanilla HTML5, CSS3, and ES6 JavaScript, it requires no back
 ## Primary Features
 *   **Forgiving Incremental Search:** Students can search without worrying about macrons or punctuation. The engine automatically handles `i/j` equivalence (crucial for older texts) and multi-word phrases.
 *   **One-Way Macron Strictness:** If a student types "o", it returns both "o" and "ō". If a student specifically types "ō", it filters out short "o"s.
-*   **Grammar Engine:** It recognizes inflected forms (e.g., typing "quō" pulls up the pronoun "quī, quae, quod") and groups them under their dictionary lemmata.
+*   **Grammar Engine:** It recognizes inflected forms (e.g., typing "quō" pulls up the pronoun "quī, quae, quod") and groups them under their dictionary lemmata. This functionality is intentionally limited to short and irregular words that are likely to cause the student trouble, but can be expanded using the provided forms.csv. A thoroughgoing grammar engine (such as the ones found in Perseus, Logeion, or Whitaker's Words) is not something I regard as practical (using the present architecture) or pedagogically desirable.
 *   **Smart Sorting:** Search results prioritize Exact Matches first, Dictionary Lemmata second, Frequency third, and Alphabetical order last.
 *   **Local Study List:** Students can save words to their browser's Local Storage, export them as a TSV file, and import them across devices.
-
-## How to Run Locally
-Because the app uses JavaScript `fetch()` to load the dictionary files, it must be run on a local server.
-1. Open the project folder in VS Code.
-2. Open the terminal and run: `python -m http.server 8000`
-3. Open a web browser to `http://localhost:8000`
-*(Alternatively, use the VS Code "Live Server" extension).*
 
 ## Data Entry & Markup Guide
 The app reads from two files: `vocabulary.csv` (the main dictionary) and `forms.csv` (inflected grammar forms). The app dynamically parses specific text formatting in the `definition` column to create a beautiful typographical hierarchy:
