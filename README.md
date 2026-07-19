@@ -24,4 +24,4 @@ The app reads from two files: `vocabulary.csv` (the main dictionary) and `forms.
 4.  **Grammar Links (Double Braces):** Grammatical terms wrapped in `{{double braces}}` render as clickable red links. To route the link to a specific section of Pharr's Grammar, use a pipe `|` and the section number. 
     *   *Example:* `{{ablative absolute|344}}`
 5.  **Idioms (Double Square Brackets):** Phrases that require special structural highlighting should be wrapped in double square brackets: `&#91;&#91;Latin Phrase "Literal" -> "Idiomatic"&#93;&#93;`. 
-    *   *Example:* `&#91;&#91;inicere manūs "to lay hands on" -> "to lay legal claim to"&#93;&#93;`
+    *   *Example:* `&#91;&#91;**inicere manūs** "to lay hands on" -> "to lay legal claim to"&#93;&#93;`
