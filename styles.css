@@ -261,16 +261,23 @@ body {
 
 /* Grammar Term Link */
 .grammar-link {
-    color: var(--danger-color); 
-    text-decoration: underline dotted;
-    text-underline-offset: 3px;
+    color: inherit; 
+    font-weight: inherit; 
     cursor: pointer;
-    font-weight: 600;
-    transition: color 0.2s, background-color 0.2s;
+    
+    /* Split out for maximum cross-browser visibility */
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #999; /* A distinct but soft gray */
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px; /* Forces the browser to actually draw the dots */
+    
+    transition: background-color 0.2s, text-decoration-color 0.2s;
 }
 
 .grammar-link:hover {
-    background-color: #fcebe9;
+    background-color: rgba(0, 0, 0, 0.05); 
+    text-decoration-color: #333; /* Underline gets darker on hover */
     border-radius: 3px;
 }
 /* Latin words within commentary */
