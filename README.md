@@ -28,3 +28,19 @@ The app reads from two files: `vocabulary.csv` (the main dictionary) and `forms.
     *   Prefer the plain form. A section answers "which use is this?"; the entry answers "what is an ablative?" — which is the question a stuck student actually has.
 5.  **Idioms (Double Square Brackets):** Phrases that require special structural highlighting should be wrapped in double square brackets: `[[Latin Phrase "Literal" → "Idiomatic"]]`. 
     *   *Example:* `[[**inicere manūs** "to lay hands on" → "to lay legal claim to"]]`
+## Testing grammar links against a local appendix
+Grammar links point at the published Pharr appendix
+(`samuelshotchkiss-jpg.github.io/pharr-aeneid-grammar/`). To test against a local
+copy instead, run the Pharr project's `build/serve.py` and set one value in the
+browser console — no file is edited, so testing can never leave a diff:
+
+```js
+localStorage.setItem('pharrBase', 'http://localhost:8766/');  // then reload
+localStorage.removeItem('pharrBase');                         // back to live
+```
+
+**The override only works when this page is itself on localhost.** Production is
+the unconditional default everywhere else, so a stale value left in a classroom or
+shared browser cannot send a student to a dead address. When the override is
+active the console says so, so you can't spend an afternoon testing links against
+the wrong copy without noticing.

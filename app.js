@@ -38,7 +38,38 @@
     // section. A student who has forgotten what an ablative is and lands on
     // section 30 gets "the case of adverbial relation" and nothing else --
     // true, and no help at all. The entry answers the question they have.
-    const PHARR_BASE = 'https://samuelshotchkiss-jpg.github.io/pharr-aeneid-grammar/';
+    //
+    // WHERE THE APPENDIX LIVES, and how to point at a local copy while testing.
+    // This app has no build step -- the files served are the files edited -- so
+    // there is no place to substitute an environment variable. Instead:
+    //
+    //   * PRODUCTION IS THE DEFAULT, unconditionally. Anything that goes wrong
+    //     here fails TOWARD the real site. A student can never be handed a
+    //     localhost link, which is the failure mode worth engineering against.
+    //   * The override is honoured ONLY when this page is itself on localhost.
+    //     A stale value in a shared or school browser therefore cannot redirect
+    //     anyone away from the live appendix.
+    //   * It lives in localStorage, not in a tracked file, so testing never
+    //     produces a diff that could be committed by accident:
+    //
+    //       localStorage.setItem('pharrBase', 'http://localhost:8766/');  // test
+    //       localStorage.removeItem('pharrBase');                        // done
+    //
+    const PHARR_BASE_PRODUCTION = 'https://samuelshotchkiss-jpg.github.io/pharr-aeneid-grammar/';
+
+    const PHARR_BASE = (function resolvePharrBase() {
+        const onLocalhost = ['localhost', '127.0.0.1', '[::1]', ''].includes(location.hostname);
+        if (!onLocalhost) return PHARR_BASE_PRODUCTION;
+        let override = null;
+        try { override = localStorage.getItem('pharrBase'); } catch (e) { /* blocked */ }
+        if (!override) return PHARR_BASE_PRODUCTION;
+        const base = override.endsWith('/') ? override : override + '/';
+        // Say so out loud: a silent redirect is how you spend an afternoon
+        // testing links against the wrong copy of the appendix.
+        console.info('[pharr] grammar links -> ' + base + ' (local override; '
+                   + "localStorage.removeItem('pharrBase') to restore production)");
+        return base;
+    })();
 
     // Slugs must be derived IDENTICALLY in three places, or a link dies:
     //   here, Pharr's js/tooltips.js slugify(), and the toolkit's
