@@ -479,7 +479,7 @@ dēnique,finally,1,Adverb
 "diēs, diēī, {m./f.}",day,7,Noun
 "diffundō, diffundere, diffūdī, diffūsum",to spread out,2,Verb
 "digitus, digitī, {m.}",finger,2,Noun
-"dignor, dignārī, dignātus sum",to deem worthy,2,Verb
+"dignor, dignārī, dignātus sum","to deem worthy {(the one deemed worthy is {{accusative|accusative-as-direct-object}}, what they are worthy of {{ablative|ablative-with-verbs-of-giving}}: *Cicerōnem dignor honōre*, ""I deem Cicero worthy of honour"")}; {(with an {{infinitive}})} to deign, to see fit",2,Verb
 "dignus, digna, dignum",worthy,1,Adjective
 "dīgredior, dīgredī, dīgressus sum",to depart,1,Verb
 "dīlacerō, dīlacerāre, dīlacerāvī, dīlacerātum",to tear to pieces,1,Verb
@@ -682,7 +682,7 @@ forte,by chance,2,Adverb
 "foveō, fovēre, fōvī, fōtum",to keep warm; to cherish,2,Verb
 "frāter, frātris, {m.}",brother,11,Noun
 "frāternus, frāterna, frāternum",of a brother,1,Adjective
-"fraudō, fraudāre, fraudāvī, fraudātum",to cheat,1,Verb
+"fraudō, fraudāre, fraudāvī, fraudātum","to cheat {(the person cheated is {{accusative|accusative-as-direct-object}}, the thing lost {{ablative|ablative-of-separation}}: *Cicerōnem triumphō fraudō*, ""I cheat Cicero of a triumph"")}",1,Verb
 "fraus, fraudis, {f.}",deceit,3,Noun
 "fremō, fremere, fremuī, fremitum",to roar,2,Verb
 frequenter,often,1,Adverb
@@ -1838,7 +1838,7 @@ ter,three times,2,Adverb
 "Thybris, Thybridis, {m.}","Thybris {(the river Tiber, personified as its god)}",1,Noun
 "tībia, tībiae, {f.}",flute,1,Noun
 "Tīmāvus, Tīmāvī, {m.}","Timavus {(a river in northeast Italy near Aquileia, mentioned in the Aeneid)}",1,Noun
-"timeō, timēre, timuī",to fear,3,Verb
+"timeō, timēre, timuī",to fear; {(with the {{dative|dative-of-reference}})} to fear for,3,Verb
 "timidus, timida, timidum",fearful,2,Adjective
 "timor, timōris, {m.}",fear,2,Noun
 "tingō, tingere, tīnxī, tīnctum",to dip,2,Verb
