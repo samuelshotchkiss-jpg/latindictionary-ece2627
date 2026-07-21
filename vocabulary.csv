@@ -359,7 +359,7 @@ clam,secretly,1,Adverb
 "cōnspiciō, cōnspicere, cōnspexī, cōnspectum",to catch sight of,1,Verb
 "cōnstantia, cōnstantiae, {f.}",steadfastness,1,Noun
 "cōnstituō, cōnstituere, cōnstituī, cōnstitūtum",to establish; to decide {(with {{infinitive}})},2,Verb
-"cōnsulō, cōnsulere, cōnsuluī, cōnsultum",to consult; {(with the {{dative}})} to have regard for {(of a person's interests)},2,Verb
+"cōnsulō, cōnsulere, cōnsuluī, cōnsultum",to consult; {(with the {{dative|dative-with-special-verbs}})} to have regard for {(of a person's interests)},2,Verb
 "cōnsūmō, cōnsūmere, cōnsūmpsī, cōnsūmptum",to use up; to destroy,2,Verb
 "cōnsurgō, cōnsurgere, cōnsurrēxī, cōnsurrēctum",to rise up,1,Verb
 "contentus, contenta, contentum","content, satisfied",2,Adjective
@@ -384,7 +384,7 @@ contrā,opposite; in reply; {(with the {{accusative}})} against,4,"Adverb, Prepo
 "crēdulitās, crēdulitātis, {f.}",credulity,1,Noun
 "Creōn, Creontis, {m.}",Creon {(king of Corinth; father of the bride Jason abandons Medea for)},1,Noun
 "crepitō, crepitāre, crepitāvī, crepitātum",to rattle,1,Verb
-"crēscō, crēscere, crēvī, crētum","to grow; {(with the {{ablative}}, {{perfect}} {{participle}} *crētus*)} descended",4,Verb
+"crēscō, crēscere, crēvī, crētum","to grow; {(with the {{ablative|ablative-of-origin}}, {{perfect}} {{participle}} *crētus*)} descended",4,Verb
 "Crēsius, Crēsia, Crēsium",Cretan,1,Adjective
 "Crētē, Crētēs, {f.}","Crete {(large island in the Aegean, kingdom of Minos, associated with Daedalus)}",1,Noun
 "Creūsa, Creūsae, {f.}","Creusa {(daughter of Creon, Jason's new bride)}; {(distinct from *Creūsa*, the wife of Aeneas)}",1,Noun
@@ -461,7 +461,7 @@ dēnique,finally,1,Adverb
 "dēspectō, dēspectāre, dēspectāvī, dēspectātum",to look down upon,1,Verb
 "dēspiciō, dēspicere, dēspexī, dēspectum",to look down on,1,Verb
 "dēstruō, dēstruere, dēstrūxī, dēstrūctum",to demolish,1,Verb
-"dēsum, dēesse, dēfuī",{(with the {{dative}})} to be lacking,2,Verb
+"dēsum, dēesse, dēfuī",{(with the {{dative|dative-with-special-verbs}})} to be lacking,2,Verb
 "dētineō, dētinēre, dētinuī, dētentum",to hold back,2,Verb
 "dētorqueō, dētorquēre, dētorsī, dētortum",to turn aside,1,Verb
 "dētrahō, dētrahere, dētrāxī, dētractum",to pull down; to remove {(of blame or guilt)},1,Verb
@@ -510,7 +510,7 @@ diū,for a long time,2,Adverb
 "doleō, dolēre, doluī, dolitum",to feel pain,1,Verb
 "dolor, dolōris, {m.}",pain; grief,4,Noun
 "dolus, dolī, {m.}",trick,1,Noun
-"dominor, dominārī, dominātus sum",{(with the {{dative}})} to rule,1,Verb
+"dominor, dominārī, dominātus sum",{(with the {{dative|dative-with-special-verbs}})} to rule,1,Verb
 "dominus, dominī, {m.}",master,2,Noun
 "domus, domūs, {f.}",house,14,Noun
 dōnec,until,2,Conjunction
@@ -748,7 +748,7 @@ frūstrā,in vain,1,Adverb
 "habitō, habitāre, habitāvī, habitātum",to live,1,Verb
 "habitus, habitūs, {m.}",appearance,1,Noun
 "Haemonius, Haemonia, Haemonium","Thessalian {(of Thessaly, region in Greece associated with Jason and Medea)}",1,Adjective
-"haereō, haerēre, haesī, haesum",{(with the {{dative}})} to stick; to be in doubt,4,Verb
+"haereō, haerēre, haesī, haesum",{(with the {{dative|dative-with-special-verbs}})} to stick; to be in doubt,4,Verb
 "hālō, hālāre, hālāvī, hālātum",to breathe out,1,Verb
 "harēna, harēnae, {f.}",sand,2,Noun
 "Harpalycē, Harpalycēs, {f.}",Harpalyce {(a legendary Thracian huntress renowned for her speed)},1,Noun
@@ -1197,7 +1197,7 @@ novem,nine,1,Numeral
 "nox, noctis, {f.}",night,11,Noun
 "noxa, noxae, {f.}",harm; fault,1,Noun
 "nūbilus, nūbila, nūbilum","cloudy; clouds {(as {{substantive}}, {{neuter}} {{plural}})}",1,Adjective
-"nūbō, nūbere, nūpsī, nūptum",{(with the {{dative}})} to marry,2,Verb
+"nūbō, nūbere, nūpsī, nūptum",{(with the {{dative|dative-with-special-verbs}})} to marry,2,Verb
 "nūdō, nūdāre, nūdāvī, nūdātum",to bare,1,Verb
 "nūdus, nūda, nūdum",naked,4,Adjective
 "nūllus, nūlla, nūllum",no,7,Adjective
@@ -1264,7 +1264,7 @@ omnīnō,entirely,1,Adverb
 "oriēns, orientis, {m.}",the rising sun; the east,2,"Noun, Adjective"
 "orīgō, orīginis, {f.}",origin,2,Noun
 "Ōrīōn, Ōrīōnis, {m.}",Orion {(a mythical hunter later placed among the stars as a constellation)},1,Noun
-"orior, orīrī, ortus sum",to rise; {(with the {{ablative}})} to be descended {(of birth or lineage)},1,Verb
+"orior, orīrī, ortus sum",to rise; {(with the {{ablative|ablative-of-origin}})} to be descended {(of birth or lineage)},1,Verb
 "ōrō, ōrāre, ōrāvī, ōrātum",to beg,4,Verb
 "ōs, ōris, {n.}","mouth; face; {(distinct from *os, ossis*)}",22,Noun
 "os, ossis, {n.}",bone,5,Noun
