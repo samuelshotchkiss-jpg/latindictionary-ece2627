@@ -43,32 +43,86 @@
     // This app has no build step -- the files served are the files edited -- so
     // there is no place to substitute an environment variable. Instead:
     //
-    //   * PRODUCTION IS THE DEFAULT, unconditionally. Anything that goes wrong
-    //     here fails TOWARD the real site. A student can never be handed a
-    //     localhost link, which is the failure mode worth engineering against.
-    //   * The override is honoured ONLY when this page is itself on localhost.
-    //     A stale value in a shared or school browser therefore cannot redirect
-    //     anyone away from the live appendix.
-    //   * It lives in localStorage, not in a tracked file, so testing never
-    //     produces a diff that could be committed by accident:
+    //     ...index.html?pharr=http://localhost:8766/     point at a local copy
+    //     ...index.html?pharr=off                        back to the live site
     //
-    //       localStorage.setItem('pharrBase', 'http://localhost:8766/');  // test
-    //       localStorage.removeItem('pharrBase');                        // done
+    // The choice is remembered afterwards, so the query string is needed once;
+    // bookmark the ?pharr= link and testing is a click.
+    //
+    // WHY A URL PARAMETER AND NOT JUST localStorage. The base is resolved once,
+    // while this script loads. Setting localStorage from the console therefore
+    // does nothing until a reload -- and a tab restored from the back/forward
+    // cache never re-runs the script at all, so the SAME window keeps the old
+    // target while a freshly opened one behaves correctly. That is a genuinely
+    // confusing failure, and it is avoided entirely by carrying the value in the
+    // URL, where it is present *before* anything is resolved.
+    //
+    // TWO SAFETY PROPERTIES, both about failing toward the real site:
+    //   * PRODUCTION IS THE DEFAULT, unconditionally. Missing value, blocked
+    //     storage, a thrown exception -- every path returns the live URL.
+    //   * The override is honoured ONLY when this page is itself on localhost,
+    //     so neither a stale stored value nor a ?pharr= link that gets forwarded
+    //     to a student can redirect anyone away from the live appendix.
     //
     const PHARR_BASE_PRODUCTION = 'https://samuelshotchkiss-jpg.github.io/pharr-aeneid-grammar/';
+    const PHARR_OVERRIDE_KEY = 'pharrBase';
+    // Words that mean "stop overriding", so undoing needs no console either.
+    const PHARR_OFF_WORDS = ['', 'off', 'no', 'live', 'prod', 'production', 'clear', 'reset'];
 
     const PHARR_BASE = (function resolvePharrBase() {
         const onLocalhost = ['localhost', '127.0.0.1', '[::1]', ''].includes(location.hostname);
         if (!onLocalhost) return PHARR_BASE_PRODUCTION;
-        let override = null;
-        try { override = localStorage.getItem('pharrBase'); } catch (e) { /* blocked */ }
-        if (!override) return PHARR_BASE_PRODUCTION;
-        const base = override.endsWith('/') ? override : override + '/';
-        // Say so out loud: a silent redirect is how you spend an afternoon
-        // testing links against the wrong copy of the appendix.
-        console.info('[pharr] grammar links -> ' + base + ' (local override; '
-                   + "localStorage.removeItem('pharrBase') to restore production)");
+
+        const store = {
+            get() { try { return localStorage.getItem(PHARR_OVERRIDE_KEY); } catch (e) { return null; } },
+            set(v) { try { localStorage.setItem(PHARR_OVERRIDE_KEY, v); } catch (e) { /* blocked */ } },
+            clear() { try { localStorage.removeItem(PHARR_OVERRIDE_KEY); } catch (e) { /* blocked */ } }
+        };
+
+        // The query string wins over the stored value: it is the more explicit
+        // and more recent instruction.
+        let param = null;
+        try { param = new URLSearchParams(location.search).get('pharr'); } catch (e) { /* ancient */ }
+
+        if (param !== null) {
+            const cleaned = param.trim();
+            if (PHARR_OFF_WORDS.includes(cleaned.toLowerCase())) {
+                store.clear();
+                console.info('[pharr] override cleared -> ' + PHARR_BASE_PRODUCTION);
+                stripParam();
+                return PHARR_BASE_PRODUCTION;
+            }
+            const base = normalize(cleaned);
+            store.set(base);
+            announce(base, 'from ?pharr=, and remembered');
+            stripParam();
+            return base;
+        }
+
+        const stored = store.get();
+        if (!stored) return PHARR_BASE_PRODUCTION;
+        const base = normalize(stored);
+        announce(base, 'remembered; ?pharr=off to undo');
         return base;
+
+        function normalize(url) { return url.endsWith('/') ? url : url + '/'; }
+
+        // Say so out loud. A silent redirect is how an afternoon disappears into
+        // testing links against the wrong copy of the appendix.
+        function announce(base, how) {
+            console.info('[pharr] grammar links -> ' + base + '  (' + how + ')');
+        }
+
+        // Take ?pharr= back out of the address bar once it has been honoured, so
+        // the URL a reader might copy from here carries no local address. The
+        // value is already stored, so nothing is lost by removing it.
+        function stripParam() {
+            try {
+                const u = new URL(location.href);
+                u.searchParams.delete('pharr');
+                history.replaceState(null, '', u.pathname + u.search + u.hash);
+            } catch (e) { /* not fatal -- the param is inert off localhost anyway */ }
+        }
     })();
 
     // Slugs must be derived IDENTICALLY in three places, or a link dies:

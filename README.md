@@ -32,16 +32,28 @@ The app reads from two files: `vocabulary.csv` (the main dictionary) and `forms.
 ## Testing grammar links against a local appendix
 Grammar links point at the published Pharr appendix
 (`samuelshotchkiss-jpg.github.io/pharr-aeneid-grammar/`). To test against a local
-copy instead, run the Pharr project's `build/serve.py` and set one value in the
-browser console — no file is edited, so testing can never leave a diff:
+copy, run the Pharr project's `build/serve.py` and open the dictionary with one
+extra bit on the end of the address:
 
-```js
-localStorage.setItem('pharrBase', 'http://localhost:8766/');  // then reload
-localStorage.removeItem('pharrBase');                         // back to live
+```
+http://localhost:8767/index.html?pharr=http://localhost:8766/   point at the local copy
+http://localhost:8767/index.html?pharr=off                      back to the live site
 ```
 
-**The override only works when this page is itself on localhost.** Production is
-the unconditional default everywhere else, so a stale value left in a classroom or
-shared browser cannot send a student to a dead address. When the override is
-active the console says so, so you can't spend an afternoon testing links against
-the wrong copy without noticing.
+That is the whole procedure — no console, no reload, no file edited, so testing
+can never leave a diff. The choice is remembered afterwards, so you need the
+`?pharr=` part once; **bookmark that link and testing is a click.** The parameter
+is removed from the address bar once it has been honoured, so a URL copied from
+there never carries a local address. The console prints which appendix is in use,
+so you can't spend an afternoon testing against the wrong copy without noticing.
+
+**The override only works when the page is itself on localhost.** Production is
+the unconditional default everywhere else — so neither a stale stored value in a
+classroom browser nor a `?pharr=` link that gets forwarded to a student can send
+anyone to a dead address.
+
+> Setting `localStorage.pharrBase` by hand still works, but prefer the URL. The
+> base is resolved once while the script loads, so a value set from the console
+> does nothing until a reload — and a tab restored from the back/forward cache
+> never re-runs the script at all, which is how the *same* window keeps pointing
+> at the old target while a newly opened one behaves correctly.
