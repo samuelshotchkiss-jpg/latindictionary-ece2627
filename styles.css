@@ -259,10 +259,12 @@ body {
     color: #666; /* A soft gray to distinguish it from the black definition text */
 }
 
-/* Grammar Term Link */
+/* Grammar Term Link — a real <a> to the Pharr appendix, styled to sit quietly
+   inside the commentary rather than announce itself as a web link. */
 .grammar-link {
-    color: inherit; 
-    font-weight: inherit; 
+    color: inherit;
+    font-weight: inherit;
+    font-style: inherit;   /* an <a> must not break out of the commentary italics */
     cursor: pointer;
     
     /* Split out for maximum cross-browser visibility */

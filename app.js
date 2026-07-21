@@ -30,6 +30,55 @@
     const STORAGE_KEY_LIST = 'latinStudyList';
     const STORAGE_KEY_CONSENT = 'privacyConsent';
 
+    // --- Pharr grammar links -------------------------------------------------
+    // A {{tagged}} grammatical term opens the matching entry in the digital
+    // Pharr appendix. The target is the GLOSSARY ENTRY, not a section number:
+    // the entry carries Pharr's definition, the editor's plain-English
+    // expansion, and a "Kinds" menu listing each construction with its own
+    // section. A student who has forgotten what an ablative is and lands on
+    // section 30 gets "the case of adverbial relation" and nothing else --
+    // true, and no help at all. The entry answers the question they have.
+    const PHARR_BASE = 'https://samuelshotchkiss-jpg.github.io/pharr-aeneid-grammar/';
+
+    // Slugs must be derived IDENTICALLY in three places, or a link dies:
+    //   here, Pharr's js/tooltips.js slugify(), and the toolkit's
+    //   engine/sync_grammar_terms.py slugify(). The toolkit gates every tag
+    //   against the vocabulary it vendors from Pharr, so drift is caught before
+    //   a student meets it.
+    function pharrSlug(str) {
+        return String(str || '').toLowerCase()
+            .normalize('NFD').replace(/\p{Diacritic}/gu, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+    }
+
+    // A pipe id that is a bare section number ("342", "§342") is a deliberate
+    // NARROWING -- we know which construction is at play, so send them straight
+    // there. Anything else names a glossary term.
+    function pharrHref(id) {
+        const raw = String(id || '').trim();
+        const section = raw.match(/^§?\s*(\d+)$/);
+        return section
+            ? PHARR_BASE + '#s' + section[1]
+            : PHARR_BASE + '#term=' + encodeURIComponent(pharrSlug(raw));
+    }
+
+    function escapeHTML(str) {
+        return String(str).replace(/[&<>"']/g, c => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        })[c]);
+    }
+
+    // A real <a>, not a span with a click handler: middle-click, ctrl-click,
+    // "open in new tab", keyboard focus and screen readers all work for free.
+    function grammarLinkHTML(label, id) {
+        const text = String(label).trim();
+        return '<a class="grammar-link" href="' + escapeHTML(pharrHref(id)) + '"' +
+               ' target="_blank" rel="noopener"' +
+               ' title="' + escapeHTML(text) + ' — look it up in Pharr’s grammar">' +
+               escapeHTML(text) + '</a>';
+    }
+
     // --- Core & Data Functions ---
 
     // Parses single {curly braces} to style commentary text lightly
@@ -45,11 +94,18 @@
         
         let formatted = rawDef;
         
-        // 1. Pharr Grammar Links (With Section IDs)
-        formatted = formatted.replace(/\{\{(.*?)\|(.*?)\}\}/g, '<span class="grammar-link" data-pharr-id="$2">$1</span>');
-        
-        // 2. Pharr Grammar Links (Without IDs - marked pending)
-        formatted = formatted.replace(/\{\{(.*?)\}\}/g, '<span class="grammar-link" data-pharr-id="pending">$1</span>');
+        // 1. Grammar link with an explicit target: {{label|term}} or {{label|§342}}.
+        //    The pipe is the EXCEPTION -- it is for when the visible text is not
+        //    the term's name ({{takes the ablative|ablative}}), or when we mean to
+        //    narrow to one section.
+        formatted = formatted.replace(/\{\{([^{}|]*?)\|([^{}]*?)\}\}/g,
+            (_m, label, id) => grammarLinkHTML(label, id));
+
+        // 2. The normal case: {{ablative}} -- the visible text IS the term, so it
+        //    is also the id. There is no "pending" state to author; a tag either
+        //    resolves in the appendix or that page says so plainly.
+        formatted = formatted.replace(/\{\{([^{}]*?)\}\}/g,
+            (_m, label) => grammarLinkHTML(label, label));
         
         // 3. Idiom Phrases (Using Hex codes \x5b and \x5d to avoid markdown UI bugs)
         const idiomRegex = new RegExp('\\x5b\\x5b(.*?)\\x5d\\x5d', 'g');
@@ -731,19 +787,9 @@
             resultDisplay.innerHTML = `<div class="placeholder-text"><p style="color:var(--danger-color);">Error: Could not load vocabulary.csv. Please ensure the file is in the same folder as index.html.</p></div>`;
         });
 
-        // --- Pharr Grammar Link Integration Placeholder ---
-        resultDisplay.addEventListener('click', function(e) {
-            if (e.target && e.target.classList.contains('grammar-link')) {
-                const pharrId = e.target.getAttribute('data-pharr-id');
-                
-                if (pharrId === 'pending') {
-                    alert('Grammar link pending: We have not assigned a specific Pharr section to this term yet.');
-                } else {
-                    // TODO: Replace this alert with actual routing logic to the Pharr Appendix
-                    alert('Integration ready! This will eventually open Pharr Section: ' + pharrId);
-                }
-            }
-        });
+        // Grammar links need no click handler: grammarLinkHTML builds real <a>
+        // elements, so the browser routes them (and ctrl-click, middle-click and
+        // the keyboard all behave the way a student expects).
 
         // Event Listener Bindings
         searchInput.addEventListener('input', onSearchInput);

@@ -21,7 +21,10 @@ The app reads from two files: `vocabulary.csv` (the main dictionary) and `forms.
     *   *Example:* `{figuratively, of control}`
 3.  **Latin in Context (Asterisks):** Latin words used *inside* a commentary block should be wrapped in `*asterisks*` so they render as bold, dark text. 
     *   *Example:* `{used in contrast to *terra*}`
-4.  **Grammar Links (Double Braces):** Grammatical terms wrapped in `{{double braces}}` render as clickable red links. To route the link to a specific section of Pharr's Grammar, use a pipe `|` and the section number. 
-    *   *Example:* `{{ablative absolute|344}}`
+4.  **Grammar Links (Double Braces):** Grammatical terms wrapped in `{{double braces}}` open that term's entry in the digital Pharr appendix, in a new tab. Normally the term speaks for itself and needs nothing else.
+    *   *Example:* `{{ablative}}` — opens the **ablative** entry: Pharr's definition, a plain-English expansion, and a list of the ablative's Kinds, each linking to its own §.
+    *   Use a pipe when the visible words aren't the term's name: `{{takes the ablative|ablative}}`.
+    *   Use a pipe with a **section number** only to narrow deliberately, when you know which construction is at play: `{{ablative|§342}}` (Ablative with Special Verbs).
+    *   Prefer the plain form. A section answers "which use is this?"; the entry answers "what is an ablative?" — which is the question a stuck student actually has.
 5.  **Idioms (Double Square Brackets):** Phrases that require special structural highlighting should be wrapped in double square brackets: `[[Latin Phrase "Literal" → "Idiomatic"]]`. 
     *   *Example:* `[[**inicere manūs** "to lay hands on" → "to lay legal claim to"]]`

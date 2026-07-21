@@ -38,8 +38,33 @@ The search engine is highly optimized for Latin pedagogy. If modifying `onSearch
 
 ## Markup Parsing (`formatDefinitionHTML`)
 Definitions are parsed dynamically before being injected into `innerHTML`. Order of regex operations is critical:
-1. Grammar Links w/ IDs: `\{\{(.*?)\|(.*?)\}\}` -> `<span data-pharr-id="$2">`
-2. Grammar Links w/o IDs: `\{\{(.*?)\}\}` -> `<span data-pharr-id="pending">`
+1. Grammar link, explicit target: `\{\{([^{}|]*?)\|([^{}]*?)\}\}` -> `<a class="grammar-link">`
+2. Grammar link, plain: `\{\{([^{}]*?)\}\}` -> same, the label doubling as the id
 3. Idioms: `\x5b\x5b(.*?)\x5d\x5d` -> `<span class="idiom-phrase">`
 4. Commentary: `\{(.*?)\}` -> `<span class="def-comment">`
 5. Latin in Context: `\*(.*?)\*` -> `<span class="latin-in-context">`
+
+## Pharr Grammar Links
+A `{{tagged}}` term becomes a real `<a target="_blank">` to the editor's digital Pharr
+appendix. `pharrHref` decides the destination:
+
+| tag | opens |
+|---|---|
+| `{{ablative}}` | `#term=ablative` — the **glossary entry** |
+| `{{takes the ablative\|ablative}}` | same; the pipe supplies the term when the visible text isn't it |
+| `{{ablative\|§342}}` | `#s342` — a deliberate **narrowing** to one section |
+
+**The default target is the glossary entry, not a section, and that is the whole
+design.** The entry is a hub: Pharr's own definition, the editor's plain-English
+expansion, and a "Kinds" menu listing each construction with its section. A student
+who has forgotten what an ablative is and lands on §30 reads "the case of adverbial
+relation" — true, and no help. The hub is never wrong, only general, and leaves them
+one click from the particular use on a screen that also tells them what the case is.
+
+There is **no authored "pending" state**. A tag either names a real glossary term or
+the appendix says plainly that it doesn't. Correctness is enforced upstream: the
+vocabulary toolkit's `lint_entry.py` fails on any tag that doesn't resolve against
+the term list it vendors from the Pharr repo.
+
+`pharrSlug` **must stay identical** to `slugify()` in Pharr's `js/tooltips.js` and in
+the toolkit's `engine/sync_grammar_terms.py`. Verified identical over all 330 slugs.
