@@ -1,0 +1,3 @@
+
+# local dev scaffolding (a copied static server), never part of the app
+.serve_tmp.py

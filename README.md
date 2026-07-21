@@ -28,6 +28,7 @@ The app reads from two files: `vocabulary.csv` (the main dictionary) and `forms.
     *   Prefer the plain form. A section answers "which use is this?"; the entry answers "what is an ablative?" — which is the question a stuck student actually has.
 5.  **Idioms (Double Square Brackets):** Phrases that require special structural highlighting should be wrapped in double square brackets: `[[Latin Phrase "Literal" → "Idiomatic"]]`. 
     *   *Example:* `[[**inicere manūs** "to lay hands on" → "to lay legal claim to"]]`
+
 ## Testing grammar links against a local appendix
 Grammar links point at the published Pharr appendix
 (`samuelshotchkiss-jpg.github.io/pharr-aeneid-grammar/`). To test against a local
