@@ -1,12 +1,23 @@
 # LLM Architecture & Constraints Guide
 **Project:** Latin Vocabulary Study App
 
-## CRITICAL CONSTRAINT: THE BRACKET BUG
-**DO NOT USE SQUARE BRACKETS IN ANY GENERATED CODE.** 
-This codebase is maintained through a chat interface that contains an aggressive markdown-parsing bug. It will silently delete any square brackets and the text inside them. 
-*   **DO NOT** use array literals. Use `new Array()` or `Array.of()`.
-*   **DO NOT** use array index accessors. Use `.slice(0, 1).pop()` or `.charAt()`.
-*   **DO NOT** use bracketed Character Classes in Regular Expressions. Use string alternation `(a|b)`, hexadecimal unicode escapes, or `\p{Category}` where possible. To target square brackets in regex, you MUST use `\x5b` and `\x5d`.
+## RETIRED CONSTRAINT: THE BRACKET BUG (lifted 2026-07-21)
+**Square brackets are now allowed in new code.** This codebase used to be maintained through a
+chat interface with a markdown-parsing bug that silently deleted brackets and their contents, so
+the code avoids array literals, index accessors, and bracketed regex character classes throughout.
+**That interface is no longer the maintenance path — the repo is now edited directly (Claude Code),
+which has no such bug.**
+
+**But DO NOT sweep the existing idioms.** `new Array()`, `.slice(0, 1).pop()` and `\x5b`/`\x5d`
+appear all over `app.js`. They are ugly but correct, cost nothing at runtime, and rewriting ~780
+lines of working search/sort/regex logic in a tool that students depend on is risk with no
+user-visible benefit. The policy is:
+
+*   **New code**: use normal idioms (`[]`, `arr[0]`, `[a-z]`).
+*   **Existing code**: modernize a line only when you are already editing that function for a real
+    reason. No standalone cleanup passes.
+*   Note that the worst offenders — `parseCSV` and `parseFormsCSV` — are slated for deletion if the
+    app moves to a JSON bundle, so most of this cleans itself up for free. Do not pre-empt it.
 
 ## Application Architecture
 *   **Stack:** Vanilla HTML5, CSS3, ES6 JavaScript. No frameworks.
