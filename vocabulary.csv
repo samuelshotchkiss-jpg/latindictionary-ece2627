@@ -109,7 +109,7 @@ aliter,otherwise,3,Adverb
 "amō, amāre, amāvī, amātum",to love,10,Verb
 "amor, amōris, {m.}",love; Cupid {(personified as the god of love)},37,Noun
 "amplector, amplectī, amplexus sum",to embrace,3,Verb
-an,or,5,Conjunction
+an,"or {(in a {{question}}, introducing an alternative)}",5,Conjunction
 "anceps, {(gen.)} ancipitis",two-headed; two-sided; uncertain,1,Adjective
 "Anchīsēs, Anchīsae, {m.}",Anchises {(father of Aeneas)},2,Noun
 "Androgeōs, Androgeī, {m.}","Androgeos {(son of Minos, killed in Attica; his death caused the tribute of youths to the Minotaur)}",1,Noun
@@ -441,7 +441,7 @@ dē,{(with the {{ablative|ablative-with-prepositions}})} down from; from {(of so
 "dēficiō, dēficere, dēfēcī, dēfectum",to fail,1,Verb
 "dēfīgō, dēfīgere, dēfīxī, dēfīxum",to fix firmly,1,Verb
 "dēfluō, dēfluere, dēflūxī, dēflūxum",to flow down,1,Verb
-dehinc,then,1,Adverb
+dehinc,"then {(next in sequence, “thereupon”)}",1,Adverb
 "Dēlius, Dēlia, Dēlium","Delian {(epithet meaning 'of Delos' (birthplace island), applied to Apollo or Diana)}",1,Adjective
 "Dēlos, Dēlī, {f.}","Delos {(Aegean island, birthplace of Apollo and Diana)}",1,Noun
 "Delphicus, Delphica, Delphicum","Delphic {(pertaining to Delphi, the site of Apollo's oracle)}",1,Adjective
@@ -545,7 +545,7 @@ ecce,behold,3,Interjection
 "egēns, egentis",needy,1,Adjective
 "ego, meī, mihi, mē","I; me {({{personal pronoun}}, {{singular}})}",92,Pronoun
 "ēgredior, ēgredī, ēgressus sum",to go out,2,Verb
-ei,alas,2,Interjection
+ei,"alas {(with the {{dative}}, as *ei mihi*)}",2,Interjection
 "ēiaculor, ēiaculārī, ēiaculātus sum",to shoot forth,1,Verb
 "ēiciō, ēicere, ēiēcī, ēiectum",to throw out,2,Verb
 "ēlābor, ēlābī, ēlāpsus sum",to slip away,4,Verb
@@ -556,14 +556,14 @@ ei,alas,2,Interjection
 "emō, emere, ēmī, ēmptum",to buy,1,Verb
 ēn,behold,1,Interjection
 "Enceladus, Enceladī, {m.}",Enceladus {(a giant buried under Mount Etna)},1,Noun
-enim,for,7,Conjunction
+enim,for {(never the first word of its clause)},7,Conjunction
 "ēnō, ēnāre, ēnāvī, ēnātum",to swim away,1,Verb
 "ēnsis, ēnsis, {m.}",sword,7,Noun
 "ēnumerō, ēnumerāre, ēnumerāvī, ēnumerātum",to enumerate,1,Verb
 "eō, īre, īvī / iī, itum",to go,21,Verb
 "Ephyrē, Ephyrēs, {f.}",Ephyrē {(old poetic name for Corinth)},1,Noun
 "epulor, epulārī, epulātus sum",to feast,1,Verb
-equidem,indeed,4,Adverb
+equidem,indeed {(chiefly with a verb in the first {{person}})},4,Adverb
 "equus, equī, {m.}",horse,3,Noun
 "ērigō, ērigere, ērēxī, ērēctum",to raise up,1,Verb
 "ēripiō, ēripere, ēripuī, ēreptum",to snatch away,1,Verb
@@ -673,7 +673,7 @@ extemplō,immediately,1,Adverb
 "fōrma, fōrmae, {f.}",shape; beauty,2,Noun
 "fōrmōsus, fōrmōsa, fōrmōsum",beautiful,2,Adjective
 "fors, fortis, {f.}","chance; {(adverbial {{ablative}}, *forte*)} by chance",8,Noun
-forsitan,perhaps,2,Adverb
+forsitan,perhaps {(with the {{subjunctive}})},2,Adverb
 fortasse,perhaps,1,Adverb
 forte,by chance,2,Adverb
 "fortis, forte",strong; brave,3,Adjective
@@ -754,7 +754,7 @@ frūstrā,in vain,1,Adverb
 "Harpalycē, Harpalycēs, {f.}",Harpalyce {(a legendary Thracian huntress renowned for her speed)},1,Noun
 "harūndō, harūndinis, {f.}",reed; arrow {(by {{metonymy}})},3,Noun
 "hastīle, hastīlis, {n.}",spear shaft,1,Noun
-haud,not,4,Adverb
+haud,"not {(negating a single word, usually an {{adjective}} or {{adverb}}, rather than a whole clause)}",4,Adverb
 "hauriō, haurīre, hausī, haustum","to drink down {(greedily, in a single gulp)}",2,Verb
 "haustus, haustūs, {m.}",a drink,1,Noun
 "Hebrus, Hebrī, {m.}",Hebrus {(a river in Thrace)},1,Noun
@@ -794,7 +794,7 @@ hūc,to this place,4,Adverb
 iam,now; already; no longer {(when paired with *nōn*)},14,Adverb
 "Iarbās, Iarbae, {m.}","Iarbas {(African king, rejected suitor of Dido)}",3,Noun
 "Iāsōn, Iāsonis, {m.}",Jason {(Greek hero of the Argonauts; abandoned Medea after taking the Golden Fleece with her help)},1,Noun
-ibi,there,1,Adverb
+ibi,there {(of a place already named)},1,Adverb
 "Īcarus, Īcarī, {m.}",Icarus {(son of Daedalus who flew too close to the sun and fell into the sea)},6,Noun
 "ictus, ictūs, {m.}",blow,1,Noun
 "īdem, eadem, idem",the same,7,"Adjective, Pronoun"
@@ -813,7 +813,7 @@ igitur,therefore,1,Conjunction
 "Īlius, Īlia, Īlium",Trojan,1,Adjective
 illāc,that way,1,Adverb
 "ille, illa, illud","that {(points out emphatically; stronger than *is*)}; he, she, it",55,"Adjective, Pronoun"
-illīc,there,1,Adverb
+illīc,"there {(of the further of two places, answered by *hīc*)}",1,Adverb
 illinc,from that place,1,Adverb
 illūc,to that place,2,Adverb
 "illūdō, illūdere, illūsī, illūsum",{(with the {{dative|dative-with-compounds}})} to mock,1,Verb
@@ -927,7 +927,7 @@ intus,inside,1,Adverb
 "is, ea, id","that {(refers back to what was just mentioned; weaker than *ille*)}; he, she, it",4,"Adjective, Pronoun"
 "iste, ista, istud",that {(of yours — what belongs to or concerns the person addressed)},7,"Adjective, Pronoun"
 "Isthmos, Isthmī, {m.}","Isthmus {(the Isthmus of Corinth, narrow land strip in Greece)}",1,Noun
-ita,so,1,Adverb
+ita,so {(generally with a {{verb}})},1,Adverb
 "Italia, Italiae, {f.}","Italia {(Italy, the land destined for Aeneas and the Trojans)}",7,Noun
 "Italus, Itala, Italum",Italian,2,Adjective
 "iter, itineris, {n.}",journey; passage {(of a physical opening or channel)},4,Noun
@@ -1148,7 +1148,7 @@ namque,for,2,Conjunction
 "naufragus, naufraga, naufragum",shipwrecked,1,Adjective
 "nāvis, nāvis, {f.}",ship,4,Noun
 nē,that not; do not {(with an {{imperative}})},7,Conjunction
--ne,question marker,3,Particle
+-ne,"question marker {({{enclitic}}, attached to the end of the word it follows)}",3,Particle
 "nebula, nebulae, {f.}",mist,1,Noun
 nec,and not,1,Conjunction
 necesse,necessary,2,Adjective
@@ -1183,7 +1183,7 @@ nisi,unless,2,Conjunction
 "nōminō, nōmināre, nōmināvī, nōminātum",to name,1,Verb
 nōn,not,46,Adverb
 nōndum,not yet,2,Adverb
-"nōs, nostrī / nostrum, nōbīs, nōs, nōbīs","we, us {(personal {{pronoun}}, {{plural}})}",14,Pronoun
+"nōs, nostrī / nostrum, nōbīs, nōs, nōbīs","we, us {({{personal pronoun}}, {{plural}})}",14,Pronoun
 "nōscō, nōscere, nōvī, nōtum",to get to know,1,Verb
 "noster, nostra, nostrum",our,35,Adjective
 "nōtitia, nōtitiae, {f.}",acquaintance,1,Noun
@@ -1496,20 +1496,20 @@ quandō,when; since {(causal)},3,"Adverb, Conjunction"
 quasi,as if,1,Conjunction
 quater,four times,2,Adverb
 "quatiō, quatere, quassī, quassum",to shake,1,Verb
--que,"and; {(when repeated, *-que... -que*)} both... and",214,Conjunction
+-que,"and {({{enclitic}}, attached to the end of the word it follows)}; {(when repeated, *-que... -que*)} both... and",218,Conjunction
 "querēla, querēlae, {f.}",complaint,1,Noun
 "queror, querī, questus sum",to complain,5,Verb
-"quī, quae, quod","who, which, that {(as a {{relative pronoun}})}; this {(as a connecting relative at the start of a sentence)}; which?, what? {(as an interrogative {{adjective}} — cf. *quis, quid*)}; [[*nesciō quī* ""I don't know what"" → ""some … or other""]]; any {(as an indefinite {{adjective}} after *sī, nisi, num, nē*)}",118,Adjective
+"quī, quae, quod","who, which, that {(as a {{relative pronoun}})}; this {(as a connecting relative at the start of a sentence)}; which?, what? {(as an {{interrogative adjective|interrogative-pronoun}} — cf. *quis, quid*)}; [[*nesciō quī* ""I don't know what"" → ""some … or other""]]; any {(as an {{indefinite adjective|indefinite-pronoun}} after *sī, nisi, num, nē*)}",118,Adjective
 quia,because,2,Conjunction
 "quīcumque, quaecumque, quodcumque","whoever, whatever",4,Pronoun
-quidem,indeed,3,Adverb
+quidem,"indeed {(following and emphasising the word it qualifies, often answered by *sed* or *tamen*)}",3,Adverb
 quidlibet,anything you like,1,Pronoun
 "quiēs, quiētis, {f.}",rest,1,Noun
 "quiēscō, quiēscere, quiēvī, quiētum",to rest,2,Verb
 "quiētus, quiēta, quiētum",calm,1,Adjective
 quīn,"why not; indeed {(intensifying, often *quīn etiam*)}; that, from ______-ing {(after a negated expression of doubting or hindering, with the {{subjunctive}})}",4,"Adverb, Conjunction"
 "Quirīnus, Quirīnī, {m.}",Quirinus {(Roman deity identified with the deified Romulus)},1,Noun
-"quis, quid","who? {({{interrogative pronoun}})}; what? {({{interrogative pronoun}})}; why? {(as the adverbial {{neuter}} *quid*)}; [[*nesciō quis* ""I don't know who"" → ""someone or other""]]; anyone, anything {(as an indefinite after *sī, nisi, nē, num*)}",43,Pronoun
+"quis, quid","who? {({{interrogative pronoun}})}; what? {({{interrogative pronoun}})}; why? {(as the adverbial {{neuter}} *quid*)}; [[*nesciō quis* ""I don't know who"" → ""someone or other""]]; anyone, anything {(as an {{indefinite pronoun}} after *sī, nisi, nē, num*)}",43,Pronoun
 "quisquam, quicquam",anyone,1,Pronoun
 "quisque, quaeque, quicque / quidque / quodque",each,7,Adjective
 "quisquis, quidquid",whoever,3,Pronoun
@@ -1517,7 +1517,7 @@ quīn,"why not; indeed {(intensifying, often *quīn etiam*)}; that, from ______-
 quō,"to where; by how much {(correlative with a {{comparative}}, answered by *hoc/eo*)}",5,Adverb
 quod,"because; that {(introducing a fact, in a {{substantive}} clause)}",6,Conjunction
 quodsī,but if,2,Conjunction
-quondam,once,2,Adverb
+quondam,"once {(of past time)}; sometimes {(in a {{simile}}, of what happens from time to time)}",2,Adverb
 quoniam,since,2,Conjunction
 quoque,also,15,Adverb
 quot,how many,2,Adjective
@@ -1649,7 +1649,7 @@ sed,but,25,Conjunction
 "sedeō, sedēre, sēdī, sessum",to sit,4,Verb
 "sēdēs, sēdis, {f.}",seat; dwelling place; position,4,Noun
 "seges, segetis, {f.}",grain field,1,Noun
-semel,once,1,Adverb
+semel,once {(of a single occasion)},1,Adverb
 "sēmen, sēminis, {n.}",seed,4,Noun
 "Semīramis, Semīramidis, {f.}","Semiramis {(legendary queen of Assyria/Babylon, associated with founding Babylon (mentioned in Pyramus & Thisbe))}",1,Noun
 "sēmirefectus, sēmirefecta, sēmirefectum",half-repaired,1,Adjective
@@ -1761,7 +1761,7 @@ subter,beneath,1,Adverb
 "succumbō, succumbere, succubuī, succubitum",{(with the {{dative|dative-with-compounds}})} to yield,1,Verb
 "sūcus, sūcī, {m.}",juice,1,Noun
 "suffundō, suffundere, suffūdī, suffūsum",to suffuse,2,Verb
-"--, suī, sibi, sē, sē","himself, herself, itself; themselves {(third-person {{reflexive}} {{pronoun}} referring to the {{subject}} of the clause)}",16,Pronoun
+"--, suī, sibi, sē, sē","himself, herself, itself; themselves {(third-person {{reflexive pronoun}} referring to the {{subject}} of the clause)}",16,Pronoun
 "sulfur, sulfuris, {n.}",sulfur,1,Noun
 "sum, esse, fuī, futūrum",to be; to belong to {(taking a {{dative}} of the possessor)},191,Verb
 "summus, summa, summum",highest,7,Adjective
@@ -1779,14 +1779,14 @@ super,{(with the {{accusative}} or {{ablative}})} above,4,"Preposition, Adverb"
 "suscipiō, suscipere, suscēpī, susceptum",to take up; to conceive {(of offspring)},1,Verb
 "suspendō, suspendere, suspendī, suspēnsum",to hang up,1,Verb
 "suspīrō, suspīrāre, suspīrāvī, suspīrātum",to sigh,1,Verb
-"suus, sua, suum","one's own {({{possessive}} {{adjective}} typically belonging to the {{subject}} of the clause, but in poetry occasionally referring to a prominent non-subject {{noun}})}",29,Adjective
+"suus, sua, suum","one's own {({{possessive adjective}} typically belonging to the {{subject}} of the clause, but in poetry occasionally referring to a prominent non-subject {{noun}})}",29,Adjective
 "Sychaeus, Sychaeī, {m.}","Sychaeus {(Dido's murdered husband, a wealthy Phoenician)}",6,Noun
 "Symplēgadēs, Symplēgadum, {f. pl.}","Symplegades {(the clashing rocks at the Black Sea's entrance, passed by Jason and the Argonauts)}",1,Noun
 "tābēscō, tābēscere, tābuī",to melt away,1,Verb
 "tacitus, tacita, tacitum",silent,2,Adjective
 "taeda, taedae, {f.}",torch; marriage {(by {{metonymy}})},5,Noun
 "tālis, tāle",such,8,Adjective
-tam,so,5,Adverb
+tam,"so {(with an {{adjective}} or {{adverb}}, answered by *quam*)}",5,Adverb
 tamen,nevertheless,14,Adverb
 tamquam,just as; as if {(with the {{subjunctive}})},1,Conjunction
 tandem,at last; pray {(intensifying an interrogative)},5,Adverb
@@ -1891,7 +1891,7 @@ tunc,then,2,Adverb
 "turris, turris, {f.}",tower,2,Noun
 "tūs, tūris, {n.}",frankincense,2,Noun
 "tūtus, tūta, tūtum",safe,8,Adjective
-"tuus, tua, tuum",your {({{possessive}} {{adjective}} referring to a {{singular}} possessor)},36,Adjective
+"tuus, tua, tuum",your {({{possessive adjective}} referring to a {{singular}} possessor)},36,Adjective
 "tyrannus, tyrannī, {m.}",king,2,Noun
 "Tyrius, Tyria, Tyrium",Tyrian,8,Adjective
 "Tyrus, Tyrī, {f.}","Tyrus {(Phoenician city, Dido's homeland)}",2,Noun
@@ -1907,9 +1907,9 @@ tunc,then,2,Adverb
 "vāstus, vāsta, vāstum",vast,2,Adjective
 "vātēs, vātis, {m./f.}",prophet,1,Noun
 "ūber, {(gen.)} ūberis",fertile,1,Adjective
-ubi,where {({{locative}})}; when {(temporal)},17,Adverb
+ubi,where {(of place)}; when {(of time)},17,Adverb
 "ūdus, ūda, ūdum",wet,2,Adjective
--ve,or,8,Conjunction
+-ve,"or {({{enclitic}}, attached to the end of the word it follows)}",8,Conjunction
 "vehō, vehere, vēxī, vectum",to carry,2,Verb
 vel,or,4,"Conjunction, Adverb"
 "vēlāmen, vēlāminis, {n.}",covering,2,Noun
@@ -1936,7 +1936,7 @@ vērum,but,1,Conjunction
 "vērus, vēra, vērum {(adv. vērō)}",true,5,Adjective
 "vesper, vesperī, {m.}",evening,1,Noun
 "Vesta, Vestae, {f.}",Vesta {(goddess of the hearth and home)},1,Noun
-"vester, vestra, vestrum",your {({{possessive}} {{adjective}} referring to a {{plural}} possessor)},1,Adjective
+"vester, vestra, vestrum",your {({{possessive adjective}} referring to a {{plural}} possessor)},1,Adjective
 "vestīgium, vestīgiī, {n.}",footprint,2,Noun
 "vestis, vestis, {f.}",clothing,6,Noun
 "vetō, vetāre, vetuī, vetitum",to forbid,4,Verb
