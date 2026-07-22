@@ -395,6 +395,7 @@ contrā,opposite; in reply; {(with the {{accusative}})} against,4,"Adverb, Prepo
 "cruentō, cruentāre, cruentāvī, cruentātum",to stain with blood,1,Verb
 "cruentus, cruenta, cruentum",bloody,2,Adjective
 "cruor, cruōris, {m.}","blood, gore",5,Noun
+"crūs, crūris, {n.}",leg,1,Noun
 "cubīle, cubīlis, {n.}","bed, couch",2,Noun
 "cubō, cubāre, cubuī, cubitum",to lie down,1,Verb
 "culmen, culminis, {n.}",summit; roof,2,Noun
@@ -790,6 +791,7 @@ hūc,to this place,4,Adverb
 "Hymēn, Hymenis, {m.}",Hymen {(the god of marriage)},3,Noun
 "hymenaeus, hymenaeī, {m.}",wedding song; marriage {(by {{metonymy}})},2,Noun
 "iaceō, iacēre, iacuī, iacitum",to lie,6,Verb
+"iaciō, iacere, iēcī, iactum",to throw,1,Verb
 "iactō, iactāre, iactāvī, iactātum",to toss about; to boast of,7,Verb
 iam,now; already; no longer {(when paired with *nōn*)},14,Adverb
 "Iarbās, Iarbae, {m.}","Iarbas {(African king, rejected suitor of Dido)}",3,Noun
@@ -936,6 +938,7 @@ iterum,again,4,Adverb
 "iugālis, iugāle","yoke-like; nuptial {(from *iugum*, a yoke -- the joining of two)}",2,Adjective
 "iūgerum, iūgerī, {n.}",acre (unit of land area),1,Noun
 "iugō, iugāre, iugāvī, iugātum",to join,1,Verb
+"Iūlius, Iūliī, {m.}","Julius {(the Julian family name, traced to Aeneas's son *Iūlus*)}",1,Noun
 "Iūlus, Iūlī, {m.}",Iulus {(also called Ascanius; son of Aeneas)},7,Noun
 "iungō, iungere, iūnxī, iūnctum",to join,6,Verb
 "Iūnō, Iūnōnis, {f.}","Juno {(queen of the gods, sister and wife of Jupiter)}",6,Noun
@@ -1007,6 +1010,7 @@ iterum,again,4,Adverb
 "lūctus, lūctūs, {m.}",grief,1,Noun
 "lūdō, lūdere, lūsī, lūsum",to play; to deceive,4,Verb
 "lūmen, lūminis, {n.}",light; eye {(by {{metonymy}} in poetry)},11,Noun
+"lūna, lūnae, {f.}",moon,2,Noun
 "lupa, lupae, {f.}",she-wolf,1,Noun
 "lupus, lupī, {m.}",wolf,1,Noun
 "lūstrō, lūstrāre, lūstrāvī, lūstrātum",to traverse,2,Verb
@@ -1176,6 +1180,7 @@ nimium,too much,3,"Adjective, Adverb"
 nisi,unless,2,Conjunction
 "niteō, nitēre, nituī",to shine,1,Verb
 "niveus, nivea, niveum",snow-white,1,Adjective
+"nivōsus, nivōsa, nivōsum",snowy,1,Adjective
 "noceō, nocēre, nocuī, nocitum",{(with the {{dative|dative-with-special-verbs}})} to harm; {({{present}} {{participle}} *nocens*)} guilty,9,Verb
 "nocturnus, nocturna, nocturnum",of the night,2,Adjective
 "nōdus, nōdī, {m.}",knot,2,Noun
@@ -1318,6 +1323,7 @@ paulum,a little,1,Adverb
 "pellō, pellere, pepulī, pulsum",to drive,2,Verb
 "Penātēs, Penātium, {m. pl.}","Penates {(the Roman household gods, guardians of the home)}",3,Noun
 "pendeō, pendēre, pependī, pēnsum",to hang,5,Verb
+"pendō, pendere, pependī, pēnsum","to pay {(of a penalty, as *poenās pendere*; not *pendeō* “to hang”)}",1,Verb
 "Pēnēis, Pēnēidos, {f.}","Peneis {(epithet for Daphne, daughter of the river-god Peneus)}",1,Noun
 "Pēnēius, Pēnēia, Pēnēium",Peneian {(of/pertaining to the river Peneus (Daphne's father) in Thessaly)},2,Adjective
 "penetrō, penetrāre, penetrāvī, penetrātum",to enter,1,Verb
