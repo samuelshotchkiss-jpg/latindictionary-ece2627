@@ -148,6 +148,22 @@ body {
 .modal-body { overflow-y: auto; line-height: 1.6; }
 .modal-footer { border-top: 1px solid var(--border-color); padding-top: 20px; margin-top: 20px; display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 10px; }
 
+/* --- The About link, and the credits it opens -------------------------------
+   The footer sits BELOW the result card and is pushed to the bottom of the
+   scroll area by margin-top:auto, so on a short page it rests at the foot of
+   the window and on a long entry it simply follows the text. It is styled as
+   quiet grey type -- the same treatment as the word-wheel legend -- because it
+   must be findable without competing with the search box. */
+#site-footer { width: 100%; max-width: 600px; margin-top: auto; padding-bottom: 4px; text-align: center; flex-shrink: 0; }
+.footer-link { background: none; border: none; font: inherit; font-size: 0.8em; color: #777; cursor: pointer; text-decoration: underline; padding: 8px 12px; border-radius: 8px; }
+.footer-link:hover { color: var(--accent-color); background-color: var(--accent-secondary); }
+.footer-link:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+
+.about-body p:first-child { margin-top: 0; }
+.about-body h3 { color: var(--accent-color); font-size: 1.05em; margin: 22px 0 6px; }
+.about-body ul { padding-left: 22px; margin: 10px 0; }
+.about-body li { margin-bottom: 8px; }
+
 #study-list-ul { list-style: none; padding: 0; }
 #study-list-ul li { display: flex; justify-content: space-between; align-items: flex-start; padding: 15px 10px; border-bottom: 1px solid var(--primary-bg); }
 .study-list-item-content { display: flex; flex-direction: column; margin-right: 15px; flex-grow: 1; }

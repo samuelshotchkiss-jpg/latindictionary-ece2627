@@ -20,6 +20,11 @@
     const toggleWordWheelBtn = document.getElementById('toggle-word-wheel-btn');
     const closeWordWheelBtn = document.getElementById('close-word-wheel-btn');
     const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+    const aboutBtn = document.getElementById('about-btn');
+    const aboutModal = document.getElementById('about-modal');
+    const closeAboutModal = document.getElementById('close-about-modal');
+    const closeAboutBtn = document.getElementById('close-about-btn');
+    const aboutPharrLink = document.getElementById('about-pharr-link');
     
     // --- Global State Variables ---
     let vocabulary = new Array(); // Holds standard dictionary lemmata
@@ -907,6 +912,24 @@
         toggleWordWheelBtn.addEventListener('click', openMobileMenu);
         closeWordWheelBtn.addEventListener('click', closeMobileMenu);
         mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+        // The credits point at the appendix through the SAME resolved base as the
+        // grammar links, so a local test copy is exercised here too rather than
+        // being the one link that quietly still goes to the live site.
+        if (aboutPharrLink) aboutPharrLink.href = PHARR_BASE;
+
+        aboutBtn.addEventListener('click', () => { aboutModal.style.display = 'flex'; });
+        closeAboutModal.addEventListener('click', hideAboutModal);
+        closeAboutBtn.addEventListener('click', hideAboutModal);
+        // Clicking the dark backdrop closes it; clicking the card itself must not.
+        aboutModal.addEventListener('click', (e) => { if (e.target === aboutModal) hideAboutModal(); });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && aboutModal.style.display === 'flex') hideAboutModal();
+        });
+    }
+
+    function hideAboutModal() {
+        aboutModal.style.display = 'none';
     }
 
     document.addEventListener('DOMContentLoaded', initialize);

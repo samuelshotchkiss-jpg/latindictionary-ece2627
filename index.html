@@ -34,6 +34,10 @@
                     <p>Search for a word or select one from the list to see its details.</p>
                 </div>
             </div>
+
+            <footer id="site-footer">
+                <button id="about-btn" class="footer-link">About &amp; Acknowledgements</button>
+            </footer>
         </main>
     </div>
 
@@ -69,6 +73,55 @@
                 <input type="file" id="import-file-input" accept=".tsv,.txt" style="display: none;">
                 <button id="copy-list-btn" class="btn btn-primary">Copy to Clipboard</button>
                 <button id="download-list-btn" class="btn btn-primary">Download as TSV</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>About &amp; Acknowledgements</h2>
+                <button class="modal-close" id="close-about-modal">&times;</button>
+            </div>
+            <div class="modal-body about-body">
+                <p>This dictionary covers the Latin vocabulary of a themed mythology reader drawn from
+                Ovid and Vergil. Every definition in it was written from scratch against the poems
+                themselves: an entry leads with one core meaning and then adds only the senses that
+                actually occur in these passages.</p>
+
+                <p>Grammatical terms are printed <span class="def-comment">like this</span>, and the
+                ones that are links will open the matching entry in the
+                <a id="about-pharr-link" href="https://samuelshotchkiss-jpg.github.io/pharr-aeneid-grammar/"
+                   target="_blank" rel="noopener">digital Pharr grammar appendix</a>.</p>
+
+                <h3>With thanks to the lexicographers</h3>
+
+                <p>No dictionary text is reproduced in these entries. But the judgment behind many of
+                them was informed by the standard lexica, and that debt is real enough to state
+                plainly:</p>
+
+                <ul>
+                    <li><b>Woordenboek Latijn/Nederlands</b>, edited by Harm Pinkster (Amsterdam
+                    University Press) — the one this dictionary owes most.</li>
+                    <li><b>Lewis &amp; Short</b>, <i>A Latin Dictionary</i> (1879), consulted
+                    constantly through Perseus.</li>
+                    <li><b>Frieze–Dennison</b>, <i>A Vergilian Dictionary</i>, through Dickinson
+                    College Commentaries.</li>
+                    <li><b>Arthur Palmer</b>, <i>Heroides</i> (1898).</li>
+                    <li><b>Peter Knox</b>, <i>Ovid: Heroides</i>.</li>
+                </ul>
+
+                <h3>Where this dictionary departs from them</h3>
+
+                <p>It is deliberately stricter than a general lexicon about live metaphor. When a poet
+                is using a word figuratively, the aim here is to leave the figure standing so that the
+                reader meets it, rather than flattening it into a tidy gloss — a cloud <i>heavy</i>
+                with rain is a cloud <i>pregnant</i> with rain, and the student should get to see
+                that. So a meaning the older dictionaries record is sometimes one this dictionary has
+                declined to give. Where that happens it is a choice, not an oversight.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="close-about-btn" class="btn btn-primary">Close</button>
             </div>
         </div>
     </div>

@@ -1001,7 +1001,7 @@ iterum,again,4,Adverb
 "littera, litterae, {f.}",letter of the alphabet; letter {(a written document or epistle)},1,Noun
 "lītus, lītoris, {n.}",shore,8,Noun
 "locō, locāre, locāvī, locātum",to place,1,Verb
-"locus, locī, {m.} {(pl. loca)}",place; region {(in the {{neuter}} {{plural}} *loca*)},16,Noun
+"locus, locī, {m.} {(n. pl.} loca{)}",place; region {(in the {{neuter}} {{plural}} *loca*)},16,Noun
 "longus, longa, longum","long; distant; {({{adverb}}, *longē*)} far",15,Adjective
 "loquor, loquī, locūtus sum",to speak,6,Verb
 "lūctus, lūctūs, {m.}",grief,1,Noun
@@ -1609,7 +1609,7 @@ rīte,duly,2,Adverb
 "rūsticus, rūstica, rūsticum",rural,1,Adjective
 "Rutulī, Rutulōrum, {m. pl.}","Rutuli {(an ancient Italian people led by Turnus, rivals of Aeneas)}",1,Noun
 "Sabaeus, Sabaea, Sabaeum","Sabaean {(of the Sabaeans, a people of Arabia famed for incense)}",1,Adjective
-"sacer, sacra, sacrum","sacred; {(as a {{noun}}, {{neuter}} {{plural}} *sacra*)} sacred rites; {(as a {{noun}}, {{neuter}} {{plural}} *sacra*)} sacred emblems",6,Adjective
+"sacer, sacra, sacrum","sacred; {(as a {{noun}}, {{neuter}} {{plural}} *sacra*)} sacred rites; {({{neuter}} {{plural}} *sacra*)} sacred emblems",6,Adjective
 "sacerdōs, sacerdōtis, {m./f.}",priest,1,Noun
 "sacrō, sacrāre, sacrāvī, sacrātum",to consecrate,2,Verb
 "sacrum, sacrī, {n.}",sacred thing,2,Noun
@@ -1936,7 +1936,7 @@ vērum,but,1,Conjunction
 "vērus, vēra, vērum {(adv. vērō)}",true,5,Adjective
 "vesper, vesperī, {m.}",evening,1,Noun
 "Vesta, Vestae, {f.}",Vesta {(goddess of the hearth and home)},1,Noun
-"vester, vestra, vestrum",your,1,Adjective
+"vester, vestra, vestrum",your {({{possessive}} {{adjective}} referring to a {{plural}} possessor)},1,Adjective
 "vestīgium, vestīgiī, {n.}",footprint,2,Noun
 "vestis, vestis, {f.}",clothing,6,Noun
 "vetō, vetāre, vetuī, vetitum",to forbid,4,Verb
@@ -2000,7 +2000,7 @@ unde,from where,5,Adverb
 "voluptās, voluptātis, {f.}",pleasure,1,Noun
 "vōmer, vōmeris, {m.}",plowshare,2,Noun
 "vomō, vomere, vomuī, vomitum",to vomit,1,Verb
-"vōs, vestrum/vestrī, vōbīs, vōs, vōbīs",you (plural),1,Pronoun
+"vōs, vestrum/vestrī, vōbīs, vōs, vōbīs","you {({{personal pronoun}}, {{plural}})}",1,Pronoun
 "vōtum, vōtī, {n.}",vow; prayer; wish,5,Noun
 "vōx, vōcis, {f.}",voice; word,10,Noun
 "urbs, urbis, {f.}",city,23,Noun
