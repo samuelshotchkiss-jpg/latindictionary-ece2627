@@ -124,7 +124,7 @@ an,"or {(in a {{question}}, introducing an alternative)}",5,Conjunction
 "annālis, annāle",annual; chronicle {(as a {{substantive}})},1,Adjective
 "annuō, annuere, annuī",to nod assent; to grant,1,Verb
 "annus, annī, {m.}",year,3,Noun
-ante,"{(with the {{accusative}})} before; previously {(as a temporal {{adverb}})}; ahead {(as a spatial {{adverb}})}; sooner {(in the correlative *ante ... quam*, ""sooner ... than""; cf. the {{conjunction}} *antequam*, ""before"")}",16,"Adverb, Preposition"
+ante,"{(with the {{accusative}})} before; previously {(as a temporal {{adverb}})}; ahead {(as a spatial {{adverb}})}; sooner {(in the pairing *ante ... quam*, ""sooner ... than""; cf. the {{conjunction}} *antequam*, ""before"")}",16,"Adverb, Preposition"
 "Antēnor, Antēnoris, {m.}",Antenor {(Trojan elder who escaped Troy and founded Padua)},1,Noun
 "antīquus, antīqua, antīquum",ancient,4,Adjective
 "antrum, antrī, {n.}",cave,2,Noun
@@ -557,7 +557,7 @@ ei,"alas {(with the {{dative}}, as *ei mihi*)}",2,Interjection
 "emō, emere, ēmī, ēmptum",to buy,1,Verb
 ēn,behold,1,Interjection
 "Enceladus, Enceladī, {m.}",Enceladus {(a giant buried under Mount Etna)},1,Noun
-enim,for {(never the first word of its clause)},7,Conjunction
+enim,"you see, and here's why {(never the first word of its clause, indicates that what follows is the cause of what precedes)}; {(in rhetorical questions)} after all; {(in the phrase *sed enim*)} but in fact, but as it happens",7,Conjunction
 "ēnō, ēnāre, ēnāvī, ēnātum",to swim away,1,Verb
 "ēnsis, ēnsis, {m.}",sword,7,Noun
 "ēnumerō, ēnumerāre, ēnumerāvī, ēnumerātum",to enumerate,1,Verb
@@ -1103,7 +1103,7 @@ mīlle,thousand,1,Numeral
 "mittō, mittere, mīsī, missum",to send,3,Verb
 "mōbilitās, mōbilitātis, {f.}",mobility,1,Noun
 "moderātus, moderāta, moderātum",restrained,2,Adjective
-modo,"only; just now {(of time, recently)}; {(correlative, *modo ... modo*)} now; just {(with an {{imperative}})}",7,Adverb
+modo,"only; just now {(of time, recently)}; {(when doubled, *modo ... modo*)} now; just {(with an {{imperative}})}",7,Adverb
 "modus, modī, {m.}",measure; limit; manner,2,Noun
 "moenia, moenium, {n. pl.}",city walls; walled city,11,Noun
 "mōlior, mōlīrī, mōlītus sum",to work at,2,Verb
@@ -1139,8 +1139,8 @@ mox,soon,2,Adverb
 "mūtābilis, mūtābile",changeable,1,Adjective
 "mūtō, mūtāre, mūtāvī, mūtātum",to change,1,Verb
 "Mycēnae, Mycēnārum, {f. pl.}","Mycenae {(a city in Greece, kingdom of Agamemnon)}",2,Noun
-nam,for,5,Conjunction
-namque,for,2,Conjunction
+nam,"you see, and here's why {(indicates that what follows causes what precedes)}",5,Conjunction
+namque,"you see, and here's why {(indicates that what follows causes what precedes)}",2,Conjunction
 "nāris, nāris, {f.}",nostril,1,Noun
 "nārrō, nārrāre, nārrāvī, nārrātum",to tell,3,Verb
 "nāscor, nāscī, nātus sum","to be born; {({{masculine}}, the {{participle}} *nātus* used as a {{noun}})} child",5,Verb
@@ -1495,7 +1495,7 @@ prōtinus,immediately,4,Adverb
 quā,where,4,Adverb
 "quaerō, quaerere, quaesīvī, quaesītum",to seek; to ask,13,Verb
 "quālis, quāle",of what kind,3,Adjective
-quam,"how {(as an exclamatory {{adverb}})}; than {(after a {{comparative}})}; as {(in the correlative *tam ... quam*, ""as ... as"")}; as {(with a {{superlative}}, ""as ... as possible"")}",15,Conjunction
+quam,"how {(as an exclamatory {{adverb}})}; than {(after a {{comparative}})}; as {(in the pairing *tam ... quam*, ""as ... as"")}; as {(with a {{superlative}}, ""as ... as possible"")}",15,Conjunction
 quamvīs,although,1,"Adverb, Conjunction"
 quandō,when; since {(causal)},3,"Adverb, Conjunction"
 "quantus, quanta, quantum","how great, how much; as much as {(sometimes with *tantus* in the main clause)}",7,Adjective
@@ -1520,7 +1520,7 @@ quīn,"why not; indeed {(intensifying, often *quīn etiam*)}; that, from ______-
 "quisque, quaeque, quicque / quidque / quodque",each,7,Adjective
 "quisquis, quidquid",whoever,3,Pronoun
 "quīvīs, quaevīs, quodvīs",any (you like),1,Adjective
-quō,"to where; by how much {(correlative with a {{comparative}}, answered by *hoc/eo*)}",5,Adverb
+quō,"to where; {(with a {{comparative}})} by how much, by as much as {(answered by *hōc/eō*, ""by this/that much"")}",5,Adverb
 quod,"because; that {(introducing a fact, in a {{substantive}} clause)}",6,Conjunction
 quodsī,but if,2,Conjunction
 quondam,"once {(of past time)}; sometimes {(in a {{simile}}, of what happens from time to time)}",2,Adverb
