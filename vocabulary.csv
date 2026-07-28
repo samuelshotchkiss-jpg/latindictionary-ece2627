@@ -226,7 +226,7 @@ bene,"well; [[*bene merērī dē* ""to deserve well of"" → ""to do {someone} a
 bis,twice,4,Adverb
 "blanditia, blanditiae, {f.}","tenderness and coaxing; {(in the {{plural}},)} endearments",1,Noun
 "blandus, blanda, blandum",tender and coaxing,1,Adjective
-"bonus, bona, bonum",good,1,Adjective
+"optimus, optima, optimum",best,1,Adjective
 "Boōtēs, Boōtae, {m.}","Boötes {(constellation, 'the Herdsman')}",1,Noun
 "bōs, bovis, {m./f.}",ox,3,Noun
 "bracchium, bracchiī, {n.}",arm,2,Noun
@@ -1087,8 +1087,9 @@ māne,in the morning,1,Adverb
 "mīlitō, mīlitāre, mīlitāvī, mīlitātum",to serve as a soldier,1,Verb
 mīlle,thousand,1,Numeral
 "minae, minārum, {f. pl.}","threats; battlements {(of walls, jutting heights)}",2,Noun
+"minimus, minima, minimum",smallest,1,Adjective
 "Mīnōius, Mīnōia, Mīnōium",of Minos,1,Adjective
-"minor, minus",smaller,1,Adjective
+"minor, minus",smaller,6,Adjective
 "Mīnōs, Mīnōis, {m.}",Minos {(king of Crete who imprisoned Daedalus)},1,Noun
 "Mīnōtaurus, Mīnōtaurī, {m.}",Minotaurus {(monstrous bull-man imprisoned in Daedalus' labyrinth on Crete)},1,Noun
 "Minyae, Minyārum, {m. pl.}","Minyae {(the Argonauts, Jason's crew (descended from the Minyans of Thessaly))}",1,Noun
@@ -1297,7 +1298,7 @@ pariter,equally; at the same time,3,Adverb
 "parturiō, parturīre, parturīvī",to be in labor,1,Verb
 "partus, partūs, {m.}",birth; offspring {(by {{metonymy}})},2,Noun
 "parvulus, parvula, parvulum",very small,1,Adjective
-"parvus, parva, parvum",small,11,Adjective
+"parvus, parva, parvum",small,5,Adjective
 "Pāsiphaē, Pāsiphaēs, {f.}",Pasiphae {(wife of King Minos of Crete; mother of the Minotaur)},1,Noun
 passim,here and there,1,Adverb
 "pāstor, pāstōris, {m.}",shepherd,3,Noun
