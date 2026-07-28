@@ -1034,8 +1034,9 @@ iterum,again,4,Adverb
 magis,more,2,Adverb
 "magnanimus, magnanima, magnanimum",great-souled,1,Adjective
 "Magnētis, Magnētidos, {f.}","Magnesian {(from or relating to Magnesia, a region in Greece)}",1,Noun
-"magnus, magna, magnum","great; {(in the {{comparative}} *maior, maius*)} greater",18,Adjective
+"magnus, magna, magnum","great; {(in the {{comparative}} *maior, maius*)} greater",16,Adjective
 "Māia, Māiae, {f.}","Maia {(nymph, daughter of Atlas, mother of Mercury by Jupiter)}",1,Noun
+"maior, maius",greater,2,Adjective
 male,"badly; scarcely {(negating a following {{adjective}}, *male grātus*)}; utterly {(intensifying a following {{verb}} of destruction, *male perdere*)}",6,Adverb
 "mālō, mālle, māluī",to prefer,1,Verb
 "malum, malī, {n.}",evil; misfortune,4,Noun
