@@ -1132,7 +1132,7 @@ modo,"only; just now {(of time, recently)}; {(when doubled, *modo ... modo*)} no
 mox,soon,2,Adverb
 "mūcrō, mūcrōnis, {m.}",sword point,1,Noun
 "multiplex, {(gen.)} multiplicis",having many folds; varied,1,Adjective
-"multus, multa, multum","much {(in the {{singular}})}; many {(in the {{plural}})}; {(in the {{comparative}} *plūs, plūris*)} more; {(in the {{superlative}} *plūrimus, plūrima, plūrimum*)} most",18,Adjective
+"multus, multa, multum",much {(in the {{singular}})}; many {(in the {{plural}})},12,Adjective
 "mūniō, mūnīre, mūnīvī, mūnītum",to fortify,1,Verb
 "mūnus, mūneris, {n.}",gift,5,Noun
 "murmur, murmuris, {n.}",murmur,4,Noun
@@ -1391,6 +1391,8 @@ per,{(with the {{accusative}})} through; across {(of spatial extent or motion)};
 "plēnus, plēna, plēnum",full,4,Adjective
 "plūma, plūmae, {f.}",feather,2,Noun
 "plumbum, plumbī, {n.}",lead,2,Noun
+"plūrimus, plūrima, plūrima",the most; very many,2,Adjective
+"plūs, {(gen)} plūris",more,4,Adjective
 "poena, poenae, {f.}","punishment, penalty",9,Noun
 "Poenus, Poenī, {m.}",Carthaginian,1,Noun
 "pollex, pollicis, {m.}",thumb,1,Noun
