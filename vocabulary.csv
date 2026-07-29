@@ -425,8 +425,8 @@ cūr,why,4,Adverb
 "Daphnē, Daphnēs, {f.}","Daphne {(nymph pursued by Apollo, transformed into a laurel tree)}",2,Noun
 "Dardania, Dardaniae, {f.}","Dardania {(poetic name for Troy, the Trojans' homeland)}",1,Noun
 "Dardanius, Dardania, Dardanium","Trojan {(epithet referring to Dardanus, mythical ancestor of the Trojan royal line, hence Trojan/Aeneas's people)}",3,Adjective
-"Dardanus, Dardana, Dardanum","Dardanian {(Trojan; relating to Dardanus, legendary ancestor of the Trojan royal line)}",1,Adjective
-"Dardanus, Dardanī, {m.}","Dardanus {(mythical ancestor of the Trojans, founder of their line)}; Dardanian {(as an {{adjective}}, here of Aeneas)}",1,Noun
+"Dardanus, Dardana, Dardanum","Dardanian {(Trojan; relating to Dardanus, legendary ancestor of the Trojan royal line)}",2,Adjective
+"Dardanus, Dardana, Dardanum","Dardanian, Trojan",0,Adjective
 dē,{(with the {{ablative|ablative-with-prepositions}})} down from; from {(of source or origin)}; concerning; according to,9,Preposition
 "dea, deae, {f.}",goddess,9,Noun
 "dēbeō, dēbēre, dēbuī, dēbitum",to owe; ought {(with an accompanying {{infinitive}})},8,Verb
