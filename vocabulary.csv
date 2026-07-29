@@ -1088,7 +1088,7 @@ māne,in the morning,1,Adverb
 "mīlitō, mīlitāre, mīlitāvī, mīlitātum",to serve as a soldier,1,Verb
 mīlle,thousand,1,Numeral
 "minae, minārum, {f. pl.}","threats; battlements {(of walls, jutting heights)}",2,Noun
-"minimus, minima, minimum",smallest,1,Adjective
+"minimus, minima, minimum",smallest,2,Adjective
 "Mīnōius, Mīnōia, Mīnōium",of Minos,1,Adjective
 "minor, minus",smaller,6,Adjective
 "Mīnōs, Mīnōis, {m.}",Minos {(king of Crete who imprisoned Daedalus)},1,Noun
@@ -1299,7 +1299,7 @@ pariter,equally; at the same time,3,Adverb
 "parturiō, parturīre, parturīvī",to be in labor,1,Verb
 "partus, partūs, {m.}",birth; offspring {(by {{metonymy}})},2,Noun
 "parvulus, parvula, parvulum",very small,1,Adjective
-"parvus, parva, parvum",small,5,Adjective
+"parvus, parva, parvum",small,4,Adjective
 "Pāsiphaē, Pāsiphaēs, {f.}",Pasiphae {(wife of King Minos of Crete; mother of the Minotaur)},1,Noun
 passim,here and there,1,Adverb
 "pāstor, pāstōris, {m.}",shepherd,3,Noun
@@ -1319,7 +1319,7 @@ paulum,a little,1,Adverb
 "pāx, pācis, {f.}",peace,4,Noun
 "pectus, pectoris, {n.}",breast; heart {(as the seat of emotion)},15,Noun
 "pecus, pecudis, {f.}",a head of livestock,2,Noun
-"peior, peius",{(worse)},2,Adjective
+"peior, peius",worse,2,Adjective
 "pelagus, pelagī, {n.}",sea,6,Noun
 "Pelasgus, Pelasga, Pelasgum",Pelasgian {(poetic {{adjective}} meaning Greek)},2,Adjective
 "Peliās, Peliae, {m.}",Pelias {(king of Iolcus who sent Jason to fetch the Golden Fleece)},1,Noun
