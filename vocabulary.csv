@@ -214,7 +214,7 @@ aut,"or; {(when repeated, *aut... aut*)} either... or",27,Conjunction
 "barbaricus, barbarica, barbaricum",foreign,1,Adjective
 "barbarus, barbara, barbarum",foreign,1,Adjective
 "Barcē, Barcēs, {f.}","Barce {(nurse of Sychaeus, mentioned in the Aeneid)}",1,Noun
-"beātus, beāta, beātum",happy,1,Adjective
+"beātus, beāta, beātum",#blessed,1,Adjective
 "bellum, bellī, {n.}",war,10,Noun
 bene,"well; [[*bene merērī dē* ""to deserve well of"" → ""to do {someone} a service""]]",6,Adverb
 "benignus, benigna, benignum",kind,1,Adjective
