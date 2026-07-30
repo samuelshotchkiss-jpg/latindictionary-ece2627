@@ -426,7 +426,6 @@ cūr,why,4,Adverb
 "Dardania, Dardaniae, {f.}","Dardania {(poetic name for Troy, the Trojans' homeland)}",1,Noun
 "Dardanius, Dardania, Dardanium","Trojan {(epithet referring to Dardanus, mythical ancestor of the Trojan royal line, hence Trojan/Aeneas's people)}",3,Adjective
 "Dardanus, Dardana, Dardanum","Dardanian {(Trojan; relating to Dardanus, legendary ancestor of the Trojan royal line)}",2,Adjective
-"Dardanus, Dardana, Dardanum","Dardanian, Trojan",0,Adjective
 dē,{(with the {{ablative|ablative-with-prepositions}})} down from; from {(of source or origin)}; concerning; according to,9,Preposition
 "dea, deae, {f.}",goddess,9,Noun
 "dēbeō, dēbēre, dēbuī, dēbitum",to owe; ought {(with an accompanying {{infinitive}})},8,Verb
@@ -579,7 +578,7 @@ etiam,even,5,"Adverb, Conjunction"
 "ēvolvō, ēvolvere, ēvolvī, ēvolūtum",to unroll,1,Verb
 "Eurōpa, Eurōpae, {f.}",Europa {(Phoenician princess abducted by Jupiter in the form of a bull)}; Europe {(the continent)},1,Noun
 "Eurus, Eurī, {m.}","Eurus {(the east wind, personified)}",2,Noun
-ex,"{(with the {{ablative|ablative-with-prepositions}})} out of; of {(partitive)}; [[*ex aequō* ""from the level"" → ""on equal terms""]]",9,Preposition
+ex,"{(with the {{ablative|ablative-with-prepositions}})} out of; of {(equivalent to a {{partitive genitive|286}})}; [[*ex aequō* ""from the level"" → ""on equal terms""]]",9,Preposition
 "exaudiō, exaudīre, exaudīvī, exaudītum",to hear clearly,1,Verb
 "excēdō, excēdere, excessī, excessum",to depart,2,Verb
 "excidō, excidere, excidī",to fall out; to be forgotten {(of memory)},1,Verb
@@ -755,7 +754,7 @@ frūstrā,in vain,1,Adverb
 "Harpalycē, Harpalycēs, {f.}",Harpalyce {(a legendary Thracian huntress renowned for her speed)},1,Noun
 "harūndō, harūndinis, {f.}",reed; arrow {(by {{metonymy}})},3,Noun
 "hastīle, hastīlis, {n.}",spear shaft,1,Noun
-haud,"not {(negating a single word, usually an {{adjective}} or {{adverb}}, rather than a whole clause)}",4,Adverb
+haud,"not at all {(negating a single word, usually an {{adjective}} or {{adverb}})}",4,Adverb
 "hauriō, haurīre, hausī, haustum","to drink down {(greedily, in a single gulp)}",2,Verb
 "haustus, haustūs, {m.}",a drink,1,Noun
 "Hebrus, Hebrī, {m.}",Hebrus {(a river in Thrace)},1,Noun
@@ -1402,7 +1401,7 @@ per,{(with the {{accusative}})} through; across {(of spatial extent or motion)};
 "pompa, pompae, {f.}",procession,1,Noun
 "pōmum, pōmī, {n.}",fruit,3,Noun
 "pondus, ponderis, {n.}",weight; significance,2,Noun
-"pōnō, pōnere, posuī, positum","to put; to establish {(of a city or walls)}; to lay aside; to subside {(intransitive, of wind or sea)}",14,Verb
+"pōnō, pōnere, posuī, positum","to put; to establish {(of a city or walls)}; to lay aside; to subside {({{intransitive}}, of wind or sea)}",14,Verb
 "pontus, pontī, {m.}",sea; the Black Sea {(as a proper name)},2,Noun
 "populus, populī, {m.}",the people {(as a political body)}; a people {(like *gēns*)},8,Noun
 "porta, portae, {f.}",gate,2,Noun
@@ -1511,7 +1510,7 @@ quater,four times,2,Adverb
 -que,"and {({{enclitic}}, attached to the end of the word it follows)}; {(when repeated, *-que... -que*)} both... and",218,Conjunction
 "querēla, querēlae, {f.}",complaint,1,Noun
 "queror, querī, questus sum",to complain,5,Verb
-"quī, quae, quod","who, which, that {(as a {{relative pronoun}})}; this {(as a connecting relative at the start of a sentence)}; which?, what? {(as an {{interrogative adjective|interrogative-pronoun}} — cf. *quis, quid*)}; [[*nesciō quī* ""I don't know what"" → ""some … or other""]]; any {(as an {{indefinite adjective|indefinite-pronoun}} after *sī, nisi, num, nē*)}",118,Adjective
+"quī, quae, quod","who, which, that {(as a {{relative pronoun}})}; this {(equivalent to *is* or *ille* at the start of a sentence)}; which?, what? {(as an {{interrogative adjective|interrogative-pronoun}} — cf. *quis, quid*)}; [[*nesciō quī* ""I don't know what"" → ""some … or other""]]; any {(as an {{indefinite adjective|indefinite-pronoun}} after *sī, nisi, num, nē*)}",118,Adjective
 quia,because,2,Conjunction
 "quīcumque, quaecumque, quodcumque","whoever, whatever",4,Pronoun
 quidem,"indeed {(following and emphasising the word it qualifies, often answered by *sed* or *tamen*)}",3,Adverb
@@ -1527,7 +1526,7 @@ quīn,"why not; indeed {(intensifying, often *quīn etiam*)}; that, from ______-
 "quisquis, quidquid",whoever,3,Pronoun
 "quīvīs, quaevīs, quodvīs",any (you like),1,Adjective
 quō,"to where; {(with a {{comparative}})} by how much, by as much as {(answered by *hōc/eō*, ""by this/that much"")}",5,Adverb
-quod,"because; that {(introducing a fact, in a {{substantive}} clause)}",6,Conjunction
+quod,because; that {(introducing a fact: the {{clause}} functions as a {{substantive}})},6,Conjunction
 quodsī,but if,2,Conjunction
 quondam,"once {(of past time)}; sometimes {(in a {{simile}}, of what happens from time to time)}",2,Adverb
 quoniam,since,2,Conjunction
@@ -1773,7 +1772,7 @@ subter,beneath,1,Adverb
 "succumbō, succumbere, succubuī, succubitum",{(with the {{dative|dative-with-compounds}})} to yield,1,Verb
 "sūcus, sūcī, {m.}",juice,1,Noun
 "suffundō, suffundere, suffūdī, suffūsum",to suffuse,2,Verb
-"--, suī, sibi, sē, sē","himself, herself, itself; themselves {(third-person {{reflexive pronoun}} referring to the {{subject}} of the clause)}",16,Pronoun
+"--, suī, sibi, sē, sē","himself, herself, itself; themselves {(third-person {{reflexive pronoun}} referring to the {{subject}} of the {{clause}})}",16,Pronoun
 "sulfur, sulfuris, {n.}",sulfur,1,Noun
 "sum, esse, fuī, futūrum",to be; to belong to {(taking a {{dative}} of the possessor)},191,Verb
 "summus, summa, summum",highest,7,Adjective
@@ -1787,11 +1786,11 @@ super,{(with the {{accusative}} or {{ablative}})} above,4,"Preposition, Adverb"
 "suppōnō, suppōnere, supposuī, suppositum",to put under; to substitute {(by fraud or trickery)},2,Verb
 "sūra, sūrae, {f.}",calf (of the leg),1,Noun
 "surdus, surda, surdum",deaf,1,Adjective
-"surgō (subrigō), surgere (subrigere), surrēxī, surrēctum","to rise; {(transitive, *subrigit*)} to raise up",4,Verb
+"surgō (subrigō), surgere (subrigere), surrēxī, surrēctum","to rise; {({{transitive}}, *subrigit*)} to raise up",4,Verb
 "suscipiō, suscipere, suscēpī, susceptum",to take up; to conceive {(of offspring)},1,Verb
 "suspendō, suspendere, suspendī, suspēnsum",to hang up,1,Verb
 "suspīrō, suspīrāre, suspīrāvī, suspīrātum",to sigh,1,Verb
-"suus, sua, suum","one's own {({{possessive adjective}} typically belonging to the {{subject}} of the clause, but in poetry occasionally referring to a prominent non-subject {{noun}})}",29,Adjective
+"suus, sua, suum","one's own {({{possessive adjective}} typically belonging to the {{subject}} of the {{clause}}, but in poetry occasionally referring to a prominent non-subject {{noun}})}",29,Adjective
 "Sychaeus, Sychaeī, {m.}","Sychaeus {(Dido's murdered husband, a wealthy Phoenician)}",6,Noun
 "Symplēgadēs, Symplēgadum, {f. pl.}","Symplegades {(the clashing rocks at the Black Sea's entrance, passed by Jason and the Argonauts)}",1,Noun
 "tābēscō, tābēscere, tābuī",to melt away,1,Verb
@@ -1801,7 +1800,7 @@ super,{(with the {{accusative}} or {{ablative}})} above,4,"Preposition, Adverb"
 tam,"so {(with an {{adjective}} or {{adverb}}, answered by *quam*)}",5,Adverb
 tamen,nevertheless,14,Adverb
 tamquam,just as; as if {(with the {{subjunctive}})},1,Conjunction
-tandem,at last; pray {(intensifying an interrogative)},5,Adverb
+tandem,at last; pray {(intensifying an {{interrogative|interrogative pronoun}})},5,Adverb
 "tangō, tangere, tetigī, tāctum",to touch; to reach {(of a destination)}; to affect {(emotionally)},11,Verb
 tantum,only,2,Adverb
 "tantus, tanta, tantum","so great, so much; {(answered by *quantus*)} as much... as",11,Adjective
