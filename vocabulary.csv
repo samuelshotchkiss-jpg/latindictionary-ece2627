@@ -177,7 +177,7 @@ ante,"{(with the {{accusative}})} before; previously {(as a temporal {{adverb}})
 "assurgō, assurgere, assurrēxī, assurrēctum",to rise up,1,Verb
 "astō, astāre, astitī",to stand near,2,Verb
 "astrum, astrī, {n.}",star,2,Noun
-at,"but {(an energetic adversative particle used to introduce a sharp, sudden, or dramatic contrast, whereas *sed* introduces a standard restriction or qualification)}",12,Conjunction
+at,"but {(used to introduce a sharp, sudden, or dramatic contrast, whereas *sed* introduces a standard restriction or qualification)}",13,Conjunction
 "āter, ātra, ātrum",black,4,Adjective
 atque,and,21,Conjunction
 "ātrium, ātriī, {n.}",atrium,1,Noun
@@ -582,7 +582,7 @@ equidem,indeed {(chiefly with a verb in the first {{person}})},4,Adverb
 "errō, errāre, errāvī, errātum",to wander; to err,4,Verb
 "error, errōris, {m.}",wandering; error {(of a moral or intellectual fault)},2,Noun
 "ērudiō, ērudīre, ērudīvī, ērudītum",to teach,1,Verb
-et,"and; also {(as an emphatic {{adverb}})}; even {(as an emphatic {{adverb}})}; {(when repeated, *et... et*)} both... and",202,Conjunction
+et,"and; also {(as an emphatic {{adverb}})}; even {(as an emphatic {{adverb}})}; {(when repeated, *et... et*)} both... and",201,Conjunction
 etiam,even,5,"Adverb, Conjunction"
 "ēveniō, ēvenīre, ēvēnī, ēventum",to happen,1,Verb
 "ēvertō, ēvertere, ēvertī, ēversum",to overturn,1,Verb
@@ -590,7 +590,7 @@ etiam,even,5,"Adverb, Conjunction"
 "ēvolvō, ēvolvere, ēvolvī, ēvolūtum",to unroll,1,Verb
 "Eurōpa, Eurōpae, {f.}",Europa {(Phoenician princess abducted by Jupiter in the form of a bull)}; Europe {(the continent)},1,Noun
 "Eurus, Eurī, {m.}","Eurus {(the east wind, personified)}",2,Noun
-ex,"{(with the {{ablative|ablative-with-prepositions}})} out of; of {(equivalent to a {{partitive genitive|286}})}; [[*ex aequō* ""from the level"" → ""on equal terms""]]",9,Preposition
+"ē, ex","{(with the {{ablative|ablative-with-prepositions}})} out of; of {(equivalent to a {{partitive genitive|286}})}; [[*ex aequō* ""from the level"" → ""on equal terms""]]",9,Preposition
 "exaudiō, exaudīre, exaudīvī, exaudītum",to hear clearly,1,Verb
 "excēdō, excēdere, excessī, excessum",to depart,2,Verb
 "excidō, excidere, excidī",to fall out; to be forgotten {(of memory)},1,Verb
