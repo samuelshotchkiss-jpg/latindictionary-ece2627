@@ -19,27 +19,23 @@ Latin Word,English Definition(s),Frequency,Part of Speech
 "Achātēs, Achātae, {m.}",Achates {(faithful companion of Aeneas)},1,Noun
 "Achīvī, Achīvōrum, {m. pl.}",Achīvī {(the Greeks (especially those at Troy))},1,Noun
 "aciēs, aciēī, {f.}",sharp edge; keenness of sight; gaze,1,Noun
+"acquīrō, acquīrere, acquīsīvī, acquīsītum",to acquire,1,Verb
 āctūtum,immediately,1,Adverb
 "acūtus, acūta, acūtum",sharp,1,Adjective
 ad,{(with the {{accusative}})} to {(of motion)}; at {(of proximity)}; in the presence of; {(with the {{gerundive}})} for {(of purpose)},26,Preposition
 "addō, addere, addidī, additum",to add,4,Verb
 "addūcō, addūcere, addūxī, adductum",to lead to; to draw toward oneself; to draw taut {(of a bow or bowstring)},1,Verb
 "adeō, adīre, adiī / adīvī, aditum",to approach; to undergo {(of hardships or dangers)},6,Verb
-"adflō, adflāre, adflāvī, adflātum",to blow on,1,Verb
 "adhaereō, adhaerēre, adhaesī, adhaesum",{(with the {{dative|dative-with-compounds}})} to cling to,1,Verb
 adhūc,still,4,Adverb
 "adimō, adimere, adēmī, adēmptum",to take away,1,Verb
 "adiungō, adiungere, adiūnxī, adiūnctum",to join,1,Verb
 "adiuvō, adiuvāre, adiūvī, adiūtum",to help,1,Verb
-"adloquor, adloquī, adlocūtus sum",to speak to,2,Verb
 "admittō, admittere, admīsī, admissum","to let in; to give free rein to {(of pace or a horse, in *admisso passu/equo*)}; to commit {(of a fault or crime)}",2,Verb
 "admoneō, admonēre, admonuī, admonitum",to remind,1,Verb
 "admoveō, admovēre, admōvī, admōtum",to bring near,1,Verb
-"adnō, adnāre, adnāvī, adnātum",to swim to,1,Verb
 "adoleō, adolēre, adoluī, adultum",to burn (in sacrifice); to burn up,1,Verb
 "adoperiō, adoperīre, adoperuī, adopertum",to cover,1,Verb
-"adquīrō, adquīrere, adquīsīvī, adquīsītum",to acquire,1,Verb
-"adspergō, adsperginis, {f.}",spray,1,Noun
 "adsum, adesse, adfuī",to be present,3,Verb
 "advehō, advehere, advēxī, advectum",to carry to,1,Verb
 "advena, advenae, {m./f.}",stranger,1,"Noun, Adjective"
@@ -73,6 +69,7 @@ aequāliter,equally,1,Adverb
 "Āfer, Āfra, Āfrum",African,1,Adjective
 "afferō, afferre, attulī, allātum",to bring,1,Verb
 "afflātus, afflātūs, {m.}",breath,1,Noun
+"afflō, afflāre, afflāvī, afflātum",to blow on,1,Verb
 "affor, affārī, affātus sum",to speak to,1,Verb
 "Agēnor, Agēnoris, {m.}","Agenor {(king of Phoenicia, father of Europa)}",1,Noun
 "aggerō, aggerāre, aggerāvī, aggerātum",to heap up,1,Verb
@@ -96,6 +93,7 @@ aiō,to say,9,Verb
 aliter,otherwise,3,Adverb
 "alius, alia, aliud",other,5,Adjective
 "alligō, alligāre, alligāvī, alligātum",to bind,1,Verb
+"alloquor, alloquī, allocūtus sum",to speak to,2,Verb
 "almus, alma, almum",nourishing,1,Adjective
 "alter, altera, alterum",one {(of two)}; the other; another,13,Adjective
 "altum, altī, {n.}",the deep sea,4,Noun
@@ -125,6 +123,7 @@ an,"or {(in a {{question}}, introducing an alternative)}",6,Conjunction
 "animus, animī, {m.}","mind; heart {(figuratively, the seat of feeling)}; courage",15,Noun
 "Anna, Annae, {f.}","Anna {(sister and confidante of Dido, queen of Carthage)}",3,Noun
 "annālis, annāle",annual; chronicle {(as a {{substantive}})},1,Adjective
+"annō, annāre, annāvī, annātum",to swim to,1,Verb
 "annuō, annuere, annuī",to nod assent; to grant,2,Verb
 "annus, annī, {m.}",year,3,Noun
 ante,"{(with the {{accusative}})} before; previously {(as a temporal {{adverb}})}; ahead {(as a spatial {{adverb}})}; sooner {(in the pairing *ante ... quam*, ""sooner ... than""; cf. the {{conjunction}} *antequam*, ""before"")}",17,"Adverb, Preposition"
@@ -171,6 +170,7 @@ ante,"{(with the {{accusative}})} before; previously {(as a temporal {{adverb}})
 "Asia, Asiae, {f.}","Asia {(Asia Minor, region in the eastern Mediterranean)}",1,Noun
 "aspectus, aspectūs, {m.}",sight,1,Noun
 "asper, aspera, asperum",rough; harsh,3,Adjective
+"aspergō, asperginis, {f.}",spray,1,Noun
 "aspiciō, aspicere, aspexī, aspectum",to look at,5,Verb
 "Assaracus, Assaracī, {m.}","Assaracus {(early Trojan king, ancestor of Aeneas)}",1,Noun
 "asserō, asserere, asseruī, assertum",to claim,1,Verb
@@ -600,7 +600,6 @@ etiam,even,5,"Adverb, Conjunction"
 "exhorrēscō, exhorrēscere, exhorruī",to shudder,1,Verb
 "exigō, exigere, exēgī, exāctum","to drive out; to exact {(of punishment, *poenās*)}; to carry through to the end; to ascertain",3,Verb
 "exiguus, exigua, exiguum",small; brief {(of time)},2,Adjective
-"exilium, exiliī, {n.}",exile,1,Noun
 "exorior, exorīrī, exortus sum",to arise,1,Verb
 "exōsus, exōsa, exōsum",hating,1,Adjective
 "expallēscō, expallēscere, expalluī",to turn pale,2,Verb
@@ -612,7 +611,7 @@ etiam,even,5,"Adverb, Conjunction"
 "exposcō, exposcere, expoposcī",to demand,1,Verb
 "exprobrō, exprobrāre, exprobrāvī, exprobrātum",to reproach,1,Verb
 "exquīrō, exquīrere, exquīsīvī, exquīsītum",to search out,1,Verb
-"exsilium, exsiliī, {n.}",exile,1,Noun
+"exsilium, exsiliī, {n.}",exile,2,Noun
 "exsolvō, exsolvere, exsolvī, exsolūtum",to release,1,Verb
 "exstinguō, exstinguere, exstīnxī, exstīnctum",to put out; to destroy,3,Verb
 "exsul, exsulis, {m./f.}",exile,1,Noun
