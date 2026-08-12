@@ -210,6 +210,126 @@
         return formatted;
     }
 
+    // --- Prefix assimilation: name the rule, don't silently correct ---------------
+    //
+    // This dictionary is spelled to ONE orthographic norm (all-assimilated, 2026-08-12).
+    // Books elsewhere are not. A student who meets `inpleat` in another edition, or who
+    // half-remembers `adloquor` from a textbook, types it here and gets nothing -- and
+    // because this is a PREFIX search, the letters assimilation changes are exactly the
+    // ones it keys on, so there is no partial credit and no way to backspace into a hit.
+    //
+    // Unlike the j->i fold in normalizeForSearch, which is silent, this is SHOWN. The
+    // student is not being autocorrected; they are being taught a rule they will need
+    // every time they open a different book.
+    //
+    // THE SAFETY PROPERTY IS THE TRIGGER: a rule is only tried when the search returns
+    // ZERO results, so it can never shadow a real entry. That is what makes the `ad-`
+    // fricatives safe to include without special-casing -- `adsum` and `adfuī` are real
+    // headwords, so typing them matches and nothing fires; `adsere` matches nothing, so
+    // `assere` is offered. The exceptions defend themselves.
+    const ASSIMILATION_RULES = [
+        // in- before a labial or a liquid
+        { from: 'inp',  to: 'imp',  note: 'in- becomes im- before p, b and m' },
+        { from: 'inb',  to: 'imb',  note: 'in- becomes im- before p, b and m' },
+        { from: 'inm',  to: 'imm',  note: 'in- becomes im- before p, b and m' },
+        { from: 'inl',  to: 'ill',  note: 'in- becomes il- before l' },
+        { from: 'inr',  to: 'irr',  note: 'in- becomes ir- before r' },
+        // con- likewise
+        { from: 'conp', to: 'comp', note: 'con- becomes com- before p, b and m' },
+        { from: 'conb', to: 'comb', note: 'con- becomes com- before p, b and m' },
+        { from: 'conm', to: 'comm', note: 'con- becomes com- before p, b and m' },
+        { from: 'conl', to: 'coll', note: 'con- becomes col- before l' },
+        { from: 'conr', to: 'corr', note: 'con- becomes cor- before r' },
+        // ad- takes the shape of whatever follows it
+        { from: 'adq',  to: 'acq',  note: 'ad- becomes ac- before qu' },
+        { from: 'adsp', to: 'asp',  note: 'ad- loses its d before sp, sc and st' },
+        { from: 'adsc', to: 'asc',  note: 'ad- loses its d before sp, sc and st' },
+        { from: 'adst', to: 'ast',  note: 'ad- loses its d before sp, sc and st' },
+        { from: 'adc',  to: 'acc',  note: 'ad- takes the shape of the consonant after it' },
+        { from: 'adf',  to: 'aff',  note: 'ad- takes the shape of the consonant after it' },
+        { from: 'adg',  to: 'agg',  note: 'ad- takes the shape of the consonant after it' },
+        { from: 'adl',  to: 'all',  note: 'ad- takes the shape of the consonant after it' },
+        { from: 'adn',  to: 'ann',  note: 'ad- takes the shape of the consonant after it' },
+        { from: 'adp',  to: 'app',  note: 'ad- takes the shape of the consonant after it' },
+        { from: 'adr',  to: 'arr',  note: 'ad- takes the shape of the consonant after it' },
+        { from: 'ads',  to: 'ass',  note: 'ad- takes the shape of the consonant after it' },
+        { from: 'adt',  to: 'att',  note: 'ad- takes the shape of the consonant after it' },
+        // ob-, sub-, ex-, dis-
+        { from: 'obc',  to: 'occ',  note: 'ob- takes the shape of the consonant after it' },
+        { from: 'obf',  to: 'off',  note: 'ob- takes the shape of the consonant after it' },
+        { from: 'obp',  to: 'opp',  note: 'ob- takes the shape of the consonant after it' },
+        { from: 'subc', to: 'succ', note: 'sub- takes the shape of the consonant after it' },
+        { from: 'subf', to: 'suff', note: 'sub- takes the shape of the consonant after it' },
+        { from: 'subg', to: 'sugg', note: 'sub- takes the shape of the consonant after it' },
+        { from: 'subp', to: 'supp', note: 'sub- takes the shape of the consonant after it' },
+        { from: 'subm', to: 'summ', note: 'sub- becomes sum- before m' },
+        { from: 'exf',  to: 'eff',  note: 'ex- becomes ef- before f' },
+        { from: 'disf', to: 'diff', note: 'dis- becomes dif- before f' },
+        // ex- keeps an s this dictionary spells out
+        { from: 'exul',   to: 'exsul',   note: 'this dictionary spells the s: exsul, not exul' },
+        { from: 'exil',   to: 'exsil',   note: 'this dictionary spells the s: exsilium, not exilium' },
+        { from: 'extinc', to: 'exstinc', note: 'this dictionary spells the s: exstinguo, not extinguo' },
+        { from: 'exting', to: 'exsting', note: 'this dictionary spells the s: exstinguo, not extinguo' },
+        { from: 'extinx', to: 'exstinx', note: 'this dictionary spells the s: exstinguo, not extinguo' },
+        // ...and the two words that go the OTHER way, which is exactly where a student
+        // who has learned the rule will now guess wrong.
+        { from: 'assum',  to: 'adsum',  note: 'adsum keeps its d, to match absum, afui' },
+        { from: 'surrid', to: 'subrid', note: 'sub- keeps its b before r: subrideo' },
+        { from: 'surrig', to: 'subrig', note: 'sub- keeps its b before r: subrigo' }
+    ];
+
+    // Does anything at all match this term? Same predicate the main search uses, so the
+    // two can never disagree about what counts as a hit.
+    function hasAnyMatch(term) {
+        const noPunct = term.toLowerCase().replace(/,|;|\.|:|-|–|—|\(|\)|=|>|</g, '').trim();
+        const patternRaw = ' ' + noPunct.replace(/\s+/g, ' ');
+        const patternNorm = ' ' + normalizeForSearch(term).replace(/\s+/g, ' ');
+        if (patternNorm.trim().length === 0) return false;
+        for (let i = 0; i < vocabulary.length; i++) {
+            const cleanRaw = vocabulary[i].latin.toLowerCase().replace(/\{(.*?)\}/g, ' ');
+            const tRaw = ' ' + cleanRaw.replace(/,|;|\.|:|-|–|—|\(|\)|=|>|</g, '').trim().replace(/\s+/g, ' ');
+            const tNorm = ' ' + normalizeForSearch(cleanRaw).replace(/\s+/g, ' ');
+            if (checkOneWayMatch(tRaw, tNorm, patternRaw, patternNorm)) return true;
+        }
+        for (let i = 0; i < formsList.length; i++) {
+            const fRaw = ' ' + formsList[i].form.toLowerCase().replace(/,|;|\.|:|-|–|—|\(|\)|=|>|</g, '').trim().replace(/\s+/g, ' ');
+            const fNorm = ' ' + normalizeForSearch(formsList[i].form).replace(/\s+/g, ' ');
+            if (checkOneWayMatch(fRaw, fNorm, patternRaw, patternNorm)) return true;
+        }
+        return false;
+    }
+
+    // Returns {term, rule, typed, shown, dead} when a rule applies to a search that
+    // found nothing. Two tiers:
+    //
+    //   dead:false -- the rewrite finds real entries. Show the rule AND the entries.
+    //   dead:true  -- the rewrite finds nothing either, but NO HEADWORD IN THE DICTIONARY
+    //                 BEGINS WITH THE TYPED SEQUENCE AT ALL. `inp-` is not a rare spelling
+    //                 here, it is an impossible one, so we still know the student is
+    //                 spelling it the other way and can say so. This is the case that
+    //                 matters most: `inpleat` is an inflected form, which this prefix
+    //                 search would miss even spelled `impleat`, so without this tier the
+    //                 student gets a blank box and no idea why.
+    function findAssimilationRedirect(term) {
+        const norm = normalizeForSearch(term);
+        let impossible = null;
+        for (let i = 0; i < ASSIMILATION_RULES.length; i++) {
+            const rule = ASSIMILATION_RULES[i];
+            if (norm.indexOf(rule.from) !== 0) continue;
+            const rewritten = rule.to + term.slice(rule.from.length);
+            if (hasAnyMatch(rewritten)) {
+                return { term: rewritten, rule: rule, typed: rule.from,
+                         shown: rule.to, dead: false };
+            }
+            // Only claim impossibility once, and only if the bare sequence really is absent.
+            if (!impossible && !hasAnyMatch(rule.from)) {
+                impossible = { term: term, rule: rule, typed: rule.from,
+                               shown: rule.to, dead: true };
+            }
+        }
+        return impossible;
+    }
+
     // Strips out all punctuation, diacritics, and handles i/j equivalence for search
     function normalizeForSearch(str) {
         if (!str) return '';
@@ -608,13 +728,22 @@
     // --- Event Handlers (The Search Engine) ---
 
     function onSearchInput(e) {
-        const rawSearchTerm = e.target.value;
-        const normalizedSearchTerm = normalizeForSearch(rawSearchTerm);
+        const typedSearchTerm = e.target.value;
 
-        if (normalizedSearchTerm.length === 0) {
+        if (normalizeForSearch(typedSearchTerm).length === 0) {
             suggestionsList.style.display = 'none';
             return;
         }
+
+        // Only when the search finds NOTHING do we try an assimilation rule. That ordering
+        // is the safety property: a redirect can never hide a real entry, so `adsum` and
+        // `subrideo` need no special case -- they match, so nothing fires.
+        let redirect = null;
+        if (!hasAnyMatch(typedSearchTerm)) {
+            redirect = findAssimilationRedirect(typedSearchTerm);
+        }
+        const rawSearchTerm = (redirect && !redirect.dead) ? redirect.term : typedSearchTerm;
+        const normalizedSearchTerm = normalizeForSearch(rawSearchTerm);
 
         // Prepares strings for the "Space-Prefix" matching rule
         const searchNoPunct = rawSearchTerm.toLowerCase().replace(/,|;|\.|:|-|\u2013|\u2014|\(|\)|=|>|</g, '').trim();
@@ -723,7 +852,26 @@
         // Limit to top 10 results to keep UI clean
         const topMatches = matches.slice(0, 10);
         suggestionsList.innerHTML = '';
-        
+
+        // The rule, named, above the results it rescued. Not a clickable suggestion --
+        // it is a small lesson, and it should not look like one of the answers.
+        if (redirect) {
+            const banner = document.createElement('div');
+            banner.className = 'assimilation-notice';
+            let html =
+                '<span class="assim-shift"><span class="assim-from">' + redirect.typed +
+                '-</span><span class="assim-arrow">→</span><span class="assim-to">' +
+                redirect.shown + '-</span></span>' +
+                '<span class="assim-note">' + redirect.rule.note + '</span>';
+            if (redirect.dead) {
+                html += '<span class="assim-note assim-dead">No headword here begins <em>' +
+                        redirect.typed + '-</em>. Try <strong>' + redirect.shown +
+                        '-</strong>, or delete a letter or two from the end.</span>';
+            }
+            banner.innerHTML = html;
+            suggestionsList.appendChild(banner);
+        }
+
         if (topMatches.length > 0) {
             topMatches.forEach(match => {
                 const div = document.createElement('div');
@@ -794,7 +942,9 @@
             });
             suggestionsList.style.display = 'block';
         } else {
-            suggestionsList.style.display = 'none';
+            // A dead-end notice is still worth showing on its own: it is the only thing
+            // standing between the student and an unexplained empty box.
+            suggestionsList.style.display = redirect ? 'block' : 'none';
         }
     }
 

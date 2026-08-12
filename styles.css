@@ -304,6 +304,51 @@ body {
     font-weight: 600; /* Makes it slightly bolder */
     color: var(--text-color); /* Brings it back to the main dark text color */
 }
+/* Prefix-assimilation notice: shown when a search found nothing and a spelling rule
+   rescued it. It must NOT read as one of the answers -- it is a lesson sitting above
+   them -- so it is not clickable, has no hover state, and is tinted rather than white. */
+.assimilation-notice {
+    cursor: default !important;
+    background-color: var(--accent-secondary);
+    border-left: 4px solid var(--accent-color);
+    padding: 10px 20px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: sticky;   /* stays visible while the rescued results are scrolled */
+    top: 0;
+    z-index: 1;
+}
+.assimilation-notice:hover { background-color: var(--accent-secondary) !important; }
+.assim-shift {
+    font-size: 1.05em;
+    letter-spacing: 0.01em;
+}
+.assim-from {
+    font-family: Georgia, "Times New Roman", serif;
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    opacity: 0.75;
+}
+.assim-arrow { margin: 0 0.5em; color: var(--accent-color); }
+.assim-to {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+.assim-note {
+    font-size: 0.85em;
+    color: #555;
+    font-style: italic;
+}
+/* The dead-end line: no result to offer, so this is the whole answer. */
+.assim-dead {
+    font-style: normal;
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px dashed var(--border-color);
+}
+.assim-dead strong { color: var(--accent-color); }
 /* Demoted styling for inflected forms in the search dropdown */
 .is-form-match {
     color: #666;
