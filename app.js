@@ -281,20 +281,13 @@
     // Does anything at all match this term? Same predicate the main search uses, so the
     // two can never disagree about what counts as a hit.
     function hasAnyMatch(term) {
-        const noPunct = term.toLowerCase().replace(/,|;|\.|:|-|–|—|\(|\)|=|>|</g, '').trim();
-        const patternRaw = ' ' + noPunct.replace(/\s+/g, ' ');
-        const patternNorm = ' ' + normalizeForSearch(term).replace(/\s+/g, ' ');
-        if (patternNorm.trim().length === 0) return false;
+        const pattern = searchUnits(term);
+        if (pattern.norm.trim().length === 0) return false;
         for (let i = 0; i < vocabulary.length; i++) {
-            const cleanRaw = vocabulary[i].latin.toLowerCase().replace(/\{(.*?)\}/g, ' ');
-            const tRaw = ' ' + cleanRaw.replace(/,|;|\.|:|-|–|—|\(|\)|=|>|</g, '').trim().replace(/\s+/g, ' ');
-            const tNorm = ' ' + normalizeForSearch(cleanRaw).replace(/\s+/g, ' ');
-            if (checkOneWayMatch(tRaw, tNorm, patternRaw, patternNorm)) return true;
+            if (checkOneWayMatch(vocabulary[i].searchUnits, pattern)) return true;
         }
         for (let i = 0; i < formsList.length; i++) {
-            const fRaw = ' ' + formsList[i].form.toLowerCase().replace(/,|;|\.|:|-|–|—|\(|\)|=|>|</g, '').trim().replace(/\s+/g, ' ');
-            const fNorm = ' ' + normalizeForSearch(formsList[i].form).replace(/\s+/g, ' ');
-            if (checkOneWayMatch(fRaw, fNorm, patternRaw, patternNorm)) return true;
+            if (checkOneWayMatch(formsList[i].searchUnits, pattern)) return true;
         }
         return false;
     }
@@ -342,46 +335,71 @@
             .trim(); 
     }
 
-    // One-Way Macron Strictness Checker
-    // If user types standard vowel, accepts long/short. If user types macron, rejects short.
-    function checkOneWayMatch(targetRawStr, targetNormStr, searchRawStr, searchNormStr) {
-        let startIdx = 0;
-        let found = false;
-        
-        while (startIdx < targetNormStr.length) {
-            const matchIdx = targetNormStr.indexOf(searchNormStr, startIdx);
-            if (matchIdx === -1) {
-                break; 
+    // Split a string into one unit per LETTER: the bare letter, plus whatever combining
+    // marks rode on it. `units.norm[i]` and `units.marks[i]` always describe the same
+    // letter, and the leading space of the space-prefix rule is built in.
+    //
+    // WHY THIS EXISTS. The old checker held two parallel strings -- the raw text and the
+    // diacritic-stripped text -- and indexed both with a position computed in the stripped
+    // one. That is only safe while every accented glyph is ONE code unit, which is true of
+    // `ī` (U+012B) and false of a STACKED diacritic: `ȳ̆` is U+0233 plus a combining breve,
+    // two units where the stripped string has one. Past such a letter the two strings are
+    // out of step and the comparison reads the wrong character. Four headwords carry the
+    // anceps notation -- `mihī̆`, `tibī̆`, `Hȳ̆mēn`, `Sȳ̆chaeus` -- so typing `mihī` or
+    // `sȳchaeus` found nothing at all, while the bare `mihi` and `sychaeus` worked.
+    function searchUnits(str) {
+        const src = String(str || '')
+            .toLowerCase()
+            .replace(/j/g, 'i')
+            .replace(/,|;|\.|:|-|–|—|\(|\)|=|>|</g, '')
+            .normalize('NFD');
+        let norm = ' ';
+        const marks = [''];
+        let lastWasSpace = true;
+        for (const ch of src) {
+            if (/\p{Diacritic}/u.test(ch)) {
+                marks[marks.length - 1] += ch;
+                continue;
             }
+            if (/\s/.test(ch)) {
+                if (lastWasSpace) continue;
+                norm += ' '; marks.push(''); lastWasSpace = true;
+                continue;
+            }
+            norm += ch; marks.push(''); lastWasSpace = false;
+        }
+        while (norm.length > 1 && norm.charAt(norm.length - 1) === ' ') {
+            norm = norm.slice(0, -1); marks.pop();
+        }
+        return { norm: norm, marks: marks };
+    }
+
+    // One-Way Macron Strictness Checker.
+    // Type a bare vowel and you get long or short; type a macron and the short is rejected.
+    //
+    // The marks a student typed must be a SUBSET of the marks on the dictionary's letter,
+    // not equal to them. That is what makes the anceps notation behave: `ī̆` means "long or
+    // short here", so someone who types the macron of `mihī` should be shown `mihī̆`, while
+    // someone who types a bare `mihi` still gets it and someone who types `mihĭ` gets it too.
+    function checkOneWayMatch(target, search) {
+        let startIdx = 0;
+        while (startIdx < target.norm.length) {
+            const matchIdx = target.norm.indexOf(search.norm, startIdx);
+            if (matchIdx === -1) return false;
 
             let isValid = true;
-            for (let i = 0; i < searchRawStr.length; i++) {
-                let sCharRaw = searchRawStr.charAt(i).toLowerCase();
-                let tCharRaw = targetRawStr.charAt(matchIdx + i).toLowerCase();
-                
-                // Allow i/j equivalence to bypass strictness rejection
-                if (sCharRaw === 'j') sCharRaw = 'i';
-                if (tCharRaw === 'j') tCharRaw = 'i';
-
-                const sCharNorm = searchNormStr.charAt(i);
-                
-                // Checks if the user intentionally typed a diacritic
-                if (sCharRaw !== sCharNorm) {
-                    // Verifies the dictionary word has that exact same diacritic
-                    if (sCharRaw !== tCharRaw) {
-                        isValid = false;
-                        break;
-                    }
+            for (let i = 0; i < search.norm.length && isValid; i++) {
+                const typed = search.marks[i];
+                if (!typed) continue;              // bare letter: accepts anything
+                const onEntry = target.marks[matchIdx + i] || '';
+                for (const mark of typed) {
+                    if (onEntry.indexOf(mark) === -1) { isValid = false; break; }
                 }
             }
-
-            if (isValid) {
-                found = true;
-                break;
-            }
+            if (isValid) return true;
             startIdx = matchIdx + 1;
         }
-        return found;
+        return false;
     }
 
     // Custom CSV Parser built without array literal brackets to survive UI bugs
@@ -745,14 +763,11 @@
         const rawSearchTerm = (redirect && !redirect.dead) ? redirect.term : typedSearchTerm;
         const normalizedSearchTerm = normalizeForSearch(rawSearchTerm);
 
-        // Prepares strings for the "Space-Prefix" matching rule
-        const searchNoPunct = rawSearchTerm.toLowerCase().replace(/,|;|\.|:|-|\u2013|\u2014|\(|\)|=|>|</g, '').trim();
-        const collapsedSearchRaw = searchNoPunct.replace(/\s+/g, ' ');
-        const searchPatternRaw = ' ' + collapsedSearchRaw;
+        // Prepares the "Space-Prefix" matching pattern: one unit per letter, so the macron
+        // check stays aligned even across a stacked diacritic.
+        const searchPattern = searchUnits(rawSearchTerm);
 
         const collapsedSearchNorm = normalizedSearchTerm.replace(/\s+/g, ' ');
-        const searchPatternNorm = ' ' + collapsedSearchNorm;
-
         const searchWordsNorm = collapsedSearchNorm.split(' ');
 
         let matches = new Array();
@@ -760,15 +775,10 @@
 
         // 1. Check Standard Dictionary Lemmata
         vocabulary.forEach(word => {
-            const cleanLatinRaw = word.latin.toLowerCase().replace(/\{(.*?)\}/g, ' '); 
-            const rawLemmaNoPunct = cleanLatinRaw.replace(/,|;|\.|:|-|\u2013|\u2014|\(|\)|=|>|</g, '').trim();
-            const collapsedLemmaRaw = rawLemmaNoPunct.replace(/\s+/g, ' ');
-            const lemmaTargetRaw = ' ' + collapsedLemmaRaw;
-
+            const cleanLatinRaw = word.latin.toLowerCase().replace(/\{(.*?)\}/g, ' ');
             const collapsedLemmaNorm = normalizeForSearch(cleanLatinRaw).replace(/\s+/g, ' ');
-            const lemmaTargetNorm = ' ' + collapsedLemmaNorm;
-            
-            if (checkOneWayMatch(lemmaTargetRaw, lemmaTargetNorm, searchPatternRaw, searchPatternNorm)) {
+
+            if (checkOneWayMatch(word.searchUnits, searchPattern)) {
                 
                 // Flag as "isExact" if it perfectly matches the whole word or a distinct sub-word
                 let isExact = false;
@@ -795,14 +805,9 @@
 
         // 2. Check Inflected Grammar Forms
         formsList.forEach(formObj => {
-            const rawFormNoPunct = formObj.form.toLowerCase().replace(/,|;|\.|:|-|\u2013|\u2014|\(|\)|=|>|</g, '').trim();
-            const collapsedFormRaw = rawFormNoPunct.replace(/\s+/g, ' ');
-            const formTargetRaw = ' ' + collapsedFormRaw;
-
             const collapsedFormNorm = normalizeForSearch(formObj.form).replace(/\s+/g, ' ');
-            const formTargetNorm = ' ' + collapsedFormNorm;
-            
-            if (checkOneWayMatch(formTargetRaw, formTargetNorm, searchPatternRaw, searchPatternNorm)) {
+
+            if (checkOneWayMatch(formObj.searchUnits, searchPattern)) {
                 const displayStr = formObj.form + ' > ' + formObj.lemma;
                 if (!addedDisplays.has(displayStr)) {
                     const wordObj = vocabulary.find(w => w.latin === formObj.lemma);
@@ -1011,6 +1016,15 @@
             vocabulary.forEach(word => {
                 word.forms = formsList.filter(f => f.lemma === word.latin);
             });
+
+            // Precompute the search units once. They never change, and recomputing them
+            // per keystroke meant an NFD normalize per dictionary entry -- roughly 2,000 of
+            // them, and up to forty times that on a search which walks the whole
+            // assimilation rule table before giving up.
+            vocabulary.forEach(word => {
+                word.searchUnits = searchUnits(word.latin.replace(/\{(.*?)\}/g, ' '));
+            });
+            formsList.forEach(f => { f.searchUnits = searchUnits(f.form); });
 
             // Sort Word Wheel alphabetically ignoring comments/punctuation
             vocabulary.sort((a, b) => {
