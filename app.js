@@ -519,7 +519,13 @@
         const buttonHtml = `<button class="btn add-to-list-btn-action ${isSaved ? 'btn-danger' : 'btn-primary'}">${isSaved ? 'Remove from List' : 'Add to List'}</button>`;
         
         const posHtml = word.partOfSpeech ? `<div class="part-of-speech">${word.partOfSpeech}</div>` : '';
-        const freqHtml = (word.frequency !== null) ? `<div class="frequency">Frequency: ${word.frequency}</div>` : '';
+        // A frequency of 0 is not a bug and not an oversight: the word is in this
+        // dictionary because it turns up in the tiered readers, and the frequency count
+        // only ever counts our own Ovid and Vergil. Saying so beats printing a 0.
+        const freqHtml = (word.frequency === null) ? ''
+            : (word.frequency === 0)
+                ? `<div class="frequency">Not in our Ovid or Vergil &mdash; this word comes from the tiered readers.</div>`
+                : `<div class="frequency">Frequency: ${word.frequency}</div>`;
 
         // Builds the dropdown HTML for grammatical forms if they exist
         let formsHtml = '';
@@ -650,7 +656,10 @@
             }).forEach(latinWord => {
                 const wordObject = vocabulary.find(w => w.latin === latinWord);
                 if (wordObject) {
-                    const freqHtml = (wordObject.frequency !== null) ? `<span class="study-list-frequency">Frequency: ${wordObject.frequency}</span>` : '';
+                    const freqHtml = (wordObject.frequency === null) ? ''
+                        : (wordObject.frequency === 0)
+                            ? `<span class="study-list-frequency">from the tiered readers</span>`
+                            : `<span class="study-list-frequency">Frequency: ${wordObject.frequency}</span>`;
                     const li = document.createElement('li');
                     li.innerHTML = `
                         <div class="study-list-item-content">
