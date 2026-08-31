@@ -562,7 +562,7 @@ dum,while {(with {{indicative}})}; until {(with {{subjunctive}})}; provided that
 "ebur, eboris, {n.}",ivory,1,Noun
 ecce,behold,3,Interjection
 "ēdiscō, ēdiscere, ēdidicī",to memorize,1,Verb
-"edō, edere, ēdī, ēsum",to eat,1,Verb
+"edō, edere, ēdī, ēsum",to eat,2,Verb
 "ēdō, ēdere, ēdidī, ēditum",to put forth,1,Verb
 "ēdūcō, ēdūcere, ēdūxī, ēductus",to draw out,0,Verb
 "efferō, efferre, extulī, ēlātum",to carry out; to raise up,1,Verb
@@ -816,8 +816,8 @@ heu,alas,3,Interjection
 heus,hey!,1,Interjection
 "hīberna, hībernōrum, {n. pl.}",winter quarters; winter {(as a period of time)},1,Noun
 "hībernus, hīberna, hībernum",wintry,1,Adjective
-"hic, haec, hoc","this; he, she, it",69,"Adjective, Pronoun"
-hīc,here,10,Adverb
+"hic, haec, hoc","this; he, she, it",71,"Adjective, Pronoun"
+hīc,here,8,Adverb
 "hiems, hiemis, {f.}",winter; storm,4,Noun
 hinc,from here,7,Adverb
 "homō, hominis, {m.}",human being,6,Noun
@@ -1874,7 +1874,7 @@ subter,beneath,1,Adverb
 "suffundō, suffundere, suffūdī, suffūsum",to suffuse,2,Verb
 "--, suī, sibi, sē, sē","himself, herself, itself; themselves {(third-person {{reflexive pronoun}} referring to the {{subject}} of the {{clause}})}",16,Pronoun
 "sulfur, sulfuris, {n.}",sulfur,1,Noun
-"sum, esse, fuī, futūrum",to be; to belong to {(taking a {{dative}} of the possessor)},202,Verb
+"sum, esse, fuī, futūrum",to be; to belong to {(taking a {{dative}} of the possessor)},201,Verb
 "summus, summa, summum",highest,7,Adjective
 super,{(with the {{accusative}} or {{ablative}})} above,4,"Preposition, Adverb"
 "superbus, superba, superbum",proud,1,Adjective
