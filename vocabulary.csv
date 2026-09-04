@@ -319,7 +319,7 @@ clam,secretly,1,Adverb
 "Cnōsius, Cnōsia, Cnōsium","Cnossian {(relating to Knossos, chief city of Crete)}",1,Adjective
 "coctilis, coctile",made of baked brick,1,Adjective
 "coeō, coīre, coiī, coitum",to come together; to be united in marriage,3,Verb
-"coepī, coepisse, coeptum",to begin,5,Verb
+"coepī, coepisse, coeptum",began {(only past tense)},5,Verb
 "coeptum, coeptī, {n.}",undertaking,2,Noun
 "coerceō, coercēre, coercuī, coercitum",to confine,1,Verb
 "coetus, coetūs, {m.}",gathering,1,Noun
@@ -935,14 +935,14 @@ inde,"from there; then {(temporal, thereafter)}",1,Adverb
 "iniciō, inicere, iniēcī, iniectum","to throw onto; to lay on; [[*inicere manūs* ""to lay hands on"" → ""to lay legal claim to""]]",1,Verb
 "inimīcus, inimīca, inimīcum",hostile,1,Adjective
 "inīquus, inīqua, inīquum","unfair {(from *in-* + *aequus*, ""fair"")}; hostile",4,Adjective
-"iniūria, iniūriae, {f.}",wrong,2,Noun
+"iniūria, iniūriae, {f.}",a wrong,2,Noun
 "iniūstus, iniūsta, iniūstum",unjust,1,Adjective
 "innātus, innāta, innātum",innate,1,Adjective
 "innītor, innītī, innīxus sum",{(with the {{ablative}})} to lean on,1,Verb
 "innumerus, innumera, innumerum",countless,1,Adjective
 "innūptus, innūpta, innūptum",unmarried,1,Adjective
 "inōrnātus, inōrnāta, inōrnātum",unadorned,1,Adjective
-"inquam, inquis, inquit",to say,7,Verb
+"inquam, inquis, inquit",to say {(introduces a quote)},7,Verb
 "inquīrō, inquīrere, inquīsīvī, inquīsītum",to investigate,1,Verb
 "īnsānia, īnsāniae, {f.}",madness,1,Noun
 "īnsānus, īnsāna, īnsānum",mad,2,Adjective
