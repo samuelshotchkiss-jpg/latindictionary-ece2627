@@ -183,7 +183,7 @@ ante,"{(with the {{accusative}})} before; previously {(as a temporal {{adverb}})
 "astrum, astrī, {n.}",star,2,Noun
 at,"but {(used to introduce a sharp, sudden, or dramatic contrast, whereas *sed* introduces a standard restriction or qualification)}",13,Conjunction
 "āter, ātra, ātrum",black,4,Adjective
-atque,and,21,Conjunction
+"atque, ac",and,21,Conjunction
 "ātrium, ātriī, {n.}",atrium,1,Noun
 "attineō, attinēre, attinuī, attentum","to hold fast; to pertain to {({{impersonal}}, *quid attinet?* = what does it matter?)}",1,Verb
 "attollō, attollere",to lift up,3,Verb
@@ -516,7 +516,7 @@ dēnique,finally,1,Adverb
 "dīligō, dīligere, dīlēxī, dīlēctum",to love,1,Verb
 "dīmittō, dīmittere, dīmīsī, dīmissum",to send away,1,Verb
 "Dīrae, Dīrārum, {f. pl.}","Dirae {(the Furies, avenging goddesses)}",1,Noun
-"dīrigō, dīrigere, dīrēxī, dīrēctum",to direct,1,Verb
+"dērigō, dērigere, dērēxī, dērēctum",to direct,1,Verb
 "dīripiō, dīripere, dīripuī, dīreptum",to tear apart,1,Verb
 "dīrus, dīra, dīrum",dreadful,2,Adjective
 "discēdō, discēdere, discessī, discessum",to depart,1,Verb
@@ -1990,7 +1990,7 @@ trīgintā,thirty,1,Numeral
 "Trōicus, Trōica, Trōicum","Trojan {(relating to Troy, the city of Aeneas' homeland)}",1,Adjective
 "Trōs, Trōis, {m.}","Trojan {(a Trojan (Trōs, {{gen}}. Trōis, often used as {{adjective}}/{{noun}} for people of Troy))}",1,Noun
 "truncus, truncī, {m.}",trunk,0,Noun
-"tū, tuī, tibī̆, tē, tē","you {({{personal pronoun}}, {{singular}})}",116,Pronoun
+"tū, tuī, tibī̆, tē, tē","you {({{personal pronoun}}, {{singular}})}",114,Pronoun
 "tuba, tubae, {f.}",trumpet,1,Noun
 "tueor, tuērī, tuitus sum",to watch; to guard,1,Verb
 tum,then,15,Adverb
@@ -2118,7 +2118,7 @@ unde,from where,5,Adverb
 "voluptās, voluptātis, {f.}",pleasure,1,Noun
 "vōmer, vōmeris, {m.}",plowshare,2,Noun
 "vomō, vomere, vomuī, vomitum",to vomit,1,Verb
-"vōs, vestrum/vestrī, vōbīs, vōs, vōbīs","you {({{personal pronoun}}, {{plural}})}",1,Pronoun
+"vōs, vestrum/vestrī, vōbīs, vōs, vōbīs","you {({{personal pronoun}}, {{plural}})}",3,Pronoun
 "vōtum, vōtī, {n.}",vow; prayer; wish,5,Noun
 "vōx, vōcis, {f.}",voice; word,11,Noun
 "urbs, urbis, {f.}",city,23,Noun
