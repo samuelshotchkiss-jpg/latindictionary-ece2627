@@ -57,3 +57,11 @@ anyone to a dead address.
 > does nothing until a reload — and a tab restored from the back/forward cache
 > never re-runs the script at all, which is how the *same* window keeps pointing
 > at the old target while a newly opened one behaves correctly.
+
+## Licence
+This repository combines three sets of terms — see [`COPYRIGHT.md`](COPYRIGHT.md) for which files fall
+under each:
+
+*   **The Latin** — public domain.
+*   **Editorial content** (`vocabulary.csv`, `forms.csv`, `index.html`, the documentation) — **CC BY-NC-SA 4.0** ([`LICENSE-CONTENT`](LICENSE-CONTENT)).
+*   **Code** (`app.js`, `styles.css`) — **AGPL-3.0** ([`LICENSE-CODE`](LICENSE-CODE)).
