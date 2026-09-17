@@ -133,6 +133,42 @@ body {
 #result-display p { font-size: 1.1em; line-height: 1.6; margin-top: 0; }
 #result-display .frequency { font-size: 0.9em; color: #777; margin-top: 20px; font-style: italic; }
 
+/* --- One sense per line, core first and largest (owner, 2026-09-17) ----------
+   Definitions carry comments both before and after a gloss, so on one run-on
+   line a student cannot see which parenthetical belongs to which sense --
+   `much (in the singular); (in the plural) many` reads as though the plural
+   note went with "much". Each sense gets its own line and its own rule down
+   the left, so a comment is visibly INSIDE one sense.
+
+   The core is set larger and in the accent colour: it is the definition a
+   student is meant to carry away, and until now it looked like any other
+   sense. An entry with no core marked (the oldest hand-vetted ones) draws
+   every sense at the same weight -- see formatSensesHTML in app.js.
+
+   The heading sits above the senses, on its own line, because `(with the
+   ablative)` governs all of them, not just the first. */
+.senses { margin-bottom: 0; }
+#result-display .def-heading {
+    font-size: 0.95em;
+    margin-bottom: 8px;
+}
+#result-display .sense {
+    margin: 0 0 6px;
+    padding-left: 12px;
+    border-left: 2px solid var(--border-color);
+}
+#result-display .sense:last-child { margin-bottom: 0; }
+#result-display .sense-core {
+    font-size: 1.35em;
+    line-height: 1.45;
+    padding-bottom: 2px;
+    border-left: 3px solid var(--accent-color);
+}
+/* A comment inside the core stays at reading size: the core's own words are
+   what the larger type is for, and a long parenthetical set at 1.35em would
+   shout louder than the gloss it explains. */
+#result-display .sense-core .def-comment { font-size: 0.8em; }
+
 .btn { padding: 10px 15px; font-size: 0.9em; font-weight: bold; border-radius: 20px; border: none; cursor: pointer; transition: background-color 0.2s, box-shadow 0.2s; white-space: nowrap; }
 .btn-primary { background-color: var(--accent-color); color: var(--accent-text-color); }
 .btn-primary:hover { background-color: #3a599d; }

@@ -210,6 +210,35 @@
         return formatted;
     }
 
+    // Lays a word's senses out one per line, with the core given the most weight.
+    //
+    // WHY THE LINE WAS BROKEN UP (owner, 2026-09-17). Definitions carry comments both
+    // before and after a gloss, and run together on one line the reader cannot tell
+    // which parenthetical belongs to which sense: `much (in the singular); (in the
+    // plural) many` reads as though the plural note went with "much". Giving each sense
+    // its own line settles it by layout, with no new convention for a student to learn.
+    //
+    // A heading is drawn ABOVE the senses, not inside the first one, because that is
+    // what it means: `(with the ablative)` governs both "from" and "by".
+    //
+    // NO CORE IS MARKED ON EVERY ENTRY. The oldest hand-vetted entries carry no core at
+    // all, and there the senses are drawn in one uniform weight rather than guessing
+    // that the first one leads. Falls back to the single-line render for a word whose
+    // CSV row predates the sense columns.
+    function formatSensesHTML(word) {
+        if (!word.senses || word.senses.length === 0) {
+            return `<p>${formatDefinitionHTML(word.definition)}</p>`;
+        }
+        const headingHtml = word.senseHeading
+            ? `<p class="def-heading">${formatDefinitionHTML(word.senseHeading)}</p>`
+            : '';
+        const senseHtml = word.senses.map((sense, i) => {
+            const isCore = (i === word.coreSense);
+            return `<p class="sense${isCore ? ' sense-core' : ''}">${formatDefinitionHTML(sense)}</p>`;
+        }).join('');
+        return `${headingHtml}<div class="senses">${senseHtml}</div>`;
+    }
+
     // --- Prefix assimilation: name the rule, don't silently correct ---------------
     //
     // This dictionary is spelled to ONE orthographic norm (all-assimilated, 2026-08-12).
@@ -433,6 +462,22 @@
                 const column3 = (values.slice(2, 3).pop() || '').replace(/"/g, '');
                 const column4 = (values.slice(3, 4).pop() || '').replace(/"/g, '');
 
+                // Columns 5-7 say what column 2 flattens away: a word-level heading
+                // ("with the ablative", which governs EVERY sense), the senses as
+                // separate pieces, and which one is the CORE. The toolkit sends them
+                // because they cannot be recovered from column 2 -- a comment may
+                // contain a semicolon, and a leading "(...)" is either a heading over
+                // all the senses or one sense's own note, with nothing to tell them
+                // apart. A file exported before 2026-09-17 has no such columns; these
+                // come out empty and the definition is drawn the old way.
+                const senseHeading = (values.slice(4, 5).pop() || '').replace(/"/g, '');
+                const senseCol = (values.slice(5, 6).pop() || '').replace(/"/g, '');
+                const coreCol = (values.slice(6, 7).pop() || '').replace(/"/g, '');
+                const senses = senseCol ? senseCol.split(' ‖ ') : new Array();
+                // 1-based in the file so that "no core marked" is an empty cell rather
+                // than a 0 competing with a real position; -1 here means none.
+                const coreSense = parseInt(coreCol) > 0 ? parseInt(coreCol) - 1 : -1;
+
                 let frequency = null;
                 let partOfSpeech = '';
                 
@@ -447,8 +492,11 @@
                 }
 
                 records.push({
-                    latin: latin, 
+                    latin: latin,
                     definition: definition,
+                    senseHeading: senseHeading,
+                    senses: senses,
+                    coreSense: coreSense,
                     frequency: frequency,
                     partOfSpeech: partOfSpeech,
                     forms: new Array() // Will be populated after forms.csv is loaded
@@ -555,7 +603,7 @@
                 ${buttonHtml}
             </div>
             ${posHtml}
-            <p>${formatDefinitionHTML(word.definition)}</p>
+            ${formatSensesHTML(word)}
             ${formsHtml}
             ${freqHtml}
             <div class="result-footer">${buttonHtml}</div>
