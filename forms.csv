@@ -1,4 +1,7 @@
 Form,Lemma,Definition
+avem,"avis, avis, {f.}",bird (acc sg)
+ave,"avis, avis, {f.}",by/with/from a bird (abl sg)
+avēs,"avis, avis, {f.}",birds (nom/acc pl) — Met. 8.195 *ut veras imitetur aves*
 dī,"deus, deī, {m.}","gods (nom pl, alternative for deī)"
 ēst,"edō, edere, ēdī, ēsum",he/she/it eats (3rd sg present; the long ē distinguishes it from est 'is')
 it,"eō, īre, īvī / iī, itum",he/she/it goes (3rd sg present)
@@ -29,6 +32,8 @@ hārum,"hic, haec, hoc",of these (feminine gen)
 hōs,"hic, haec, hoc",these (masculine acc)
 hās,"hic, haec, hoc",these (feminine acc)
 hīs,"hic, haec, hoc",to/for/by/with/from these (dat/abl)
+ūmēns,"hūmeō, hūmēre","moist, dewy (present participle)"
+ūmentibus,"hūmeō, hūmēre","moist, dewy (pres participle, dat/abl pl) — Aen. 4.351 *nox umentibus umbris*; spelled without the h, as often"
 eiusdem,"īdem, eadem, idem",of the same / his same / her same
 eīdem,"īdem, eadem, idem",to/for the same (dat sg) OR the same (masc nom pl)
 eundem,"īdem, eadem, idem",the same (masc acc)
@@ -45,6 +50,8 @@ eīsdem,"īdem, eadem, idem",to/for/by/with/from the same (dat/abl)
 iīsdem,"īdem, eadem, idem",to/for/by/with/from the same (dat/abl)
 īsdem,"īdem, eadem, idem",from/to the same (dat/abl pl; shortened from eīsdem)
 Ollī,"ille, illa, illud",to/for him (archaic dative; = illī)
+īmus,"īnferus, īnfera, īnferum","lowest, deepest (superlative of īnferus)"
+īmās,"īnferus, īnfera, īnferum",the lowest (fem acc pl) — Met. 8.193 *ceris alligat imas*
 eius,"is, ea, id",his / her / its / of that
 eī,"is, ea, id",to/for him/her/it/that (dat) OR they (masc nom pl)
 eum,"is, ea, id",him / that (masc acc)
@@ -59,6 +66,7 @@ eōs,"is, ea, id",them / those (masc acc pl)
 eās,"is, ea, id",them / those (fem acc pl)
 eīs,"is, ea, id",to/for/by/with/from them/those (dat/abl)
 iīs,"is, ea, id",to/for/by/with/from them/those (dat/abl)
+Nomadum,"Numada, Numadae, {m.}","of the Nomads, of the Numidians (gen pl) — Aen. 4.320, where the text spells the stem Nomad-"
 ōra,"ōs, ōris, {n.}","mouths / faces (nom/acc pl) — not ōra, ōrae 'shore'"
 ōre,"ōs, ōris, {n.}",with/from the mouth (ablative sg)
 cuius,"quī, quae, quod",whose / of whom / of which
@@ -79,6 +87,9 @@ cuius,"quis, quid",whose? / of whom? / of what?
 cui,"quis, quid",to/for whom? / to/for what?
 quem,"quis, quid",whom? (masc/fem acc)
 quō,"quis, quid",by/with/from whom/what? (ablative)
+qua,"quis, quid","any / anything (fem nom sg or neut nom/acc pl of the indefinite, after sī, nisi, num, nē) — Met. 1.502 *sī qua latent*"
+cuivīs,"quīvīs, quaevīs, quodvīs",to/for anyone at all (dat sg) — Her. 12.172
+cuiusvīs,"quīvīs, quaevīs, quodvīs",of anyone at all (gen sg)
 reī,"rēs, reī, {f.}",of a thing / to/for a thing (gen/dat sg)
 rem,"rēs, reī, {f.}",thing / matter (acc sg)
 rē,"rēs, reī, {f.}",by/with/from a thing (abl sg)
