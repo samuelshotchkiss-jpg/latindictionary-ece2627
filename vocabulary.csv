@@ -1,5 +1,5 @@
 Latin Word,English Definition(s),Frequency,Part of Speech,Sense Heading,Senses,Core Sense
-"ā, ab, abs",{(with the {{ablative|ablative-with-prepositions}})} from; by {(introducing a personal agent with a {{passive}} {{verb}})},29,Preposition,{(with the {{ablative|ablative-with-prepositions}})},from ‖ by {(introducing a personal agent with a {{passive}} {{verb}})},
+"ā, ab, abs",{(with the {{ablative|ablative-with-prepositions}})} from; by {(introducing a personal agent with a {{passive}} {{verb}})},29,Preposition,{(with the {{ablative|ablative-with-prepositions}})},from ‖ by {(introducing a personal agent with a {{passive}} {{verb}})},1
 "abeō, abīre, abiī, abitum",to go away; to turn into {(with *in* + {{accusative}})},4,Verb,,to go away ‖ to turn into {(with *in* + {{accusative}})},1
 "abiciō, abicere, abiēcī, abiectum","to throw away; {(of the body, {{perfect}} {{participle}} *abiectus*)} prostrate",1,Verb,,"to throw away ‖ {(of the body, {{perfect}} {{participle}} *abiectus*)} prostrate",1
 "abripiō, abripere, abripuī, abreptum",to snatch away,1,Verb,,to snatch away,1
@@ -22,7 +22,7 @@ Latin Word,English Definition(s),Frequency,Part of Speech,Sense Heading,Senses,C
 "acquīrō, acquīrere, acquīsīvī, acquīsītum",to acquire,1,Verb,,to acquire,1
 āctūtum,immediately,1,Adverb,,immediately,1
 "acūtus, acūta, acūtum",sharp,1,Adjective,,sharp,1
-ad,{(with the {{accusative}})} to {(of motion)}; at {(of proximity)}; in the presence of; {(with the {{gerundive}})} for {(of purpose)},26,Preposition,{(with the {{accusative}})},to {(of motion)} ‖ at {(of proximity)} ‖ in the presence of ‖ {(with the {{gerundive}})} for {(of purpose)},
+ad,{(with the {{accusative}})} to {(of motion)}; at {(of proximity)}; in the presence of; {(with the {{gerundive}})} for {(of purpose)},26,Preposition,{(with the {{accusative}})},to {(of motion)} ‖ at {(of proximity)} ‖ in the presence of ‖ {(with the {{gerundive}})} for {(of purpose)},1
 "addō, addere, addidī, additum",to add,4,Verb,,to add,1
 "addūcō, addūcere, addūxī, adductum",to lead to; to draw toward oneself; to draw taut {(of a bow or bowstring)},1,Verb,,to lead to ‖ to draw toward oneself ‖ to draw taut {(of a bow or bowstring)},1
 "adeō, adīre, adiī / adīvī, aditum",to approach; to undergo {(of hardships or dangers)},6,Verb,,to approach ‖ to undergo {(of hardships or dangers)},1
@@ -51,7 +51,7 @@ adhūc,still,4,Adverb,,still,1
 "Aeētēs, Aeētae, {m.}","Aeëtes {(king of Colchis, father of Medea)}",2,Noun,,"Aeëtes {(king of Colchis, father of Medea)}",1
 "aeger, aegra, aegrum",sick,1,Adjective,,sick,1
 "aemula, aemulae, {f.}",rival,1,Noun,,rival,1
-"Aenēās, Aenēae, {m.}",Aeneas {(the Trojan hero)},12,Noun,,Aeneas {(the Trojan hero)},
+"Aenēās, Aenēae, {m.}",Aeneas {(the Trojan hero)},12,Noun,,Aeneas {(the Trojan hero)},1
 "aēneus, aēnea, aēneum",made of bronze,1,Adjective,,made of bronze,1
 "aēnipes, {(gen.)} aēnipedis",bronze-footed,1,Adjective,,bronze-footed,1
 aequāliter,equally,1,Adverb,,equally,1
@@ -80,7 +80,7 @@ aequāliter,equally,1,Adverb,,equally,1
 "agmen, agminis, {n.}","column of marching men; throng {(of any moving multitude, not necessarily soldiers)}",2,Noun,,"column of marching men ‖ throng {(of any moving multitude, not necessarily soldiers)}",1
 "agna, agnae, {f.}",lamb,1,Noun,,lamb,1
 "agnōscō, agnōscere, agnōvī, agnitum",to recognize,1,Verb,,to recognize,1
-"agō, agere, ēgī, āctum","to drive; to do; to pass {(of time)}; come! {(as the {{interjection}} *age*, *agite*)}",11,Verb,,"to drive ‖ to do ‖ to pass {(of time)} ‖ come! {(as the {{interjection}} *age*, *agite*)}",
+"agō, agere, ēgī, āctum","to drive; to do; to pass {(of time)}; come! {(as the {{interjection}} *age*, *agite*)}",11,Verb,,"to drive ‖ to do ‖ to pass {(of time)} ‖ come! {(as the {{interjection}} *age*, *agite*)}",1
 "agricola, agricolae, {m.}",farmer,1,Noun,,farmer,1
 aiō,to say,9,Verb,,to say,1
 "āla, ālae, {f.}",wing,7,Noun,,wing,1
@@ -98,9 +98,9 @@ aliter,otherwise,3,Adverb,,otherwise,1
 "alligō, alligāre, alligāvī, alligātum",to bind,1,Verb,,to bind,1
 "alloquor, alloquī, allocūtus sum",to speak to,2,Verb,,to speak to,1
 "almus, alma, almum",nourishing,1,Adjective,,nourishing,1
-"alter, altera, alterum",one {(of two)}; the other; another,13,Adjective,,one {(of two)} ‖ the other ‖ another,
+"alter, altera, alterum","the other {(of two)}; {(when doubled, *alter... alter*)} the one... the other; a second",13,Adjective,,"the other {(of two)} ‖ {(when doubled, *alter... alter*)} the one... the other ‖ a second",1
 "altum, altī, {n.}",the deep sea,4,Noun,,the deep sea,1
-"altus, alta, altum","high; deep; the open sea {(when used as a {{neuter}} {{substantive}} *altum, -ī*)}",16,Adjective,,"high ‖ deep ‖ the open sea {(when used as a {{neuter}} {{substantive}} *altum, -ī*)}",
+"altus, alta, altum","high; deep; the open sea {(when used as a {{neuter}} {{substantive}} *altum, -ī*)}",16,Adjective,,"high ‖ deep ‖ the open sea {(when used as a {{neuter}} {{substantive}} *altum, -ī*)}",1
 "amāns, {(gen.)} amantis",loving; lover {(as a {{substantive}})},2,Adjective,,loving ‖ lover {(as a {{substantive}})},1
 "amārus, amāra, amārum",bitter,1,Adjective,,bitter,1
 "ambāgēs, ambāgis, {f.}",roundabout way,3,Noun,,roundabout way,1
@@ -110,8 +110,8 @@ aliter,otherwise,3,Adverb,,otherwise,1
 "amictus, amictūs, {m.}",cloak,2,Noun,,cloak,1
 "amīcus, amīca, amīcum",friendly,1,Adjective,,friendly,1
 "āmittō, āmittere, āmīsī, āmissum",to lose,2,Verb,,to lose,1
-"amō, amāre, amāvī, amātum",to love,11,Verb,,to love,
-"amor, amōris, {m.}",love; Cupid {(personified as the god of love)},39,Noun,,love ‖ Cupid {(personified as the god of love)},
+"amō, amāre, amāvī, amātum",to love,11,Verb,,to love,1
+"amor, amōris, {m.}",love; Cupid {(personified as the god of love)},39,Noun,,love ‖ Cupid {(personified as the god of love)},1
 "amplector, amplectī, amplexus sum",to embrace,3,Verb,,to embrace,1
 an,"or {(in a {{question}}, introducing an alternative)}",6,Conjunction,,"or {(in a {{question}}, introducing an alternative)}",1
 "anceps, {(gen.)} ancipitis",two-headed; two-sided; uncertain,1,Adjective,,two-headed ‖ two-sided ‖ uncertain,1
@@ -123,13 +123,13 @@ an,"or {(in a {{question}}, introducing an alternative)}",6,Conjunction,,"or {(i
 "anīlis, anīle",of an old woman,1,Adjective,,of an old woman,1
 "anima, animae, {f.}",breath; life; soul,2,Noun,,breath ‖ life ‖ soul,1
 "animal, animālis, {n.}",animal,1,Noun,,animal,1
-"animus, animī, {m.}","mind; heart {(figuratively, the seat of feeling)}; courage",15,Noun,,"mind ‖ heart {(figuratively, the seat of feeling)} ‖ courage",
+"animus, animī, {m.}","mind; heart {(figuratively, the seat of feeling)}; courage",15,Noun,,"mind ‖ heart {(figuratively, the seat of feeling)} ‖ courage",1
 "Anna, Annae, {f.}","Anna {(sister and confidante of Dido, queen of Carthage)}",3,Noun,,"Anna {(sister and confidante of Dido, queen of Carthage)}",1
 "annālis, annāle",annual; chronicle {(as a {{substantive}})},1,Adjective,,annual ‖ chronicle {(as a {{substantive}})},1
 "annō, annāre, annāvī, annātum",to swim to,1,Verb,,to swim to,1
 "annuō, annuere, annuī",to nod assent; to grant,2,Verb,,to nod assent ‖ to grant,1
 "annus, annī, {m.}",year,3,Noun,,year,1
-ante,"{(with the {{accusative}})} before; previously {(as a temporal {{adverb}})}; ahead {(as a spatial {{adverb}})}; sooner {(in the pairing *ante ... quam*, ""sooner ... than""; cf. the {{conjunction}} *antequam*, ""before"")}",17,"Adverb, Preposition",,"{(with the {{accusative}})} before ‖ previously {(as a temporal {{adverb}})} ‖ ahead {(as a spatial {{adverb}})} ‖ sooner {(in the pairing *ante ... quam*, ""sooner ... than""; cf. the {{conjunction}} *antequam*, ""before"")}",
+ante,"{(with the {{accusative}})} before; previously {(as a temporal {{adverb}})}; ahead {(as a spatial {{adverb}})}; sooner {(in the pairing *ante ... quam*, ""sooner ... than""; cf. the {{conjunction}} *antequam*, ""before"")}",17,"Adverb, Preposition",,"{(with the {{accusative}})} before ‖ previously {(as a temporal {{adverb}})} ‖ ahead {(as a spatial {{adverb}})} ‖ sooner {(in the pairing *ante ... quam*, ""sooner ... than""; cf. the {{conjunction}} *antequam*, ""before"")}",1
 "Antēnor, Antēnoris, {m.}",Antenor {(Trojan elder who escaped Troy and founded Padua)},1,Noun,,Antenor {(Trojan elder who escaped Troy and founded Padua)},1
 "antīquus, antīqua, antīquum",ancient,4,Adjective,,ancient,1
 "antrum, antrī, {n.}",cave,2,Noun,,cave,1
@@ -141,7 +141,7 @@ ante,"{(with the {{accusative}})} before; previously {(as a temporal {{adverb}})
 "applicō, applicāre, applicāvī, applicātum",to attach,1,Verb,,to attach,1
 "aptō, aptāre, aptāvī, aptātum",to fit,1,Verb,,to fit,1
 "aptus, apta, aptum",suitable,2,Adjective,,suitable,1
-"aqua, aquae, {f.}",water,12,Noun,,water,
+"aqua, aquae, {f.}",water,12,Noun,,water,1
 "aquila, aquilae, {f.}",eagle,1,Noun,,eagle,1
 "Aquilō, Aquilōnis, {m.}",north wind,2,Noun,,north wind,1
 "āra, ārae, {f.}",altar,7,Noun,,altar,1
@@ -161,7 +161,7 @@ ante,"{(with the {{accusative}})} before; previously {(as a temporal {{adverb}})
 "Argō, Argūs, {f.}",Argo {(the ship that carried Jason and the Argonauts)},1,Noun,,Argo {(the ship that carried Jason and the Argonauts)},1
 "ariēs, arietis, {m.}",ram,1,Noun,,ram,1
 "arista, aristae, {f.}",ear of grain,1,Noun,,ear of grain,1
-"arma, armōrum, {n. pl.}",weapons; armor; war {(by {{metonymy}} in poetry)},13,Noun,,weapons ‖ armor ‖ war {(by {{metonymy}} in poetry)},
+"arma, armōrum, {n. pl.}",weapons; armor; war {(by {{metonymy}} in poetry)},13,Noun,,weapons ‖ armor ‖ war {(by {{metonymy}} in poetry)},1
 "armentum, armentī, {n.}",herd,1,Noun,,herd,1
 "arō, arāre, arāvī, arātum",to plow,1,Verb,,to plow,1
 "ars, artis, {f.}",skill,7,Noun,,skill,1
@@ -181,9 +181,9 @@ ante,"{(with the {{accusative}})} before; previously {(as a temporal {{adverb}})
 "assurgō, assurgere, assurrēxī, assurrēctum",to rise up,1,Verb,,to rise up,1
 "astō, astāre, astitī",to stand near,2,Verb,,to stand near,1
 "astrum, astrī, {n.}",star,2,Noun,,star,1
-at,"but {(used to introduce a sharp, sudden, or dramatic contrast, whereas *sed* introduces a standard restriction or qualification)}",13,Conjunction,,"but {(used to introduce a sharp, sudden, or dramatic contrast, whereas *sed* introduces a standard restriction or qualification)}",
+at,"but {(used to introduce a sharp, sudden, or dramatic contrast, whereas *sed* introduces a standard restriction or qualification)}",13,Conjunction,,"but {(used to introduce a sharp, sudden, or dramatic contrast, whereas *sed* introduces a standard restriction or qualification)}",1
 "āter, ātra, ātrum",black,4,Adjective,,black,1
-"atque, ac",and,21,Conjunction,,and,
+"atque, ac",and,21,Conjunction,,and,1
 "ātrium, ātriī, {n.}",atrium,1,Noun,,atrium,1
 "attineō, attinēre, attinuī, attentum","to hold fast; to pertain to {({{impersonal}}, *quid attinet?* = what does it matter?)}",1,Verb,,"to hold fast ‖ to pertain to {({{impersonal}}, *quid attinet?* = what does it matter?)}",1
 "attollō, attollere",to lift up,3,Verb,,to lift up,1
@@ -206,7 +206,7 @@ at,"but {(used to introduce a sharp, sudden, or dramatic contrast, whereas *sed*
 "avītus, avīta, avītum",ancestral,1,Adjective,,ancestral,1
 "āvius, āvia, āvium",trackless,1,Adjective,,trackless,1
 "aula, aulae, {f.}",palace,1,Noun,,palace,1
-"aura, aurae, {f.}",breeze; air,11,Noun,,breeze ‖ air,
+"aura, aurae, {f.}",breeze; air,11,Noun,,breeze ‖ air,1
 "aurātus, aurāta, aurātum",gilded,1,Adjective,,gilded,1
 "aureus, aurea, aureum",golden,4,Adjective,,golden,1
 "auris, auris, {f.}",ear,6,Noun,,ear,1
@@ -214,7 +214,7 @@ at,"but {(used to introduce a sharp, sudden, or dramatic contrast, whereas *sed*
 "aurum, aurī, {n.}",gold,5,Noun,,gold,1
 "Ausonius, Ausonia, Ausonium","Ausonian {(poetic {{adjective}} meaning Italian, referring to Italy/Ausonia (land of Aeneas' destined kingdom))}",1,Adjective,,"Ausonian {(poetic {{adjective}} meaning Italian, referring to Italy/Ausonia (land of Aeneas' destined kingdom))}",1
 "auspicium, auspiciī, {n.}","omen, auspices {(from *avis* + *-spic-* (root of *aspiciō*, *cōnspiciō*), ""to watch birds"" — one of the ways the Romans really did read the omens)}; the right to take the auspices {(a commander's prerogative before acting)}; authority",1,Noun,,"omen, auspices {(from *avis* + *-spic-* (root of *aspiciō*, *cōnspiciō*), ""to watch birds"" — one of the ways the Romans really did read the omens)} ‖ the right to take the auspices {(a commander's prerogative before acting)} ‖ authority",1
-aut,"or; {(when repeated, *aut... aut*)} either... or",27,Conjunction,,"or ‖ {(when repeated, *aut... aut*)} either... or",
+aut,"or; {(when repeated, *aut... aut*)} either... or",27,Conjunction,,"or ‖ {(when repeated, *aut... aut*)} either... or",1
 "autumnus, autumnī, {m.}",autumn,0,Noun,,autumn,1
 "avus, avī, {m.}",grandfather,1,Noun,,grandfather,1
 "auxilium, auxiliī, {n.}",help,3,Noun,,help,1
@@ -225,7 +225,7 @@ aut,"or; {(when repeated, *aut... aut*)} either... or",27,Conjunction,,"or ‖ {
 "barbarus, barbara, barbarum",foreign,1,Adjective,,foreign,1
 "Barcē, Barcēs, {f.}","Barce {(nurse of Sychaeus, mentioned in the Aeneid)}",1,Noun,,"Barce {(nurse of Sychaeus, mentioned in the Aeneid)}",1
 "beātus, beāta, beātum",#blessed,1,Adjective,,#blessed,1
-"bellum, bellī, {n.}",war,10,Noun,,war,
+"bellum, bellī, {n.}",war,10,Noun,,war,1
 bene,"well; [[*bene merērī dē* ""to deserve well of"" → ""to do {someone} a service""]]",6,Adverb,,"well ‖ [[*bene merērī dē* ""to deserve well of"" → ""to do {someone} a service""]]",1
 "benignus, benigna, benignum",kind,1,Adjective,,kind,1
 "bibō, bibere, bibī",to drink,2,Verb,,to drink,1
@@ -250,7 +250,7 @@ bis,twice,4,Adverb,,twice,1
 "caedēs, caedis, {f.}",slaughter,4,Noun,,slaughter,1
 "caedō, caedere, cecīdī, caesum",to strike,1,Verb,,to strike,1
 "caelestis, caeleste","heavenly; the gods {({{substantive}}, {{plural}})}",3,Adjective,,"heavenly ‖ the gods {({{substantive}}, {{plural}})}",1
-"caelum, caelī, {n.}",sky,13,Noun,,sky,
+"caelum, caelī, {n.}",sky,13,Noun,,sky,1
 "caeruleus, caerulea, caeruleum",blue,3,Adjective,,blue,1
 "Caesar, Caesaris, {m.}",Caesar {(the cognomen shared by both Julius and his adoptive son Augustus -- and all subsequent Roman emperors)},1,Noun,,Caesar {(the cognomen shared by both Julius and his adoptive son Augustus -- and all subsequent Roman emperors)},1
 "caleō, calēre, caluī",to be warm,1,Verb,,to be warm,1
@@ -295,7 +295,7 @@ centum,hundred,3,Numeral,,hundred,1
 "Cerēs, Cereris, {f.}",Ceres {(goddess of agriculture and grain)},1,Noun,,Ceres {(goddess of agriculture and grain)},1
 "cernō, cernere, crēvī, crētum",to see,3,Verb,,to see,1
 "cērō, cērāre, cērāvī, cērātum",to coat with wax,1,Verb,,to coat with wax,1
-"certus, certa, certum","certain, sure {(settled, fixed)}; resolved, determined {(of a person, with an {{infinitive}})}; {({{adverb}}, *certē*)} certainly",15,Adjective,,"certain, sure {(settled, fixed)} ‖ resolved, determined {(of a person, with an {{infinitive}})} ‖ {({{adverb}}, *certē*)} certainly",
+"certus, certa, certum","certain, sure {(settled, fixed)}; resolved, determined {(of a person, with an {{infinitive}})}; {({{adverb}}, *certē*)} certainly",15,Adjective,,"certain, sure {(settled, fixed)} ‖ resolved, determined {(of a person, with an {{infinitive}})} ‖ {({{adverb}}, *certē*)} certainly",1
 "cerva, cervae, {f.}",doe,2,Noun,,doe,1
 "cervīx, cervīcis, {f.}",neck,3,Noun,,neck,1
 "Chalcidicus, Chalcidica, Chalcidicum","Chalcidian {(of Chalcis, a Greek city; associated with Cumae's Euboean settlers (in the Daedalus temple passage))}",1,Adjective,,"Chalcidian {(of Chalcis, a Greek city; associated with Cumae's Euboean settlers (in the Daedalus temple passage))}",1
@@ -395,7 +395,7 @@ contrā,opposite; in reply; {(with the {{accusative}})} against,4,"Adverb, Prepo
 "convīvium, convīviī, {n.}",banquet,1,Noun,,banquet,1
 "cor, cordis, {n.}",heart,2,Noun,,heart,1
 "cornū, cornūs, {n.}",horn,3,Noun,,horn,1
-"corpus, corporis, {n.}",body; corpse,16,Noun,,body ‖ corpse,
+"corpus, corporis, {n.}",body; corpse,16,Noun,,body ‖ corpse,1
 "corripiō, corripere, corripuī, correptum",to snatch up,1,Verb,,to snatch up,1
 "cortex, corticis, {m.}",bark,1,Noun,,bark,1
 "cothurnus, cothurnī, {m.}",buskin,1,Noun,,buskin,1
@@ -430,7 +430,7 @@ cum,"{(with the {{ablative|ablative-with-prepositions}}, {{preposition}})} with;
 "cupīdō, cupīdinis, {f.}",desire; Cupid {(the god of love)},3,Noun,,desire ‖ Cupid {(the god of love)},1
 "cupiō, cupere, cupīvī, cupītum",to desire,4,Verb,,to desire,1
 cūr,why,4,Adverb,,why,1
-"cūra, cūrae, {f.}",care; anxiety,10,Noun,,care ‖ anxiety,
+"cūra, cūrae, {f.}",care; anxiety,10,Noun,,care ‖ anxiety,1
 "cūrō, cūrāre, cūrāvī, cūrātum",to take care of,2,Verb,,to take care of,1
 "currō, currere, cucurrī, cursum",to run,3,Verb,,to run,1
 "cursus, cursūs, {m.}",running; course,4,Noun,,running ‖ course,1
@@ -496,15 +496,15 @@ dēnique,finally,1,Adverb,,finally,1
 "dētrahō, dētrahere, dētrāxī, dētractum",to pull down; to remove {(of blame or guilt)},1,Verb,,to pull down ‖ to remove {(of blame or guilt)},1
 "dēveniō, dēvenīre, dēvēnī, dēventum",to arrive at,2,Verb,,to arrive at,1
 "dēvoveō, dēvovēre, dēvōvī, dēvōtum","to devote; to curse {(by the *dēvōtiō* rite, consigning a person or thing to the gods below)}",2,Verb,,"to devote ‖ to curse {(by the *dēvōtiō* rite, consigning a person or thing to the gods below)}",1
-"deus, deī, {m.}",god,33,Noun,,god,
-"dexter, dextra, dextrum","right {(as opposed to left)}; the right hand {(when used as a {{feminine}} {{substantive}} *dextra, -ae*)}; pledge {(metaphorically, of faith or alliance in the idiom *data dextra*, a pledged right hand)}",12,Adjective,,"right {(as opposed to left)} ‖ the right hand {(when used as a {{feminine}} {{substantive}} *dextra, -ae*)} ‖ pledge {(metaphorically, of faith or alliance in the idiom *data dextra*, a pledged right hand)}",
+"deus, deī, {m.}",god,33,Noun,,god,1
+"dexter, dextra, dextrum","right {(as opposed to left)}; the right hand {(when used as a {{feminine}} {{substantive}} *dextra, -ae*)}; pledge {(metaphorically, of faith or alliance in the idiom *data dextra*, a pledged right hand)}",12,Adjective,,"right {(as opposed to left)} ‖ the right hand {(when used as a {{feminine}} {{substantive}} *dextra, -ae*)} ‖ pledge {(metaphorically, of faith or alliance in the idiom *data dextra*, a pledged right hand)}",1
 "dextra, dextrae, {f.}",right hand,1,Noun,,right hand,1
 "Diāna, Diānae, {f.}",Diana {(goddess of the hunt and the moon)},3,Noun,,Diana {(goddess of the hunt and the moon)},1
 "diciō, diciōnis, {f.}",power,1,Noun,,power,1
-"dīcō, dīcere, dīxī, dictum",to say; to call {(in the sense of naming)},36,Verb,,to say ‖ to call {(in the sense of naming)},
+"dīcō, dīcere, dīxī, dictum",to say; to call {(in the sense of naming)},36,Verb,,to say ‖ to call {(in the sense of naming)},1
 "Dictaeus, Dictaea, Dictaeum","Dictaean {(of Mount Dicte, in Crete)}",1,Adjective,,"Dictaean {(of Mount Dicte, in Crete)}",1
 "dictum, dictī, {n.}",word,2,Noun,,word,1
-"Dīdō, Dīdōnis, {f.}",Dido {(the queen of Carthage)},17,Noun,,Dido {(the queen of Carthage)},
+"Dīdō, Dīdōnis, {f.}",Dido {(the queen of Carthage)},17,Noun,,Dido {(the queen of Carthage)},1
 "diēs, diēī, {m./f.}",day,7,Noun,,day,1
 "diffundō, diffundere, diffūdī, diffūsum",to spread out,2,Verb,,to spread out,1
 "digitus, digitī, {m.}",finger,2,Noun,,finger,1
@@ -534,14 +534,14 @@ diū,for a long time,2,Adverb,,for a long time,1
 "dīves, {(gen.)} dīvitis",rich,2,Adjective,,rich,1
 "dīvīnus, dīvīna, dīvīnum",divine,1,Adjective,,divine,1
 "dīvus, dīva, dīvum",divine; god {(as a {{substantive}})},1,Adjective,,divine ‖ god {(as a {{substantive}})},1
-"dō, dare, dedī, datum",to give; to allow {(with an accompanying {{infinitive}})}; to inflict {(of wounds)}; to establish {(of laws)}; to press {(of kisses)}; to shed {(of tears)}; to utter {(of sound or song)}; to provide {(of a path or way)}; to bear {(of childbirth)}; to throw {(used {{reflexively|reflexive}} with *super*)},47,Verb,,to give ‖ to allow {(with an accompanying {{infinitive}})} ‖ to inflict {(of wounds)} ‖ to establish {(of laws)} ‖ to press {(of kisses)} ‖ to shed {(of tears)} ‖ to utter {(of sound or song)} ‖ to provide {(of a path or way)} ‖ to bear {(of childbirth)} ‖ to throw {(used {{reflexively|reflexive}} with *super*)},
+"dō, dare, dedī, datum",to give; to allow {(with an accompanying {{infinitive}})}; to inflict {(of wounds)}; to establish {(of laws)}; to press {(of kisses)}; to shed {(of tears)}; to utter {(of sound or song)}; to provide {(of a path or way)}; to bear {(of childbirth)}; to throw {(used {{reflexively|reflexive}} with *super*)},47,Verb,,to give ‖ to allow {(with an accompanying {{infinitive}})} ‖ to inflict {(of wounds)} ‖ to establish {(of laws)} ‖ to press {(of kisses)} ‖ to shed {(of tears)} ‖ to utter {(of sound or song)} ‖ to provide {(of a path or way)} ‖ to bear {(of childbirth)} ‖ to throw {(used {{reflexively|reflexive}} with *super*)},1
 "doceō, docēre, docuī, doctum","to teach; {(as an {{adjective}}, *doctus*)} learned",3,Verb,,"to teach ‖ {(as an {{adjective}}, *doctus*)} learned",1
 "doleō, dolēre, doluī, dolitum",to feel pain,1,Verb,,to feel pain,1
 "dolor, dolōris, {m.}",pain; grief,4,Noun,,pain ‖ grief,1
 "dolus, dolī, {m.}",trick,1,Noun,,trick,1
 "dominor, dominārī, dominātus sum",{(with the {{dative|dative-with-special-verbs}})} to rule,1,Verb,,{(with the {{dative|dative-with-special-verbs}})} to rule,1
 "dominus, dominī, {m.}",master,2,Noun,,master,1
-"domus, domūs, {f.}",house,14,Noun,,house,
+"domus, domūs, {f.}",house,14,Noun,,house,1
 dōnec,until,2,Conjunction,,until,1
 "dōnō, dōnāre, dōnāvī, dōnātum",to give,1,Verb,,to give,1
 "dōnum, dōnī, {n.}",gift,2,Noun,,gift,1
@@ -553,7 +553,7 @@ dōnec,until,2,Conjunction,,until,1
 "dūcō, dūcere, dūxī, ductum",to lead; to draw {(of lots)}; to form {(of a crack)},8,Verb,,to lead ‖ to draw {(of lots)} ‖ to form {(of a crack)},1
 "ductor, ductōris, {m.}",leader,1,Noun,,leader,1
 "dulcis, dulce",sweet; dear,4,Adjective,,sweet ‖ dear,1
-dum,while {(with {{indicative}})}; until {(with {{subjunctive}})}; provided that {(with {{subjunctive}})},18,Conjunction,,while {(with {{indicative}})} ‖ until {(with {{subjunctive}})} ‖ provided that {(with {{subjunctive}})},
+dum,while {(with {{indicative}})}; until {(with {{subjunctive}})}; provided that {(with {{subjunctive}})},18,Conjunction,,while {(with {{indicative}})} ‖ until {(with {{subjunctive}})} ‖ provided that {(with {{subjunctive}})},1
 "duo, duae, duo",two,6,Adjective,,two,1
 "dūritia, dūritiae, {f.}",hardness,1,Noun,,hardness,1
 "dūrō, dūrāre, dūrāvī, dūrātum",to harden; to last,1,Verb,,to harden ‖ to last,1
@@ -574,7 +574,7 @@ ecce,behold,3,Interjection,,behold,1
 "effugiō, effugere, effūgī",to escape,1,Verb,,to escape,1
 "effundō, effundere, effūdī, effūsum",to pour out,3,Verb,,to pour out,1
 "egēns, egentis",needy,1,Adjective,,needy,1
-"ego, meī, mihī̆, mē, mē","I; me {({{personal pronoun}}, {{singular}})}",92,Pronoun,,"I ‖ me {({{personal pronoun}}, {{singular}})}",
+"ego, meī, mihī̆, mē, mē","I, me {({{personal pronoun}}, {{singular}})}",92,Pronoun,,"I, me {({{personal pronoun}}, {{singular}})}",1
 "ēgredior, ēgredī, ēgressus sum",to go out,2,Verb,,to go out,1
 ei,"alas {(with the {{dative}}, as *ei mihi*)}",2,Interjection,,"alas {(with the {{dative}}, as *ei mihi*)}",1
 "ēiaculor, ēiaculārī, ēiaculātus sum",to shoot forth,1,Verb,,to shoot forth,1
@@ -591,7 +591,7 @@ enim,"you see, and here's why {(never the first word of its clause, indicates th
 "ēnō, ēnāre, ēnāvī, ēnātum",to swim away,1,Verb,,to swim away,1
 "ēnsis, ēnsis, {m.}",sword,7,Noun,,sword,1
 "ēnumerō, ēnumerāre, ēnumerāvī, ēnumerātum",to enumerate,1,Verb,,to enumerate,1
-"eō, īre, īvī / iī, itum",to go,21,Verb,,to go,
+"eō, īre, īvī / iī, itum",to go,21,Verb,,to go,1
 "Ephyrē, Ephyrēs, {f.}",Ephyrē {(old poetic name for Corinth)},1,Noun,,Ephyrē {(old poetic name for Corinth)},1
 "epulor, epulārī, epulātus sum",to feast,1,Verb,,to feast,1
 equidem,indeed {(chiefly with a verb in the first {{person}})},4,Adverb,,indeed {(chiefly with a verb in the first {{person}})},1
@@ -601,7 +601,7 @@ equidem,indeed {(chiefly with a verb in the first {{person}})},4,Adverb,,indeed 
 "errō, errāre, errāvī, errātum",to wander; to err,4,Verb,,to wander ‖ to err,1
 "error, errōris, {m.}",wandering; error {(of a moral or intellectual fault)},2,Noun,,wandering ‖ error {(of a moral or intellectual fault)},1
 "ērudiō, ērudīre, ērudīvī, ērudītum",to teach,1,Verb,,to teach,1
-et,"and; also {(as an emphatic {{adverb}})}; even {(as an emphatic {{adverb}})}; {(when repeated, *et... et*)} both... and",201,Conjunction,,"and ‖ also {(as an emphatic {{adverb}})} ‖ even {(as an emphatic {{adverb}})} ‖ {(when repeated, *et... et*)} both... and",
+et,"and; also {(as an emphatic {{adverb}})}; even {(as an emphatic {{adverb}})}; {(when repeated, *et... et*)} both... and",201,Conjunction,,"and ‖ also {(as an emphatic {{adverb}})} ‖ even {(as an emphatic {{adverb}})} ‖ {(when repeated, *et... et*)} both... and",1
 etiam,even,5,"Adverb, Conjunction",,even,1
 etiamsī,even if,0,Conjunction,,even if,1
 "ēveniō, ēvenīre, ēvēnī, ēventum",to happen,1,Verb,,to happen,1
@@ -649,17 +649,17 @@ extemplō,immediately,1,Adverb,,immediately,1
 "faciēs, faciēī, {f.}",appearance,2,Noun,,appearance,1
 "facilis, facile",easy; favorable {(of gods)},1,Adjective,,easy ‖ favorable {(of gods)},1
 "facinus, facinoris, {n.}",deed,1,Noun,,deed,1
-"faciō, facere, fēcī, factum",to make; to do,17,Verb,,to make ‖ to do,
+"faciō, facere, fēcī, factum",to make; to do,17,Verb,,to make ‖ to do,1
 "factum, factī, {n.}",deed,6,Noun,,deed,1
 "fallō, fallere, fefellī, falsum",to deceive,8,Verb,,to deceive,1
 "falsus, falsa, falsum",false,3,Adjective,,false,1
-"fāma, fāmae, {f.}",rumor; reputation; Fame {(personified as a goddess)},10,Noun,,rumor ‖ reputation ‖ Fame {(personified as a goddess)},
+"fāma, fāmae, {f.}",rumor; reputation; Fame {(personified as a goddess)},10,Noun,,rumor ‖ reputation ‖ Fame {(personified as a goddess)},1
 "fās, fās, {n.}",divine law,1,Noun,,divine law,1
 "fastīgium, fastīgiī, {n.}",top,1,Noun,,top,1
 "fātālis, fātāle",fated,1,Adjective,,fated,1
 "fateor, fatērī, fassus sum","to confess, admit",1,Verb,,"to confess, admit",1
 "fatīgō, fatīgāre, fatīgāvī, fatīgātum",to weary,2,Verb,,to weary,1
-"fātum, fātī, {n.}",fate; death {(in the {{plural}} *fāta*)},16,Noun,,fate ‖ death {(in the {{plural}} *fāta*)},
+"fātum, fātī, {n.}",fate; death {(in the {{plural}} *fāta*)},16,Noun,,fate ‖ death {(in the {{plural}} *fāta*)},1
 "fax, facis, {f.}",torch,4,Noun,,torch,1
 "fēcundus, fēcunda, fēcundum",fertile,1,Adjective,,fertile,1
 "fēlīx, {(gen.)} fēlīcis","happy, lucky",5,Adjective,,"happy, lucky",1
@@ -667,10 +667,10 @@ extemplō,immediately,1,Adverb,,immediately,1
 "fēmineus, fēminea, fēmineum",of a woman,1,Adjective,,of a woman,1
 "fera, ferae, {f.}",wild animal,5,Noun,,wild animal,1
 "feriō, ferīre",to strike,1,Verb,,to strike,1
-"ferō, ferre, tulī, lātum","to bring, bear, carry; to say, report {(in the {{passive}})}",19,Verb,,"to bring, bear, carry ‖ to say, report {(in the {{passive}})}",
+"ferō, ferre, tulī, lātum","to bring, bear, carry; to say, report {(in the {{passive}})}",19,Verb,,"to bring, bear, carry ‖ to say, report {(in the {{passive}})}",1
 "ferōx, {(gen.)} ferōcis",fierce,2,Adjective,,fierce,1
 "ferreus, ferrea, ferreum",made of iron,1,Adjective,,made of iron,1
-"ferrum, ferrī, {n.}",iron; sword {(by {{metonymy}} in poetry)},11,Noun,,iron ‖ sword {(by {{metonymy}} in poetry)},
+"ferrum, ferrī, {n.}",iron; sword {(by {{metonymy}} in poetry)},11,Noun,,iron ‖ sword {(by {{metonymy}} in poetry)},1
 "ferveō, fervēre, ferbuī",to boil,1,Verb,,to boil,1
 "ferus, fera, ferum",wild,4,Adjective,,wild,1
 "festīnō, festīnāre, festīnāvī, festīnātus",to hurry,0,Verb,,to hurry,1
@@ -691,7 +691,7 @@ extemplō,immediately,1,Adverb,,immediately,1
 "firmus, firma, firmum",steady,0,Adjective,,steady,1
 "fistula, fistulae, {f.}",pipe,2,Noun,,pipe,1
 "flāmen, flāminis, {n.}",blast of wind,1,Noun,,blast of wind,1
-"flamma, flammae, {f.}",flame,11,Noun,,flame,
+"flamma, flammae, {f.}",flame,11,Noun,,flame,1
 "flammeus, flammea, flammeum",fiery,1,Adjective,,fiery,1
 "flammō, flammāre, flammāvī, flammātum",to set on fire,1,Verb,,to set on fire,1
 "flāveō, flāvēre",to be golden-yellow,1,Verb,,to be golden-yellow,1
@@ -722,7 +722,7 @@ forte,by chance,2,Adverb,,by chance,1
 "forus, forī, {m.}",gangway of a ship,1,Noun,,gangway of a ship,1
 "foveō, fovēre, fōvī, fōtum",to keep warm; to cherish,2,Verb,,to keep warm ‖ to cherish,1
 "fragilis, fragile",fragile,0,Adjective,,fragile,1
-"frāter, frātris, {m.}",brother,11,Noun,,brother,
+"frāter, frātris, {m.}",brother,11,Noun,,brother,1
 "frāternus, frāterna, frāternum",of a brother,1,Adjective,,of a brother,1
 "fraudō, fraudāre, fraudāvī, fraudātum","to cheat {(the person cheated is {{accusative|accusative-as-direct-object}}, the thing lost {{ablative|ablative-of-separation}}: *Cicerōnem triumphō fraudō*, ""I cheat Cicero of a triumph"")}",1,Verb,,"to cheat {(the person cheated is {{accusative|accusative-as-direct-object}}, the thing lost {{ablative|ablative-of-separation}}: *Cicerōnem triumphō fraudō*, ""I cheat Cicero of a triumph"")}",1
 "fraudulentus, fraudulenta, fraudulentum",deceitful,0,Adjective,,deceitful,1
@@ -739,7 +739,7 @@ frequenter,often,1,Adverb,,often,1
 frūstrā,in vain,1,Adverb,,in vain,1
 "fuga, fugae, {f.}",flight,10,Noun,,flight,1
 "fugāx, {(gen.)} fugācis",quick to flee,1,Adjective,,quick to flee,1
-"fugiō, fugere, fūgī, fugitum",to flee; to avoid,16,Verb,,to flee ‖ to avoid,
+"fugiō, fugere, fūgī, fugitum",to flee; to avoid,16,Verb,,to flee ‖ to avoid,1
 "fugō, fugāre, fugāvī, fugātum",to put to flight,2,Verb,,to put to flight,1
 "fulgeō, fulgēre, fulsī",to shine,2,Verb,,to shine,1
 "fulmen, fulminis, {n.}",thunderbolt,2,Noun,,thunderbolt,1
@@ -791,7 +791,7 @@ frūstrā,in vain,1,Adverb,,in vain,1
 "gressus, gressūs, {m.}",step,2,Noun,,step,1
 "grex, gregis, {m.}",flock,1,Noun,,flock,1
 "Grȳnēus, Grȳnēa, Grȳnēum","Grynean {(epithet of Apollo, from Grynium, a town in Aeolis with a famous oracle/temple of Apollo)}",1,Adjective,,"Grynean {(epithet of Apollo, from Grynium, a town in Aeolis with a famous oracle/temple of Apollo)}",1
-"habeō, habēre, habuī, habitum",to have,21,Verb,,to have,
+"habeō, habēre, habuī, habitum",to have,21,Verb,,to have,1
 "habilis, habile",manageable,1,Adjective,,manageable,1
 "habitō, habitāre, habitāvī, habitātum",to live,1,Verb,,to live,1
 "habitus, habitūs, {m.}",appearance,1,Noun,,appearance,1
@@ -816,7 +816,7 @@ heu,alas,3,Interjection,,alas,1
 heus,hey!,1,Interjection,,hey!,1
 "hīberna, hībernōrum, {n. pl.}",winter quarters; winter {(as a period of time)},1,Noun,,winter quarters ‖ winter {(as a period of time)},1
 "hībernus, hīberna, hībernum",wintry,1,Adjective,,wintry,1
-"hic, haec, hoc","this; he, she, it",71,"Adjective, Pronoun",,"this ‖ he, she, it",
+"hic, haec, hoc","this; he, she, it",71,"Adjective, Pronoun",,"this ‖ he, she, it",1
 hīc,here,8,Adverb,,here,1
 "hiems, hiemis, {f.}",winter; storm,4,Noun,,winter ‖ storm,1
 hinc,from here,7,Adverb,,from here,1
@@ -831,7 +831,7 @@ hinc,from here,7,Adverb,,from here,1
 "hospita, hospitae, {f.}",female guest,1,Noun,,female guest,1
 "hospitium, hospitiī, {n.}",hospitality,2,Noun,,hospitality,1
 "hostia, hostiae, {f.}",sacrificial victim,1,Noun,,sacrificial victim,1
-"hostis, hostis, {m./f.}",enemy,10,Noun,,enemy,
+"hostis, hostis, {m./f.}",enemy,10,Noun,,enemy,1
 hūc,to this place,4,Adverb,,to this place,1
 "hūmeō, hūmēre",to be moist,1,Verb,,to be moist,1
 "humus, humī, {f.}",ground,4,Noun,,ground,1
@@ -840,7 +840,7 @@ hūc,to this place,4,Adverb,,to this place,1
 "iaceō, iacēre, iacuī, iacitum",to lie,6,Verb,,to lie,1
 "iaciō, iacere, iēcī, iactum",to throw,1,Verb,,to throw,1
 "iactō, iactāre, iactāvī, iactātum",to toss about; to boast of,7,Verb,,to toss about ‖ to boast of,1
-iam,now; already; no longer {(when paired with *nōn*)},16,Adverb,,now ‖ already ‖ no longer {(when paired with *nōn*)},
+iam,now; already; no longer {(when paired with *nōn*)},16,Adverb,,now ‖ already ‖ no longer {(when paired with *nōn*)},1
 "Iarbās, Iarbae, {m.}","Iarbas {(African king, rejected suitor of Dido)}",3,Noun,,"Iarbas {(African king, rejected suitor of Dido)}",1
 "Iāsōn, Iāsonis, {m.}",Jason {(Greek hero of the Argonauts; abandoned Medea after taking the Golden Fleece with her help)},1,Noun,,Jason {(Greek hero of the Argonauts; abandoned Medea after taking the Golden Fleece with her help)},1
 ibi,there {(of a place already named)},1,Adverb,,there {(of a place already named)},1
@@ -852,7 +852,7 @@ ideō,for that reason,1,Adverb,,for that reason,1
 igitur,therefore,1,Conjunction,,therefore,1
 "ignārus, ignāra, ignārum",unaware,4,Adjective,,unaware,1
 "igneus, ignea, igneum",fiery,1,Adjective,,fiery,1
-"ignis, ignis, {m.}",fire,14,Noun,,fire,
+"ignis, ignis, {m.}",fire,14,Noun,,fire,1
 "ignōtus, ignōta, ignōtum",unknown,5,Adjective,,unknown,1
 "īlex, īlicis, {f.}",holm-oak,1,Noun,,holm-oak,1
 "Īlia, Īliae, {f.}","Ilia {(a priestess, mother of Romulus and Remus by Mars)}",1,Noun,,"Ilia {(a priestess, mother of Romulus and Remus by Mars)}",1
@@ -861,7 +861,7 @@ igitur,therefore,1,Conjunction,,therefore,1
 "Īlion, Īliī, {n.}","Ilium {(Troy, the city besieged by the Greeks; Aeneas's homeland)}",1,Noun,,"Ilium {(Troy, the city besieged by the Greeks; Aeneas's homeland)}",1
 "Īlius, Īlia, Īlium",Trojan,1,Adjective,,Trojan,1
 illāc,that way,1,Adverb,,that way,1
-"ille, illa, illud","that {(points out emphatically; stronger than *is*)}; he, she, it",59,"Adjective, Pronoun",,"that {(points out emphatically; stronger than *is*)} ‖ he, she, it",
+"ille, illa, illud","that {(points out emphatically; stronger than *is*)}; he, she, it",59,"Adjective, Pronoun",,"that {(points out emphatically; stronger than *is*)} ‖ he, she, it",1
 illīc,"there {(of the further of two places, answered by *hīc*)}",1,Adverb,,"there {(of the further of two places, answered by *hīc*)}",1
 illinc,from that place,1,Adverb,,from that place,1
 illūc,to that place,2,Adverb,,to that place,1
@@ -895,7 +895,7 @@ illūc,to that place,2,Adverb,,to that place,1
 "imprimō, imprimere, impressī, impressum",to press into,1,Verb,,to press into,1
 "improbus, improba, improbum",wicked,1,Adjective,,wicked,1
 "īmus, īma, īmum",lowest,3,Adjective,,lowest,1
-in,"{(with the {{ablative|ablative-with-prepositions}})} in, on; {(with the {{accusative}})} into, onto, against, to",81,Preposition,,"{(with the {{ablative|ablative-with-prepositions}})} in, on ‖ {(with the {{accusative}})} into, onto, against, to",
+in,"{(with the {{ablative|ablative-with-prepositions}})} in, on; {(with the {{accusative}})} into, onto, against, to",81,Preposition,,"{(with the {{ablative|ablative-with-prepositions}})} in, on ‖ {(with the {{accusative}})} into, onto, against, to",1
 "inadustus, inadusta, inadustum",unburnt,1,Adjective,,unburnt,1
 "incautus, incauta, incautum",unwary,2,Adjective,,unwary,1
 "incendō, incendere, incendī, incēnsum",to set on fire,2,Verb,,to set on fire,1
@@ -977,7 +977,7 @@ intus,inside,1,Adverb,,inside,1
 "invidus, invida, invidum",envious,1,Adjective,,envious,1
 "invīsus, invīsa, invīsum",hated,2,Adjective,,hated,1
 "inultus, inulta, inultum",unavenged,2,Adjective,,unavenged,1
-"ipse, ipsa, ipsum","himself, herself, itself {({{intensive pronoun}})}; the very",32,"Adjective, Pronoun",,"himself, herself, itself {({{intensive pronoun}})} ‖ the very",
+"ipse, ipsa, ipsum","himself, herself, itself {({{intensive pronoun}})}; the very",32,"Adjective, Pronoun",,"himself, herself, itself {({{intensive pronoun}})} ‖ the very",1
 "īra, īrae, {f.}",anger,8,Noun,,anger,1
 "irrītō, irrītāre, irrītāvī, irrītātum",to provoke,2,Verb,,to provoke,1
 "irrumpō, irrumpere, irrūpī, irruptum",to burst in,1,Verb,,to burst in,1
@@ -1010,7 +1010,7 @@ iterum,again,4,Adverb,,again,1
 "labor, labōris, {m.}",hard work,10,Noun,,hard work,1
 "lābor, lābī, lāpsus sum",to slide; to glide; to fall,6,Verb,,to slide ‖ to glide ‖ to fall,1
 "lacertus, lacertī, {m.}",arm,6,Noun,,arm,1
-"lacrima, lacrimae, {f.}",tear,11,Noun,,tear,
+"lacrima, lacrimae, {f.}",tear,11,Noun,,tear,1
 "laedō, laedere, laesī, laesum",to hurt,6,Verb,,to hurt,1
 "laetor, laetārī, laetātus sum",to rejoice,1,Verb,,to rejoice,1
 "laetus, laeta, laetum",joyful,4,Adjective,,joyful,1
@@ -1066,13 +1066,13 @@ iterum,again,4,Adverb,,again,1
 "littera, litterae, {f.}",letter of the alphabet; letter {(a written document or epistle)},1,Noun,,letter of the alphabet ‖ letter {(a written document or epistle)},1
 "lītus, lītoris, {n.}",shore,8,Noun,,shore,1
 "locō, locāre, locāvī, locātum",to place,1,Verb,,to place,1
-"locus, locī, {m.} {(n. pl.} loca{)}",place; region {(in the {{neuter}} {{plural}} *loca*)},16,Noun,,place ‖ region {(in the {{neuter}} {{plural}} *loca*)},
-"longus, longa, longum","long; distant; {({{adverb}}, *longē*)} far",16,Adjective,,"long ‖ distant ‖ {({{adverb}}, *longē*)} far",
+"locus, locī, {m.} {(n. pl.} loca{)}",place; region {(in the {{neuter}} {{plural}} *loca*)},16,Noun,,place ‖ region {(in the {{neuter}} {{plural}} *loca*)},1
+"longus, longa, longum","long; distant; {({{adverb}}, *longē*)} far",16,Adjective,,"long ‖ distant ‖ {({{adverb}}, *longē*)} far",1
 "loquor, loquī, locūtus sum",to speak,7,Verb,,to speak,1
 "lūcēscō, lūcēscere, lūxī",to grow light,0,Verb,,to grow light,1
 "lūctus, lūctūs, {m.}",grief,1,Noun,,grief,1
 "lūdō, lūdere, lūsī, lūsum",to play; to deceive,4,Verb,,to play ‖ to deceive,1
-"lūmen, lūminis, {n.}",light; eye {(by {{metonymy}} in poetry)},11,Noun,,light ‖ eye {(by {{metonymy}} in poetry)},
+"lūmen, lūminis, {n.}",light; eye {(by {{metonymy}} in poetry)},11,Noun,,light ‖ eye {(by {{metonymy}} in poetry)},1
 "lūna, lūnae, {f.}",moon,2,Noun,,moon,1
 "lupa, lupae, {f.}",she-wolf,1,Noun,,she-wolf,1
 "lupus, lupī, {m.}",wolf,1,Noun,,wolf,1
@@ -1100,7 +1100,7 @@ iterum,again,4,Adverb,,again,1
 magis,more,2,Adverb,,more,1
 "magnanimus, magnanima, magnanimum",great-souled,1,Adjective,,great-souled,1
 "Magnētis, Magnētidos, {f.}","Magnesian {(from or relating to Magnesia, a region in Greece)}",1,Noun,,"Magnesian {(from or relating to Magnesia, a region in Greece)}",1
-"magnus, magna, magnum",great,16,Adjective,,great,
+"magnus, magna, magnum",great,16,Adjective,,great,1
 "Māia, Māiae, {f.}","Maia {(nymph, daughter of Atlas, mother of Mercury by Jupiter)}",1,Noun,,"Maia {(nymph, daughter of Atlas, mother of Mercury by Jupiter)}",1
 "maior, maius",greater,2,Adjective,,greater,1
 male,"badly; scarcely {(negating a following {{adjective}}, *male grātus*)}; utterly {(intensifying a following {{verb}} of destruction, *male perdere*)}",6,Adverb,,"badly ‖ scarcely {(negating a following {{adjective}}, *male grātus*)} ‖ utterly {(intensifying a following {{verb}} of destruction, *male perdere*)}",1
@@ -1113,14 +1113,14 @@ male,"badly; scarcely {(negating a following {{adjective}}, *male grātus*)}; ut
 māne,in the morning,1,Adverb,,in the morning,1
 "maneō, manēre, mānsī, mānsum",to remain,7,Verb,,to remain,1
 "manifestus, manifesta, manifestum",clear,1,Adjective,,clear,1
-"manus, manūs, {f.}","hand; power {(figuratively, of personal control or agency)}; [[*cōnserere manūs* ""to join hands"" → ""to fight hand-to-hand""]]; [[*inicere manūs* ""to lay hands on"" → ""to lay legal claim to""]]; [[*manus ultima* ""the last hand"" → ""the finishing touch""]]",18,Noun,,"hand ‖ power {(figuratively, of personal control or agency)} ‖ [[*cōnserere manūs* ""to join hands"" → ""to fight hand-to-hand""]] ‖ [[*inicere manūs* ""to lay hands on"" → ""to lay legal claim to""]] ‖ [[*manus ultima* ""the last hand"" → ""the finishing touch""]]",
+"manus, manūs, {f.}","hand; power {(figuratively, of personal control or agency)}; [[*cōnserere manūs* ""to join hands"" → ""to fight hand-to-hand""]]; [[*inicere manūs* ""to lay hands on"" → ""to lay legal claim to""]]; [[*manus ultima* ""the last hand"" → ""the finishing touch""]]",18,Noun,,"hand ‖ power {(figuratively, of personal control or agency)} ‖ [[*cōnserere manūs* ""to join hands"" → ""to fight hand-to-hand""]] ‖ [[*inicere manūs* ""to lay hands on"" → ""to lay legal claim to""]] ‖ [[*manus ultima* ""the last hand"" → ""the finishing touch""]]",1
 "mare, maris, {n.}",sea,9,Noun,,sea,1
 "marīta, marītae, {f.}",wife,1,Noun,,wife,1
 "marītus, marītī, {m.}",husband; nuptial {(as {{adjective}})},1,Noun,,husband ‖ nuptial {(as {{adjective}})},1
 "marmor, marmoris, {n.}",marble,1,Noun,,marble,1
 "marmoreus, marmorea, marmoreum",of marble,2,Adjective,,of marble,1
 "Mārs, Mārtis, {m.}",Mars {(the Roman god of war)}; war {(by {{metonymy}})},4,Noun,,Mars {(the Roman god of war)} ‖ war {(by {{metonymy}})},1
-"māter, mātris, {f.}",mother,10,Noun,,mother,
+"māter, mātris, {f.}",mother,10,Noun,,mother,1
 "māteria, māteriae, {f.}",material,1,Noun,,material,1
 "mātrimōnium, mātrimōniī, {n.}",marriage,0,Noun,,marriage,1
 "Māvortius, Māvortia, Māvortium",of Mars,1,Adjective,,of Mars,1
@@ -1130,7 +1130,7 @@ māne,in the morning,1,Adverb,,in the morning,1
 "medicīna, medicīnae, {f.}",medicine,1,Noun,,medicine,1
 "medicō, medicāre, medicāvī, medicātum",to medicate,1,Verb,,to medicate,1
 "meditor, meditārī, meditātus sum",to think over,1,Verb,,to think over,1
-"medius, media, medium","middle of {(agreeing substantively with its {{noun}}, as *media silvā*, the middle of the forest)}",16,Adjective,,"middle of {(agreeing substantively with its {{noun}}, as *media silvā*, the middle of the forest)}",
+"medius, media, medium","middle of {(agreeing substantively with its {{noun}}, as *media silvā*, the middle of the forest)}",16,Adjective,,"middle of {(agreeing substantively with its {{noun}}, as *media silvā*, the middle of the forest)}",1
 "medulla, medullae, {f.}",marrow,2,Noun,,marrow,1
 "mel, mellis, {n.}",honey,1,Noun,,honey,1
 "melior, melius","better; [[*in melius referre* ""to bring into the better"" → ""to change for the better""]]",3,Adjective,,"better ‖ [[*in melius referre* ""to bring into the better"" → ""to change for the better""]]",1
@@ -1138,7 +1138,7 @@ māne,in the morning,1,Adverb,,in the morning,1
 "meminī, meminisse",{(with the {{genitive|genitive-with-verbs-of-remembering}})} to remember,2,Verb,,{(with the {{genitive|genitive-with-verbs-of-remembering}})} to remember,1
 "memor, {(gen.)} memoris",mindful,2,Adjective,,mindful,1
 "memorō, memorāre, memorāvī, memorātum",to tell; to call,2,Verb,,to tell ‖ to call,1
-"mēns, mentis, {f.}",mind; intention,13,Noun,,mind ‖ intention,
+"mēns, mentis, {f.}",mind; intention,13,Noun,,mind ‖ intention,1
 "mēnsa, mēnsae, {f.}",table,2,Noun,,table,1
 "mēnsis, mēnsis, {m.}",month,1,Noun,,month,1
 "mentior, mentīrī, mentītus sum",to lie,1,Verb,,to lie,1
@@ -1150,7 +1150,7 @@ māne,in the morning,1,Adverb,,in the morning,1
 "mēta, mētae, {f.}",turning post; limit,1,Noun,,turning post ‖ limit,1
 "metuō, metuere, metuī",to fear,1,Verb,,to fear,1
 "metus, metūs, {m.}",fear,6,Noun,,fear,1
-"meus, mea, meum",my,62,Adjective,,my,
+"meus, mea, meum",my,62,Adjective,,my,1
 "micō, micāre, micuī",to flash,2,Verb,,to flash,1
 "mīles, mīlitis, {m.}",soldier,1,Noun,,soldier,1
 "mīlitō, mīlitāre, mīlitāvī, mīlitātum",to serve as a soldier,1,Verb,,to serve as a soldier,1
@@ -1176,7 +1176,7 @@ mīlle,thousand,1,Numeral,,thousand,1
 "moderātus, moderāta, moderātum",restrained,2,Adjective,,restrained,1
 modo,"only; just now {(of time, recently)}; {(when doubled, *modo ... modo*)} now; just {(with an {{imperative}})}",9,Adverb,,"only ‖ just now {(of time, recently)} ‖ {(when doubled, *modo ... modo*)} now ‖ just {(with an {{imperative}})}",1
 "modus, modī, {m.}",measure; limit; manner,2,Noun,,measure ‖ limit ‖ manner,1
-"moenia, moenium, {n. pl.}",city walls; walled city,11,Noun,,city walls ‖ walled city,
+"moenia, moenium, {n. pl.}",city walls; walled city,11,Noun,,city walls ‖ walled city,1
 "mōlior, mōlīrī, mōlītus sum",to work at,2,Verb,,to work at,1
 "molliō, mollīre, mollīvī, mollītum",to soften,2,Verb,,to soften,1
 "mollis, molle",soft,3,Adjective,,soft,1
@@ -1189,7 +1189,7 @@ modo,"only; just now {(of time, recently)}; {(when doubled, *modo ... modo*)} no
 "monumentum, monumentī, {n.}",memorial,2,Noun,,memorial,1
 "mora, morae, {f.}",delay,5,Noun,,delay,1
 "moribundus, moribunda, moribundum",dying,1,Adjective,,dying,1
-"morior, morī, mortuus sum",to die,10,Verb,,to die,
+"morior, morī, mortuus sum",to die,10,Verb,,to die,1
 "moror, morārī, morātus sum",to linger; to delay {(with an {{object}})},4,Verb,,to linger ‖ to delay {(with an {{object}})},1
 "mors, mortis, {f.}",death,8,Noun,,death,1
 "morsus, morsūs, {m.}",bite,2,Noun,,bite,1
@@ -1202,7 +1202,7 @@ mox,soon,2,Adverb,,soon,1
 "mucrō, mucrōnis, {m.}",sword point,1,Noun,,sword point,1
 "mulier, mulieris, {f.}",woman,0,Noun,,woman,1
 "multiplex, {(gen.)} multiplicis",having many folds; varied,1,Adjective,,having many folds ‖ varied,1
-"multus, multa, multum",much {(in the {{singular}})}; many {(in the {{plural}})},12,Adjective,,much {(in the {{singular}})} ‖ many {(in the {{plural}})},
+"multus, multa, multum","much, many {(much in the {{singular}}, many in the {{plural}})}",12,Adjective,,"much, many {(much in the {{singular}}, many in the {{plural}})}",1
 "mūniō, mūnīre, mūnīvī, mūnītum",to fortify,1,Verb,,to fortify,1
 "mūnus, mūneris, {n.}",gift,5,Noun,,gift,1
 "murmur, murmuris, {n.}",murmur,4,Noun,,murmur,1
@@ -1234,7 +1234,7 @@ necesse,necessary,2,Adjective,,necessary,1
 nempe,certainly,2,Adverb,,certainly,1
 "nemus, nemoris, {n.}",grove,4,Noun,,grove,1
 "nepōs, nepōtis, {m.}",grandson,2,Noun,,grandson,1
-neque / nec,"and...not; neither... nor {(when repeated, *nec... nec*)}",48,Conjunction,,"and...not ‖ neither... nor {(when repeated, *nec... nec*)}",
+neque / nec,"and...not; neither... nor {(when repeated, *nec... nec*)}",48,Conjunction,,"and...not ‖ neither... nor {(when repeated, *nec... nec*)}",1
 nēquīquam,in vain,1,Adverb,,in vain,1
 "nēquis, nēquid",lest anyone,1,Adjective,,lest anyone,1
 "nervus, nervī, {m.}","sinew; string {(of a bow or lyre, by {{metonymy}})}",2,Noun,,"sinew ‖ string {(of a bow or lyre, by {{metonymy}})}",1
@@ -1257,13 +1257,13 @@ nisi,unless,2,Conjunction,,unless,1
 "noceō, nocēre, nocuī, nocitum",{(with the {{dative|dative-with-special-verbs}})} to harm; {({{present}} {{participle}} *nocens*)} guilty,9,Verb,,{(with the {{dative|dative-with-special-verbs}})} to harm ‖ {({{present}} {{participle}} *nocens*)} guilty,1
 "nocturnus, nocturna, nocturnum",of the night,2,Adjective,,of the night,1
 "nōdus, nōdī, {m.}",knot,2,Noun,,knot,1
-"nōmen, nōminis, {n.}",name; renown,13,Noun,,name ‖ renown,
+"nōmen, nōminis, {n.}",name; renown,13,Noun,,name ‖ renown,1
 "nōminō, nōmināre, nōmināvī, nōminātum",to name,1,Verb,,to name,1
-nōn,not,48,Adverb,,not,
+nōn,not,48,Adverb,,not,1
 nōndum,not yet,2,Adverb,,not yet,1
-"nōs, nostrī / nostrum, nōbīs, nōs, nōbīs","we, us {({{personal pronoun}}, {{plural}})}",14,Pronoun,,"we, us {({{personal pronoun}}, {{plural}})}",
+"nōs, nostrī / nostrum, nōbīs, nōs, nōbīs","we, us {({{personal pronoun}}, {{plural}})}",14,Pronoun,,"we, us {({{personal pronoun}}, {{plural}})}",1
 "nōscō, nōscere, nōvī, nōtum",to get to know,1,Verb,,to get to know,1
-"noster, nostra, nostrum",our,36,Adjective,,our,
+"noster, nostra, nostrum",our,36,Adjective,,our,1
 "nōtitia, nōtitiae, {f.}",acquaintance,1,Noun,,acquaintance,1
 "notō, notāre, notāvī, notātum",to mark; to notice,2,Verb,,to mark ‖ to notice,1
 "nōtus, nōta, nōtum",known,7,Adjective,,known,1
@@ -1272,7 +1272,7 @@ novem,nine,1,Numeral,,nine,1
 "novissimus, novissima, novissimum",last,2,Adjective,,last,1
 "novō, novāre, novāvī, novātum",to renew,1,Verb,,to renew,1
 "novus, nova, novum",new; {({{superlative}} *novissimus*)} last,10,Adjective,,new ‖ {({{superlative}} *novissimus*)} last,1
-"nox, noctis, {f.}",night,11,Noun,,night,
+"nox, noctis, {f.}",night,11,Noun,,night,1
 "noxa, noxae, {f.}",harm; fault,1,Noun,,harm ‖ fault,1
 "nūbilus, nūbila, nūbilum","cloudy; clouds {(as {{substantive}}, {{neuter}} {{plural}})}",1,Adjective,,"cloudy ‖ clouds {(as {{substantive}}, {{neuter}} {{plural}})}",1
 "nūbō, nūbere, nūpsī, nūptum",{(with the {{dative|dative-with-special-verbs}})} to marry,2,Verb,,{(with the {{dative|dative-with-special-verbs}})} to marry,1
@@ -1283,7 +1283,7 @@ novem,nine,1,Numeral,,nine,1
 "nūmen, nūminis, {n.}",divine power,6,Noun,,divine power,1
 "numerō, numerāre, numerāvī, numerātum","to count; to pay {(of money, by counting out)}",1,Verb,,"to count ‖ to pay {(of money, by counting out)}",1
 numquam,never,2,Adverb,,never,1
-nunc,now,25,Adverb,,now,
+nunc,now,25,Adverb,,now,1
 "nūntia, nūntiae, {f.}",female messenger,1,Noun,,female messenger,1
 "nūntiō, nūntiāre, nūntiāvī, nūntiātum",to announce,1,Verb,,to announce,1
 "nūntius, nūntiī, {m.}",messenger,1,Noun,,messenger,1
@@ -1316,7 +1316,7 @@ ob,{(with the {{accusative}})} on account of,3,Preposition,,{(with the {{accusat
 "occurrō, occurrere, occurrī, occursum",to meet,1,Verb,,to meet,1
 "Ōceanus, Ōceanī, {m.}",Oceanus {(the great river/god encircling the world in ancient cosmology)},1,Noun,,Oceanus {(the great river/god encircling the world in ancient cosmology)},1
 "ōcior, ōcius",swifter,2,Adjective,,swifter,1
-"oculus, oculī, {m.}",eye,12,Noun,,eye,
+"oculus, oculī, {m.}",eye,12,Noun,,eye,1
 "ōdī, ōdisse",to hate,2,Verb,,to hate,1
 "odium, odiī, {n.}",hatred,3,Noun,,hatred,1
 "odor, odōris, {m.}",smell,1,Noun,,smell,1
@@ -1327,7 +1327,7 @@ ob,{(with the {{accusative}})} on account of,3,Preposition,,{(with the {{accusat
 "Olympus, Olympī, {m.}",Olympus {(mountain home of the gods)}; the heavens {(by {{metonymy}})},1,Noun,,Olympus {(mountain home of the gods)} ‖ the heavens {(by {{metonymy}})},1
 "ōmen, ōminis, {n.}",omen,3,Noun,,omen,1
 omnīnō,entirely,1,Adverb,,entirely,1
-"omnis, omne",all,19,Adjective,,all,
+"omnis, omne",all,19,Adjective,,all,1
 "onerō, onerāre, onerāvī, onerātum",to load,1,Verb,,to load,1
 "onustus, onusta, onustum",laden,1,Adjective,,laden,1
 "operiō, operīre, operuī, opertum",to cover,1,Verb,,to cover,1
@@ -1348,7 +1348,7 @@ omnīnō,entirely,1,Adverb,,entirely,1
 "Ōrīōn, Ōrīōnis, {m.}",Orion {(a mythical hunter later placed among the stars as a constellation)},1,Noun,,Orion {(a mythical hunter later placed among the stars as a constellation)},1
 "orior, orīrī, ortus sum",to rise; {(with the {{ablative|ablative-of-origin}})} to be descended {(of birth or lineage)},1,Verb,,to rise ‖ {(with the {{ablative|ablative-of-origin}})} to be descended {(of birth or lineage)},1
 "ōrō, ōrāre, ōrāvī, ōrātum",to beg,4,Verb,,to beg,1
-"ōs, ōris, {n.}","mouth; face; {(distinct from *os, ossis*)}",24,Noun,,"mouth ‖ face ‖ {(distinct from *os, ossis*)}",
+"ōs, ōris, {n.}","mouth; face; {(distinct from *os, ossis*)}",24,Noun,,"mouth ‖ face ‖ {(distinct from *os, ossis*)}",1
 "os, ossis, {n.}",bone,5,Noun,,bone,1
 "ōsculum, ōsculī, {n.}",kiss; {(literally)} little mouth {(a sense sometimes still used by the poets)},9,Noun,,kiss ‖ {(literally)} little mouth {(a sense sometimes still used by the poets)},1
 "ostendō, ostendere, ostendī, ostentus",to show,0,Verb,,to show,1
@@ -1375,7 +1375,7 @@ pariter,equally; at the same time,3,Adverb,,equally ‖ at the same time,1
 "parturiō, parturīre, parturīvī",to be in labor,1,Verb,,to be in labor,1
 "partus, partūs, {m.}",birth; offspring {(by {{metonymy}})},2,Noun,,birth ‖ offspring {(by {{metonymy}})},1
 "parvulus, parvula, parvulum",very small,1,Adjective,,very small,1
-"parvus, parva, parvum",small,4,Adjective,,small,
+"parvus, parva, parvum",small,4,Adjective,,small,1
 "Pāsiphaē, Pāsiphaēs, {f.}",Pasiphae {(wife of King Minos of Crete; mother of the Minotaur)},1,Noun,,Pasiphae {(wife of King Minos of Crete; mother of the Minotaur)},1
 passim,here and there,1,Adverb,,here and there,1
 "passus, passūs, {m.}",step,1,Noun,,step,1
@@ -1383,7 +1383,7 @@ passim,here and there,1,Adverb,,here and there,1
 "Patarēus, Patarēa, Patarēum",Patarean {(Patara is a city in Lycia with a famous oracle of Apollo)},1,Adjective,,Patarean {(Patara is a city in Lycia with a famous oracle of Apollo)},1
 "Patavium, Pataviī, {n.}","Patavium {(a city in northern Italy, modern Padua, founded by Antenor)}",1,Noun,,"Patavium {(a city in northern Italy, modern Padua, founded by Antenor)}",1
 "pateō, patēre, patuī",to lie open; to be revealed,6,Verb,,to lie open ‖ to be revealed,1
-"pater, patris, {m.}",father; {(in the {{plural}} *patrēs*)} ancestors,20,Noun,,father ‖ {(in the {{plural}} *patrēs*)} ancestors,
+"pater, patris, {m.}",father; {(in the {{plural}} *patrēs*)} ancestors,20,Noun,,father ‖ {(in the {{plural}} *patrēs*)} ancestors,1
 "patera, paterae, {f.}",libation bowl,1,Noun,,libation bowl,1
 "paternus, paterna, paternum",paternal,1,Adjective,,paternal,1
 "patior, patī, passus sum",to suffer; to allow,5,Verb,,to suffer ‖ to allow,1
@@ -1395,7 +1395,7 @@ paulisper,for a little while,0,Adverb,,for a little while,1
 paulum,a little,1,Adverb,,a little,1
 "pauper, {(gen.)} pauperis",poor,1,Adjective,,poor,1
 "pāx, pācis, {f.}",peace,4,Noun,,peace,1
-"pectus, pectoris, {n.}",breast; heart {(as the seat of emotion)},16,Noun,,breast ‖ heart {(as the seat of emotion)},
+"pectus, pectoris, {n.}",breast; heart {(as the seat of emotion)},16,Noun,,breast ‖ heart {(as the seat of emotion)},1
 "pecūnia, pecūniae, {f.}",money,0,Noun,,money,1
 "pecus, pecudis, {f.}",a head of livestock,2,Noun,,a head of livestock,1
 "peior, peius",worse,2,Adjective,,worse,1
@@ -1411,7 +1411,7 @@ paulum,a little,1,Adverb,,a little,1
 "Pēnēius, Pēnēia, Pēnēium",Peneian {(of/pertaining to the river Peneus (Daphne's father) in Thessaly)},2,Adjective,,Peneian {(of/pertaining to the river Peneus (Daphne's father) in Thessaly)},1
 "penetrō, penetrāre, penetrāvī, penetrātum",to enter,1,Verb,,to enter,1
 "penna, pennae, {f.}",feather; wing,9,Noun,,feather ‖ wing,1
-per,{(with the {{accusative}})} through; across {(of spatial extent or motion)}; during {(of temporal duration)}; by means of {(of agency or cause)}; by {(in oaths or entreaties)},45,Preposition,{(with the {{accusative}})},through ‖ across {(of spatial extent or motion)} ‖ during {(of temporal duration)} ‖ by means of {(of agency or cause)} ‖ by {(in oaths or entreaties)},
+per,{(with the {{accusative}})} through; across {(of spatial extent or motion)}; during {(of temporal duration)}; by means of {(of agency or cause)}; by {(in oaths or entreaties)},45,Preposition,{(with the {{accusative}})},through ‖ across {(of spatial extent or motion)} ‖ during {(of temporal duration)} ‖ by means of {(of agency or cause)} ‖ by {(in oaths or entreaties)},1
 "peragō, peragere, perēgī, perāctum",to complete,1,Verb,,to complete,1
 "peragrō, peragrāre, peragrāvī, peragrātum",to travel through,2,Verb,,to travel through,1
 "percipiō, percipere, percēpī, perceptum",to take in,1,Verb,,to take in,1
@@ -1443,7 +1443,7 @@ per,{(with the {{accusative}})} through; across {(of spatial extent or motion)};
 "pervigil, {(gen.)} pervigilis",sleepless,1,Adjective,,sleepless,1
 "pēs, pedis, {m.}",foot,8,Noun,,foot,1
 "pestifer, pestifera, pestiferum",destructive,1,Adjective,,destructive,1
-"petō, petere, petīvī / petiī, petītum",to seek; to make for {(of a destination)}; to beg; to attack,14,Verb,,to seek ‖ to make for {(of a destination)} ‖ to beg ‖ to attack,
+"petō, petere, petīvī / petiī, petītum",to seek; to make for {(of a destination)}; to beg; to attack,14,Verb,,to seek ‖ to make for {(of a destination)} ‖ to beg ‖ to attack,1
 "pharetra, pharetrae, {f.}",quiver,4,Noun,,quiver,1
 "Phāsiacus, Phāsiaca, Phāsiacum","Colchian {(pertaining to the Phasis river in Colchis, Medea's homeland)}",1,Adjective,,"Colchian {(pertaining to the Phasis river in Colchis, Medea's homeland)}",1
 "Phoebē, Phoebēs, {f.}",Phoebe {(epithet/name for the moon goddess (Diana))},1,Noun,,Phoebe {(epithet/name for the moon goddess (Diana))},1
@@ -1484,7 +1484,7 @@ per,{(with the {{accusative}})} through; across {(of spatial extent or motion)};
 "pompa, pompae, {f.}",procession,2,Noun,,procession,1
 "pōmum, pōmī, {n.}",fruit,3,Noun,,fruit,1
 "pondus, ponderis, {n.}",weight; significance,2,Noun,,weight ‖ significance,1
-"pōnō, pōnere, posuī, positum","to put; to establish {(of a city or walls)}; to lay aside; to subside {({{intransitive}}, of wind or sea)}",15,Verb,,"to put ‖ to establish {(of a city or walls)} ‖ to lay aside ‖ to subside {({{intransitive}}, of wind or sea)}",
+"pōnō, pōnere, posuī, positum","to put; to establish {(of a city or walls)}; to lay aside; to subside {({{intransitive}}, of wind or sea)}",15,Verb,,"to put ‖ to establish {(of a city or walls)} ‖ to lay aside ‖ to subside {({{intransitive}}, of wind or sea)}",1
 "pontus, pontī, {m.}",sea; the Black Sea {(as a proper name)},2,Noun,,sea ‖ the Black Sea {(as a proper name)},1
 "populus, populī, {m.}",the people {(as a political body)}; a people {(like *gēns*)},8,Noun,,the people {(as a political body)} ‖ a people {(like *gēns*)},1
 "porta, portae, {f.}",gate,2,Noun,,gate,1
@@ -1492,7 +1492,7 @@ per,{(with the {{accusative}})} through; across {(of spatial extent or motion)};
 "portus, portūs, {m.}",harbor,4,Noun,,harbor,1
 "poscō, poscere, poposcī",to demand,4,Verb,,to demand,1
 "possideō, possidēre, possēdī, possessum",to possess,2,Verb,,to possess,1
-"possum, posse, potuī",to be able,25,Verb,,to be able,
+"possum, posse, potuī",to be able,25,Verb,,to be able,1
 post,{(with the {{accusative}})} behind; after,3,"Adverb, Preposition",{(with the {{accusative}})},behind ‖ after,1
 "posterus, postera, posterum",following,1,Adjective,,following,1
 "postis, postis, {m.}",doorpost,1,Noun,,doorpost,1
@@ -1525,13 +1525,13 @@ praetereā,besides,1,Adverb,,besides,1
 "prāvus, prāva, prāvum",crooked; wicked,1,Adjective,,crooked ‖ wicked,1
 "precēs, precum, {f. pl.}",prayers,1,Noun,,prayers,1
 "precor, precārī, precātus sum",to pray,5,Verb,,to pray,1
-"premō, premere, pressī, pressum",to press; to cover; to suppress,10,Verb,,to press ‖ to cover ‖ to suppress,
+"premō, premere, pressī, pressum",to press; to cover; to suppress,10,Verb,,to press ‖ to cover ‖ to suppress,1
 "pretiōsus, pretiōsa, pretiōsum",valuable,1,Adjective,,valuable,1
 "pretium, pretiī, {n.}",price; reward,1,Noun,,price ‖ reward,1
 "prex, precis, {f.}",prayer,4,Noun,,prayer,1
 "Priamus, Priamī, {m.}",Priamus {(the last king of Troy)},1,Noun,,Priamus {(the last king of Troy)},1
 prīmum,first,1,"Adjective, Adverb",,first,1
-"prīmus, prīma, prīmum",first; {(adverbially)} at first,20,Adjective,,first ‖ {(adverbially)} at first,
+"prīmus, prīma, prīmum",first; {(adverbially)} at first,20,Adjective,,first ‖ {(adverbially)} at first,1
 "prīncipium, prīncipiī, {n.}","beginning; {(adverbial {{ablative}}, *principiō*)} first",1,Noun,,"beginning ‖ {(adverbial {{ablative}}, *principiō*)} first",1
 "prior, prius","former; first {(before another, in time or action)}",5,Adjective,,"former ‖ first {(before another, in time or action)}",1
 priusquam,before,0,Conjunction,,before,1
@@ -1587,20 +1587,20 @@ prōtinus,immediately,4,Adverb,,immediately,1
 "Pȳramus, Pȳramī, {m.}","Pyramus {(Babylonian youth, tragic lover of Thisbe)}",6,Noun,,"Pyramus {(Babylonian youth, tragic lover of Thisbe)}",1
 "Pȳthōn, Pȳthōnis, {m.}",Python {(the monstrous serpent slain by Apollo at Delphi)},1,Noun,,Python {(the monstrous serpent slain by Apollo at Delphi)},1
 quā,where,4,Adverb,,where,1
-"quaerō, quaerere, quaesīvī, quaesītum",to seek; to ask,13,Verb,,to seek ‖ to ask,
+"quaerō, quaerere, quaesīvī, quaesītum",to seek; to ask,13,Verb,,to seek ‖ to ask,1
 "quālis, quāle",of what kind,3,Adjective,,of what kind,1
-quam,"how {(as an exclamatory {{adverb}})}; than {(after a {{comparative}})}; as {(in the pairing *tam ... quam*, ""as ... as"")}; as {(with a {{superlative}}, ""as ... as possible"")}",15,Conjunction,,"how {(as an exclamatory {{adverb}})} ‖ than {(after a {{comparative}})} ‖ as {(in the pairing *tam ... quam*, ""as ... as"")} ‖ as {(with a {{superlative}}, ""as ... as possible"")}",
+quam,"how {(as an exclamatory {{adverb}})}; than {(after a {{comparative}})}; as {(in the pairing *tam ... quam*, ""as ... as"")}; as {(with a {{superlative}}, ""as ... as possible"")}",15,Conjunction,,"how {(as an exclamatory {{adverb}})} ‖ than {(after a {{comparative}})} ‖ as {(in the pairing *tam ... quam*, ""as ... as"")} ‖ as {(with a {{superlative}}, ""as ... as possible"")}",1
 quamvīs,although,1,"Adverb, Conjunction",,although,1
 quandō,when; since {(causal)},3,"Adverb, Conjunction",,when ‖ since {(causal)},1
 "quantus, quanta, quantum","how great, how much; as much as {(sometimes with *tantus* in the main clause)}",7,Adjective,,"how great, how much ‖ as much as {(sometimes with *tantus* in the main clause)}",1
 quasi,as if,1,Conjunction,,as if,1
 quater,four times,2,Adverb,,four times,1
 "quatiō, quatere, quassī, quassum",to shake,1,Verb,,to shake,1
--que,"and {({{enclitic}}, attached to the end of the word it follows)}; {(when repeated, *-que... -que*)} both... and",235,Conjunction,,"and {({{enclitic}}, attached to the end of the word it follows)} ‖ {(when repeated, *-que... -que*)} both... and",
+-que,"and {({{enclitic}}, attached to the end of the word it follows)}; {(when repeated, *-que... -que*)} both... and",235,Conjunction,,"and {({{enclitic}}, attached to the end of the word it follows)} ‖ {(when repeated, *-que... -que*)} both... and",1
 "quercus, quercūs, {f.}",oak tree; oak wreath {(the civic crown of oak leaves)},1,Noun,,oak tree ‖ oak wreath {(the civic crown of oak leaves)},1
 "querēla, querēlae, {f.}",complaint,1,Noun,,complaint,1
 "queror, querī, questus sum",to complain,5,Verb,,to complain,1
-"quī, quae, quod","who, which, that {(as a {{relative pronoun}})}; this {(equivalent to *is* or *ille* at the start of a sentence)}; which?, what? {(as an {{interrogative adjective|interrogative-pronoun}} — cf. *quis, quid*)}; [[*nesciō quī* ""I don't know what"" → ""some … or other""]]; any {(as an {{indefinite adjective|indefinite-pronoun}} after *sī, nisi, num, nē*)}",124,Adjective,,"who, which, that {(as a {{relative pronoun}})} ‖ this {(equivalent to *is* or *ille* at the start of a sentence)} ‖ which?, what? {(as an {{interrogative adjective|interrogative-pronoun}} — cf. *quis, quid*)} ‖ [[*nesciō quī* ""I don't know what"" → ""some … or other""]] ‖ any {(as an {{indefinite adjective|indefinite-pronoun}} after *sī, nisi, num, nē*)}",
+"quī, quae, quod","who, which, that {(as a {{relative pronoun}})}; this {(equivalent to *is* or *ille* at the start of a sentence)}; which?, what? {(as an {{interrogative adjective|interrogative-pronoun}} — cf. *quis, quid*)}; [[*nesciō quī* ""I don't know what"" → ""some … or other""]]; any {(as an {{indefinite adjective|indefinite-pronoun}} after *sī, nisi, num, nē*)}",124,Adjective,,"who, which, that {(as a {{relative pronoun}})} ‖ this {(equivalent to *is* or *ille* at the start of a sentence)} ‖ which?, what? {(as an {{interrogative adjective|interrogative-pronoun}} — cf. *quis, quid*)} ‖ [[*nesciō quī* ""I don't know what"" → ""some … or other""]] ‖ any {(as an {{indefinite adjective|indefinite-pronoun}} after *sī, nisi, num, nē*)}",1
 quia,because,2,Conjunction,,because,1
 "quīcumque, quaecumque, quodcumque","whoever, whatever",4,Pronoun,,"whoever, whatever",1
 quidem,"indeed {(following and emphasising the word it qualifies, often answered by *sed* or *tamen*)}",3,Adverb,,"indeed {(following and emphasising the word it qualifies, often answered by *sed* or *tamen*)}",1
@@ -1610,7 +1610,7 @@ quidlibet,anything you like,1,Pronoun,,anything you like,1
 "quiētus, quiēta, quiētum",calm,1,Adjective,,calm,1
 quīn,"why not; indeed {(intensifying, often *quīn etiam*)}; that, from ______-ing {(after a negated expression of doubting or hindering, with the {{subjunctive}})}",4,"Adverb, Conjunction",,"why not ‖ indeed {(intensifying, often *quīn etiam*)} ‖ that, from ______-ing {(after a negated expression of doubting or hindering, with the {{subjunctive}})}",1
 "Quirīnus, Quirīnī, {m.}",Quirinus {(Roman deity identified with the deified Romulus)},1,Noun,,Quirinus {(Roman deity identified with the deified Romulus)},1
-"quis, quid","who? {({{interrogative pronoun}})}; what? {({{interrogative pronoun}})}; why? {(as the adverbial {{neuter}} *quid*)}; [[*nesciō quis* ""I don't know who"" → ""someone or other""]]; anyone, anything {(as an {{indefinite pronoun}} after *sī, nisi, nē, num*)}",46,Pronoun,,"who? {({{interrogative pronoun}})} ‖ what? {({{interrogative pronoun}})} ‖ why? {(as the adverbial {{neuter}} *quid*)} ‖ [[*nesciō quis* ""I don't know who"" → ""someone or other""]] ‖ anyone, anything {(as an {{indefinite pronoun}} after *sī, nisi, nē, num*)}",
+"quis, quid","who? {({{interrogative pronoun}})}; what? {({{interrogative pronoun}})}; why? {(as the adverbial {{neuter}} *quid*)}; [[*nesciō quis* ""I don't know who"" → ""someone or other""]]; anyone, anything {(as an {{indefinite pronoun}} after *sī, nisi, nē, num*)}",46,Pronoun,,"who? {({{interrogative pronoun}})} ‖ what? {({{interrogative pronoun}})} ‖ why? {(as the adverbial {{neuter}} *quid*)} ‖ [[*nesciō quis* ""I don't know who"" → ""someone or other""]] ‖ anyone, anything {(as an {{indefinite pronoun}} after *sī, nisi, nē, num*)}",1
 "quisquam, quicquam",anyone,1,Pronoun,,anyone,1
 "quisque, quaeque, quicque / quidque / quodque",each,7,Adjective,,each,1
 "quisquis, quidquid",whoever,3,Pronoun,,whoever,1
@@ -1620,7 +1620,7 @@ quod,because; that {(introducing a fact: the {{clause}} functions as a {{substan
 quodsī,but if,2,Conjunction,,but if,1
 quondam,"once {(of past time)}; sometimes {(in a {{simile}}, of what happens from time to time)}",2,Adverb,,"once {(of past time)} ‖ sometimes {(in a {{simile}}, of what happens from time to time)}",1
 quoniam,since,3,Conjunction,,since,1
-quoque,also,16,Adverb,,also,
+quoque,also,16,Adverb,,also,1
 quot,how many,2,Adjective,,how many,1
 quotannīs,every year,1,Adverb,,every year,1
 quotiēns,how often,3,Adverb,,how often,1
@@ -1649,9 +1649,9 @@ quotiēns,how often,3,Adverb,,how often,1
 "regiō, regiōnis, {f.}",region,1,Noun,,region,1
 "rēgius, rēgia, rēgium",royal,1,Adjective,,royal,1
 "rēgnō, rēgnāre, rēgnāvī, rēgnātum",to reign,2,Verb,,to reign,1
-"rēgnum, rēgnī, {n.}",kingdom,18,Noun,,kingdom,
+"rēgnum, rēgnī, {n.}",kingdom,18,Noun,,kingdom,1
 "regō, regere, rēxī, rēctum",to guide; to rule,4,Verb,,to guide ‖ to rule,1
-"relinquō, relinquere, relīquī, relictum",to leave; to abandon,18,Verb,,to leave ‖ to abandon,
+"relinquō, relinquere, relīquī, relictum",to leave; to abandon,18,Verb,,to leave ‖ to abandon,1
 "rēliquiae, rēliquiārum, {f. pl.}",remains,1,Noun,,remains,1
 "remaneō, remanēre, remānsī, remānsum",to stay behind; to remain {(of a quality or trait persisting)},1,Verb,,to stay behind ‖ to remain {(of a quality or trait persisting)},1
 "rēmex, rēmigis, {m.}",rower,1,Noun,,rower,1
@@ -1752,7 +1752,7 @@ scīlicet,of course,1,Adverb,,of course,1
 "Scylla, Scyllae, {f.}",Scylla {(a dangerous sea monster (or rock) opposite Charybdis)},2,Noun,,Scylla {(a dangerous sea monster (or rock) opposite Charybdis)},1
 "Scythia, Scythiae, {f.}","Scythia {(region north of the Black Sea, associated with Medea's homeland Colchis in myth)}",1,Noun,,"Scythia {(region north of the Black Sea, associated with Medea's homeland Colchis in myth)}",1
 "sēcūrus, sēcūra, sēcūrum",free from care,2,Adjective,,free from care,1
-sed,but,27,Conjunction,,but,
+sed,but,27,Conjunction,,but,1
 "sedeō, sedēre, sēdī, sessum",to sit,4,Verb,,to sit,1
 "sēdēs, sēdis, {f.}",seat; dwelling place; position,4,Noun,,seat ‖ dwelling place ‖ position,1
 "seges, segetis, {f.}",grain field,1,Noun,,grain field,1
@@ -1774,7 +1774,7 @@ septem,seven,1,Numeral,,seven,1
 "septēnī, septēnae, septēna",seven each,1,Numeral,,seven each,1
 "septimus, septima, septimum",seventh,1,Adjective,,seventh,1
 "sepulcrum, sepulcrī, {n.}",tomb,2,Noun,,tomb,1
-"sequor, sequī, secūtus sum",to follow; to pursue,14,Verb,,to follow ‖ to pursue,
+"sequor, sequī, secūtus sum",to follow; to pursue,14,Verb,,to follow ‖ to pursue,1
 "serēnō, serēnāre, serēnāvī, serēnātum",to clear up,1,Verb,,to clear up,1
 "sermō, sermōnis, {m.}",conversation,1,Noun,,conversation,1
 "serpēns, serpentis, {m./f.}",snake,3,Noun,,snake,1
@@ -1784,9 +1784,9 @@ septem,seven,1,Numeral,,seven,1
 "servō, servāre, servāvī, servātum",to save,2,Verb,,to save,1
 "sērus, sēra, sērum",late,1,Adjective,,late,1
 "servus, servī, {m.}",enslaved man,1,Noun,,enslaved man,1
-sī,if; if only,34,Conjunction,,if ‖ if only,
+sī,if; if only,34,Conjunction,,if ‖ if only,1
 "sībilō, sībilāre, sībilāvī, sībilātum",to hiss,1,Verb,,to hiss,1
-sīc,thus,26,Adverb,,thus,
+sīc,thus,26,Adverb,,thus,1
 "siccō, siccāre, siccāvī, siccātum",to dry,1,Verb,,to dry,1
 "Sīdōnius, Sīdōnia, Sīdōnium",Sidonian,1,Adjective,,Sidonian,1
 "sīdus, sīderis, {n.}",star,5,Noun,,star,1
@@ -1820,7 +1820,7 @@ sine,{(with the {{ablative|ablative-with-prepositions}})} without,6,Preposition,
 "sonō, sonāre, sonuī, sonitum",to sound; to sound like {(with {{accusative}})},3,Verb,,to sound ‖ to sound like {(with {{accusative}})},1
 "sonus, sonī, {m.}",sound,1,Noun,,sound,1
 "sōpiō, sōpīre, sōpīvī, sōpītum",to lull to sleep,1,Verb,,to lull to sleep,1
-"soror, sorōris, {f.}",sister,10,Noun,,sister,
+"soror, sorōris, {f.}",sister,10,Noun,,sister,1
 "sors, sortis, {f.}",lot; oracle {(by {{metonymy}})},2,Noun,,lot ‖ oracle {(by {{metonymy}})},1
 "sospes, {(gen.)} sospitis",safe and sound,2,Adjective,,safe and sound,1
 "spargō, spargere, sparsī, sparsum",to scatter; to sprinkle,7,Verb,,to scatter ‖ to sprinkle,1
@@ -1857,7 +1857,7 @@ sponte,of one's own accord,2,Adverb,,of one's own accord,1
 "stultus, stulta, stultum",foolish,2,Adjective,,foolish,1
 "Stygius, Stygia, Stygium",of the Styx,1,Adjective,,of the Styx,1
 "suādeō, suādēre, suāsī, suāsum",to advise,4,Verb,,to advise,1
-sub,{(with the {{ablative}} or {{accusative}})} under; {(with the {{accusative}})} close to {(of time)},17,Preposition,,{(with the {{ablative}} or {{accusative}})} under ‖ {(with the {{accusative}})} close to {(of time)},
+sub,{(with the {{ablative}} or {{accusative}})} under; {(with the {{accusative}})} close to {(of time)},17,Preposition,,{(with the {{ablative}} or {{accusative}})} under ‖ {(with the {{accusative}})} close to {(of time)},1
 "subdūcō, subdūcere, subdūxī, subductum",to steal away,1,Verb,,to steal away,1
 "subeō, subīre, subiī, subitum","to go under; to undergo {(of a penalty, *poenās*)}; to approach",3,Verb,,"to go under ‖ to undergo {(of a penalty, *poenās*)} ‖ to approach",1
 "subiciō, subicere, subiēcī, subiectum",to place under,1,Verb,,to place under,1
@@ -1872,9 +1872,9 @@ subter,beneath,1,Adverb,,beneath,1
 "succumbō, succumbere, succubuī, succubitum",{(with the {{dative|dative-with-compounds}})} to yield,1,Verb,,{(with the {{dative|dative-with-compounds}})} to yield,1
 "sūcus, sūcī, {m.}",juice,1,Noun,,juice,1
 "suffundō, suffundere, suffūdī, suffūsum",to suffuse,2,Verb,,to suffuse,1
-"--, suī, sibi, sē, sē","himself, herself, itself; themselves {(third-person {{reflexive pronoun}} referring to the {{subject}} of the {{clause}})}",16,Pronoun,,"himself, herself, itself ‖ themselves {(third-person {{reflexive pronoun}} referring to the {{subject}} of the {{clause}})}",
+"--, suī, sibi, sē, sē","himself, herself, itself, themselves {(third-person {{reflexive pronoun}} referring to the {{subject}} of the {{clause}})}",16,Pronoun,,"himself, herself, itself, themselves {(third-person {{reflexive pronoun}} referring to the {{subject}} of the {{clause}})}",1
 "sulfur, sulfuris, {n.}",sulfur,1,Noun,,sulfur,1
-"sum, esse, fuī, futūrum",to be; to belong to {(taking a {{dative}} of the possessor)},201,Verb,,to be ‖ to belong to {(taking a {{dative}} of the possessor)},
+"sum, esse, fuī, futūrum",to be; to belong to {(taking a {{dative}} of the possessor)},201,Verb,,to be ‖ to belong to {(taking a {{dative}} of the possessor)},1
 "summus, summa, summum",highest,7,Adjective,,highest,1
 super,{(with the {{accusative}} or {{ablative}})} above,4,"Preposition, Adverb",,{(with the {{accusative}} or {{ablative}})} above,1
 "superbus, superba, superbum",proud,1,Adjective,,proud,1
@@ -1891,7 +1891,7 @@ super,{(with the {{accusative}} or {{ablative}})} above,4,"Preposition, Adverb",
 "suspendō, suspendere, suspendī, suspēnsum",to hang up,1,Verb,,to hang up,1
 "suspīrō, suspīrāre, suspīrāvī, suspīrātum",to sigh,1,Verb,,to sigh,1
 "sustineō, sustinēre, sustinuī, sustentum",to hold up; to bear {(with infinitive)},1,Verb,,to hold up ‖ to bear {(with infinitive)},1
-"suus, sua, suum","one's own {({{possessive adjective}} typically belonging to the {{subject}} of the {{clause}}, but in poetry occasionally referring to a prominent non-subject {{noun}})}",31,Adjective,,"one's own {({{possessive adjective}} typically belonging to the {{subject}} of the {{clause}}, but in poetry occasionally referring to a prominent non-subject {{noun}})}",
+"suus, sua, suum","one's own {({{possessive adjective}} typically belonging to the {{subject}} of the {{clause}}, but in poetry occasionally referring to a prominent non-subject {{noun}})}",31,Adjective,,"one's own {({{possessive adjective}} typically belonging to the {{subject}} of the {{clause}}, but in poetry occasionally referring to a prominent non-subject {{noun}})}",1
 "Sȳ̆chaeus, Sȳ̆chaeī, {m.}","Sychaeus {(Dido's murdered husband, a wealthy Phoenician)}",6,Noun,,"Sychaeus {(Dido's murdered husband, a wealthy Phoenician)}",1
 "Symplēgadēs, Symplēgadum, {f. pl.}","Symplegades {(the clashing rocks at the Black Sea's entrance, passed by Jason and the Argonauts)}",1,Noun,,"Symplegades {(the clashing rocks at the Black Sea's entrance, passed by Jason and the Argonauts)}",1
 "tābēscō, tābēscere, tābuī",to melt away,1,Verb,,to melt away,1
@@ -1899,12 +1899,12 @@ super,{(with the {{accusative}} or {{ablative}})} above,4,"Preposition, Adverb",
 "taeda, taedae, {f.}",torch; marriage {(by {{metonymy}})},5,Noun,,torch ‖ marriage {(by {{metonymy}})},1
 "tālis, tāle",such,8,Adjective,,such,1
 tam,"so {(with an {{adjective}} or {{adverb}}, answered by *quam*)}",6,Adverb,,"so {(with an {{adjective}} or {{adverb}}, answered by *quam*)}",1
-tamen,nevertheless,16,Adverb,,nevertheless,
+tamen,nevertheless,16,Adverb,,nevertheless,1
 tamquam,just as; as if {(with the {{subjunctive}})},1,Conjunction,,just as ‖ as if {(with the {{subjunctive}})},1
 tandem,at last; pray {(intensifying an {{interrogative|interrogative pronoun}})},5,Adverb,,at last ‖ pray {(intensifying an {{interrogative|interrogative pronoun}})},1
-"tangō, tangere, tetigī, tāctum",to touch; to reach {(of a destination)}; to affect {(emotionally)},12,Verb,,to touch ‖ to reach {(of a destination)} ‖ to affect {(emotionally)},
+"tangō, tangere, tetigī, tāctum",to touch; to reach {(of a destination)}; to affect {(emotionally)},12,Verb,,to touch ‖ to reach {(of a destination)} ‖ to affect {(emotionally)},1
 tantum,only,2,Adverb,,only,1
-"tantus, tanta, tantum","so great, so much; {(answered by *quantus*)} as much... as",11,Adjective,,"so great, so much ‖ {(answered by *quantus*)} as much... as",
+"tantus, tanta, tantum","so great, so much; {(answered by *quantus*)} as much... as",11,Adjective,,"so great, so much ‖ {(answered by *quantus*)} as much... as",1
 "tardus, tarda, tardum",slow,2,Adjective,,slow,1
 "taurīnus, taurīna, taurīnum",of a bull,1,Adjective,,of a bull,1
 "taurus, taurī, {m.}",bull,6,Noun,,bull,1
@@ -1917,12 +1917,12 @@ tantum,only,2,Adverb,,only,1
 "tempestās, tempestātis, {f.}",weather; storm,2,Noun,,weather ‖ storm,1
 "templum, templī, {n.}",temple,2,Noun,,temple,1
 "temptō, temptāre, temptāvī, temptātum",to try; to attack,3,Verb,,to try ‖ to attack,1
-"tempus, temporis, {n.}","time; the temples of the head {(in the {{plural}} *tempora*, anatomically)}",11,Noun,,"time ‖ the temples of the head {(in the {{plural}} *tempora*, anatomically)}",
+"tempus, temporis, {n.}","time; the temples of the head {(in the {{plural}} *tempora*, anatomically)}",11,Noun,,"time ‖ the temples of the head {(in the {{plural}} *tempora*, anatomically)}",1
 "tenāx, {(gen.)} tenācis",holding fast,1,Adjective,,holding fast,1
 "tendō, tendere, tetendī, tentum","to stretch; to direct one's course; to head {(toward a destination, of motion)}",1,Verb,,"to stretch ‖ to direct one's course ‖ to head {(toward a destination, of motion)}",1
 "tenebrae, tenebrārum, {f. pl.}",darkness,1,Noun,,darkness,1
 "Tenedos, Tenedī, {f.}",Tenedos {(an island in the Aegean Sea near Troy)},1,Noun,,Tenedos {(an island in the Aegean Sea near Troy)},1
-"teneō, tenēre, tenuī, tentum",to hold; to restrain,14,Verb,,to hold ‖ to restrain,
+"teneō, tenēre, tenuī, tentum",to hold; to restrain,14,Verb,,to hold ‖ to restrain,1
 "tener, tenera, tenerum",tender,2,Adjective,,tender,1
 "tenor, tenōris, {m.}",course,1,Noun,,course,1
 "tenuis, tenue",thin,7,Adjective,,thin,1
@@ -1934,7 +1934,7 @@ ter,three times,2,Adverb,,three times,1
 "terminus, terminī, {m.}",boundary,1,Noun,,boundary,1
 "ternī, ternae, terna",three each,1,Adjective,,three each,1
 "terō, terere, trīvī, trītum",to wear away; to spend {(of time)},1,Verb,,to wear away ‖ to spend {(of time)},1
-"terra, terrae, {f.}",earth,22,Noun,,earth,
+"terra, terrae, {f.}",earth,22,Noun,,earth,1
 "terreō, terrēre, terruī, territum",to frighten,2,Verb,,to frighten,1
 "terribilis, terribile",frightful,1,Adjective,,frightful,1
 "terrigena, terrigenae, {m.}",earth-born one,1,Noun,,earth-born one,1
@@ -1990,10 +1990,10 @@ trīgintā,thirty,1,Numeral,,thirty,1
 "Trōicus, Trōica, Trōicum","Trojan {(relating to Troy, the city of Aeneas' homeland)}",1,Adjective,,"Trojan {(relating to Troy, the city of Aeneas' homeland)}",1
 "Trōs, Trōis, {m.}","Trojan {(a Trojan (Trōs, {{gen}}. Trōis, often used as {{adjective}}/{{noun}} for people of Troy))}",1,Noun,,"Trojan {(a Trojan (Trōs, {{gen}}. Trōis, often used as {{adjective}}/{{noun}} for people of Troy))}",1
 "truncus, truncī, {m.}",trunk,0,Noun,,trunk,1
-"tū, tuī, tibī̆, tē, tē","you {({{personal pronoun}}, {{singular}})}",114,Pronoun,,"you {({{personal pronoun}}, {{singular}})}",
+"tū, tuī, tibī̆, tē, tē","you {({{personal pronoun}}, {{singular}})}",114,Pronoun,,"you {({{personal pronoun}}, {{singular}})}",1
 "tuba, tubae, {f.}",trumpet,1,Noun,,trumpet,1
 "tueor, tuērī, tuitus sum",to watch; to guard,1,Verb,,to watch ‖ to guard,1
-tum,then,15,Adverb,,then,
+tum,then,15,Adverb,,then,1
 "tumeō, tumēre, tumuī",to swell,1,Verb,,to swell,1
 "tumidus, tumida, tumidum",swollen,1,Adjective,,swollen,1
 "tumulus, tumulī, {m.}",mound; tomb,3,Noun,,mound ‖ tomb,1
@@ -2006,7 +2006,7 @@ tunc,then,2,Adverb,,then,1
 "turris, turris, {f.}",tower,2,Noun,,tower,1
 "tūs, tūris, {n.}",frankincense,2,Noun,,frankincense,1
 "tūtus, tūta, tūtum",safe,8,Adjective,,safe,1
-"tuus, tua, tuum",your {({{possessive adjective}} referring to a {{singular}} possessor)},36,Adjective,,your {({{possessive adjective}} referring to a {{singular}} possessor)},
+"tuus, tua, tuum",your {({{possessive adjective}} referring to a {{singular}} possessor)},36,Adjective,,your {({{possessive adjective}} referring to a {{singular}} possessor)},1
 "tyrannus, tyrannī, {m.}",king,2,Noun,,king,1
 "Tyrius, Tyria, Tyrium",Tyrian,8,Adjective,,Tyrian,1
 "Tyrus, Tyrī, {f.}","Tyrus {(Phoenician city, Dido's homeland)}",2,Noun,,"Tyrus {(Phoenician city, Dido's homeland)}",1
@@ -2022,7 +2022,7 @@ tunc,then,2,Adverb,,then,1
 "vāstus, vāsta, vāstum",vast,2,Adjective,,vast,1
 "vātēs, vātis, {m./f.}",prophet,1,Noun,,prophet,1
 "ūber, {(gen.)} ūberis",fertile,1,Adjective,,fertile,1
-ubi,where {(of place)}; when {(of time)},17,Adverb,,where {(of place)} ‖ when {(of time)},
+ubi,where {(of place)}; when {(of time)},17,Adverb,,where {(of place)} ‖ when {(of time)},1
 "ūdus, ūda, ūdum",wet,2,Adjective,,wet,1
 -ve,"or {({{enclitic}}, attached to the end of the word it follows)}",8,Conjunction,,"or {({{enclitic}}, attached to the end of the word it follows)}",1
 "vehemēns, vehementis",violent,0,Adjective,,violent,1
@@ -2038,9 +2038,9 @@ velut,just as,2,Adverb,,just as,1
 "venēnātus, venēnāta, venēnātum",poisoned,1,Adjective,,poisoned,1
 "venēnum, venēnī, {n.}",poison,1,Noun,,poison,1
 "venia, veniae, {f.}",favor {(granted to one who asks)},1,Noun,,favor {(granted to one who asks)},1
-"veniō, venīre, vēnī, ventum",to come,18,Verb,,to come,
+"veniō, venīre, vēnī, ventum",to come,18,Verb,,to come,1
 "venter, ventris, {m.}",belly,1,Noun,,belly,1
-"ventus, ventī, {m.}",wind,11,Noun,,wind,
+"ventus, ventī, {m.}",wind,11,Noun,,wind,1
 "Venus, Veneris, {f.}",Venus {(the goddess of love and beauty; mother of Aeneas)}; love {(by {{metonymy}})},9,Noun,,Venus {(the goddess of love and beauty; mother of Aeneas)} ‖ love {(by {{metonymy}})},1
 "verbum, verbī, {n.}",word,9,Noun,,word,1
 "verēcundus, verēcunda, verēcundum",modest,1,Adjective,,modest,1
@@ -2066,7 +2066,7 @@ vērum,but,1,Conjunction,,but,1
 "vicis, vicem, vice",turn,1,Noun,,turn,1
 vicissim,in turn,1,Adverb,,in turn,1
 "victor, victōris, {m.}",conqueror,1,"Noun, Adjective",,conqueror,1
-"videō, vidēre, vīdī, vīsum",to see; to seem {(in the {{passive}})},41,Verb,,to see ‖ to seem {(in the {{passive}})},
+"videō, vidēre, vīdī, vīsum",to see; to seem {(in the {{passive}})},41,Verb,,to see ‖ to seem {(in the {{passive}})},1
 "vigeō, vigēre, viguī",to flourish,1,Verb,,to flourish,1
 "vigil, {(gen.)} vigilis",awake,2,"Noun, Adjective",,awake,1
 "vigilō, vigilāre, vigilāvī, vigilātum",to stay awake,2,Verb,,to stay awake,1
@@ -2076,7 +2076,7 @@ vicissim,in turn,1,Adverb,,in turn,1
 "vincō, vincere, vīcī, victum",to conquer; to surpass,7,Verb,,to conquer ‖ to surpass,1
 "vinculum, vinculī, {n.}",bond,2,Noun,,bond,1
 "violō, violāre, violāvī, violātum",to violate,2,Verb,,to violate,1
-"vir, virī, {m.}",man; husband; hero,20,Noun,,man ‖ husband ‖ hero,
+"vir, virī, {m.}",man; husband; hero,20,Noun,,man ‖ husband ‖ hero,1
 "virgineus, virginea, virgineum",of a maiden,1,Adjective,,of a maiden,1
 "virginitās, virginitātis, {f.}",virginity,2,Noun,,virginity,1
 "virgō, virginis, {f.}",young unmarried woman,6,Noun,,young unmarried woman,1
@@ -2104,10 +2104,10 @@ ultrā,beyond; any longer,2,Adverb,,beyond ‖ any longer,1
 "umbrōsus, umbrōsa, umbrōsum",shady,1,Adjective,,shady,1
 "umerus, umerī, {m.}",shoulder,5,Noun,,shoulder,1
 umquam,ever,3,Adverb,,ever,1
-"unda, undae, {f.}",wave; water {(by extension in poetry)},13,Noun,,wave ‖ water {(by extension in poetry)},
+"unda, undae, {f.}",wave; water {(by extension in poetry)},13,Noun,,wave ‖ water {(by extension in poetry)},1
 unde,from where,5,Adverb,,from where,1
 "undōsus, undōsa, undōsum",full of waves,1,Adjective,,full of waves,1
-"ūnus, ūna, ūnum","one; alone; {({{adverb}}, *ūnā*)} together",13,Adjective,,"one ‖ alone ‖ {({{adverb}}, *ūnā*)} together",
+"ūnus, ūna, ūnum","one; alone; {({{adverb}}, *ūnā*)} together",13,Adjective,,"one ‖ alone ‖ {({{adverb}}, *ūnā*)} together",1
 "vocō, vocāre, vocāvī, vocātum",to call,3,Verb,,to call,1
 "volātilis, volātile",winged,1,Adjective,,winged,1
 "volātus, volātūs, {m.}",flight,1,Noun,,flight,1
@@ -2120,13 +2120,13 @@ unde,from where,5,Adverb,,from where,1
 "vomō, vomere, vomuī, vomitum",to vomit,1,Verb,,to vomit,1
 "vōs, vestrum/vestrī, vōbīs, vōs, vōbīs","you {({{personal pronoun}}, {{plural}})}",3,Pronoun,,"you {({{personal pronoun}}, {{plural}})}",1
 "vōtum, vōtī, {n.}",vow; prayer; wish,5,Noun,,vow ‖ prayer ‖ wish,1
-"vōx, vōcis, {f.}",voice; word,11,Noun,,voice ‖ word,
-"urbs, urbis, {f.}",city,23,Noun,,city,
+"vōx, vōcis, {f.}",voice; word,11,Noun,,voice ‖ word,1
+"urbs, urbis, {f.}",city,23,Noun,,city,1
 "urgeō, urgēre, ursī",to press,1,Verb,,to press,1
 "urna, urnae, {f.}",jar; funeral urn,2,Noun,,jar ‖ funeral urn,1
 "ūrō, ūrere, ussī, ustum",to burn,4,Verb,,to burn,1
 "ūsus, ūsūs, {m.}",use,2,Noun,,use,1
-ut,"as {(with {{indicative}})}; when {(with {{indicative}})}; to {(introducing a {{purpose clause}} with {{subjunctive}})}; so that {(introducing a {{result clause}} with {{subjunctive}})}; although {({{concessive}}, with {{subjunctive}})}; how {(exclamatory, with {{subjunctive}})}",46,Conjunction,,"as {(with {{indicative}})} ‖ when {(with {{indicative}})} ‖ to {(introducing a {{purpose clause}} with {{subjunctive}})} ‖ so that {(introducing a {{result clause}} with {{subjunctive}})} ‖ although {({{concessive}}, with {{subjunctive}})} ‖ how {(exclamatory, with {{subjunctive}})}",
+ut,"as {(with {{indicative}})}; when {(with {{indicative}})}; to {(introducing a {{purpose clause}} with {{subjunctive}})}; so that {(introducing a {{result clause}} with {{subjunctive}})}; although {({{concessive}}, with {{subjunctive}})}; how {(exclamatory, with {{subjunctive}})}",46,Conjunction,,"as {(with {{indicative}})} ‖ when {(with {{indicative}})} ‖ to {(introducing a {{purpose clause}} with {{subjunctive}})} ‖ so that {(introducing a {{result clause}} with {{subjunctive}})} ‖ although {({{concessive}}, with {{subjunctive}})} ‖ how {(exclamatory, with {{subjunctive}})}",1
 "uterque, utraque, utrumque",each of two,3,Adjective,,each of two,1
 "ūtilis, ūtile",useful,1,Adjective,,useful,1
 utinam,if only,4,Adverb,,if only,1
