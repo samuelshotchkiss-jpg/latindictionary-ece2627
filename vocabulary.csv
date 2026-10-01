@@ -363,7 +363,7 @@ clam,secretly,1,Adverb,,secretly,1
 "cōnectō, cōnectere, cōnexuī, cōnexum",to join together,1,Verb,,to join together,1
 "cōnferō, cōnferre, contulī, collātum",to bring together,1,Verb,,to bring together,1
 "cōnficiō, cōnficere, cōnfēcī, cōnfectum",to finish; to wear out,1,Verb,,to finish ‖ to wear out,1
-"cōniciō, cōnicere, cōniēcī, cōniectum",to hurl,1,Verb,,to hurl,1
+"coniciō, conicere, coniēcī, coniectum",to hurl,1,Verb,,to hurl,1
 "coniugium, coniugiī, {n.}",marriage,2,Noun,,marriage,1
 "coniūnx, coniugis, {m./f.}",spouse,10,Noun,,spouse,1
 "cōnor, cōnārī, cōnātus sum",to try,1,Verb,,to try,1
@@ -372,7 +372,7 @@ clam,secretly,1,Adverb,,secretly,1
 "cōnserō, cōnserere, cōnseruī, cōnsertum","to join together; [[*cōnserere manūs* ""to join hands"" → ""to fight hand-to-hand""]]",1,Verb,,"to join together ‖ [[*cōnserere manūs* ""to join hands"" → ""to fight hand-to-hand""]]",1
 "cōnsīdō, cōnsīdere, cōnsēdī, cōnsessum",to settle,1,Verb,,to settle,1
 "cōnsilium, cōnsiliī, {n.}",plan,1,Noun,,plan,1
-"cōnsistō, cōnsistere, cōnstitī",to stop,4,Verb,,to stop,1
+"cōnsistō, cōnsistere, cōnstitī",to stand together; to stop; to take one's place,4,Verb,,to stand together ‖ to stop ‖ to take one's place,1
 "cōnspiciō, cōnspicere, cōnspexī, cōnspectum",to catch sight of,1,Verb,,to catch sight of,1
 "cōnstantia, cōnstantiae, {f.}",steadfastness,1,Noun,,steadfastness,1
 "cōnstituō, cōnstituere, cōnstituī, cōnstitūtum",to establish; to decide {(with {{infinitive}})},2,Verb,,to establish ‖ to decide {(with {{infinitive}})},1
@@ -801,7 +801,7 @@ frūstrā,in vain,1,Adverb,,in vain,1
 "hālō, hālāre, hālāvī, hālātum",to breathe out,1,Verb,,to breathe out,1
 "harēna, harēnae, {f.}",sand,2,Noun,,sand,1
 "Harpalycē, Harpalycēs, {f.}",Harpalyce {(a legendary Thracian huntress renowned for her speed)},1,Noun,,Harpalyce {(a legendary Thracian huntress renowned for her speed)},1
-"harūndō, harūndinis, {f.}",reed; arrow {(by {{metonymy}})},3,Noun,,reed ‖ arrow {(by {{metonymy}})},1
+"harundō, harundinis, {f.}",reed; arrow {(by {{metonymy}})},3,Noun,,reed ‖ arrow {(by {{metonymy}})},1
 "hastīle, hastīlis, {n.}",spear shaft,1,Noun,,spear shaft,1
 haud,"not at all {(negating a single word, usually an {{adjective}} or {{adverb}})}",4,Adverb,,"not at all {(negating a single word, usually an {{adjective}} or {{adverb}})}",1
 "hauriō, haurīre, hausī, haustum","to drink down {(greedily, in a single gulp)}",2,Verb,,"to drink down {(greedily, in a single gulp)}",1
@@ -951,7 +951,7 @@ inde,"from there; then {(temporal, thereafter)}",1,Adverb,,"from there ‖ then 
 "īnsignis, īnsigne",distinguished,1,Adjective,,distinguished,1
 "īnsolitus, īnsolita, īnsolitum",unusual,1,Adjective,,unusual,1
 "īnsopor, {(gen.)} īnsopōris",sleepless,1,Adjective,,sleepless,1
-instar,the equivalent of,2,Noun,,the equivalent of,1
+īnstar,the equivalent of,2,Noun,,the equivalent of,1
 "īnstaurō, īnstaurāre, īnstaurāvī, īnstaurātum",to renew,1,Verb,,to renew,1
 "īnstruō, īnstruere, īnstrūxī, īnstrūctum","to build up; to equip, furnish; to instruct",2,Verb,,"to build up ‖ to equip, furnish ‖ to instruct",1
 "īnsuētus, īnsuēta, īnsuētum",unfamiliar,1,Adjective,,unfamiliar,1
@@ -1248,7 +1248,7 @@ nī,if not,1,"Adverb, Conjunction",,if not,1
 "nihil, nīl",nothing,3,Noun,,nothing,1
 nimis,too much,1,Adverb,,too much,1
 nimium,too much,4,"Adjective, Adverb",,too much,1
-"Nīnus, Nīnī, {m.}","Ninus {(legendary king of Assyria, associated with Babylon in Pyramus & Thisbe)}",1,Noun,,"Ninus {(legendary king of Assyria, associated with Babylon in Pyramus & Thisbe)}",1
+"Ninus, Ninī, {m.}","Ninus {(legendary king of Assyria, associated with Babylon in Pyramus & Thisbe)}",1,Noun,,"Ninus {(legendary king of Assyria, associated with Babylon in Pyramus & Thisbe)}",1
 nisi,unless,2,Conjunction,,unless,1
 "niteō, nitēre, nituī",to shine,1,Verb,,to shine,1
 "nitor, nitōris, {m.}",brightness,1,Noun,,brightness,1
@@ -1600,7 +1600,7 @@ quater,four times,2,Adverb,,four times,1
 "quercus, quercūs, {f.}",oak tree; oak wreath {(the civic crown of oak leaves)},1,Noun,,oak tree ‖ oak wreath {(the civic crown of oak leaves)},1
 "querēla, querēlae, {f.}",complaint,1,Noun,,complaint,1
 "queror, querī, questus sum",to complain,5,Verb,,to complain,1
-"quī, quae, quod","who, which, that {(as a {{relative pronoun}})}; this {(equivalent to *is* or *ille* at the start of a sentence)}; which?, what? {(as an {{interrogative adjective|interrogative-pronoun}} — cf. *quis, quid*)}; [[*nesciō quī* ""I don't know what"" → ""some … or other""]]; any {(as an {{indefinite adjective|indefinite-pronoun}} after *sī, nisi, num, nē*)}",124,Adjective,,"who, which, that {(as a {{relative pronoun}})} ‖ this {(equivalent to *is* or *ille* at the start of a sentence)} ‖ which?, what? {(as an {{interrogative adjective|interrogative-pronoun}} — cf. *quis, quid*)} ‖ [[*nesciō quī* ""I don't know what"" → ""some … or other""]] ‖ any {(as an {{indefinite adjective|indefinite-pronoun}} after *sī, nisi, num, nē*)}",1
+"quī, quae, quod","who, which, that {(as a {{relative pronoun}})}; this {(equivalent to *is* or *ille* at the start of a sentence)}; which?, what? {(as an {{interrogative adjective|interrogative-pronoun}} — cf. *quis, quid*)}; [[*nesciō quī* ""I don't know what"" → ""some … or other""]]; any {(as an {{indefinite adjective|indefinite-pronoun}} after *sī, nisi, num, nē*)}; by how much {({{ablative|ablative-of-degree-of-difference}} *quō* with a {{comparative}}: *quō magis…, (eō) magis* ""the more…, the more"")}",125,Adjective,,"who, which, that {(as a {{relative pronoun}})} ‖ this {(equivalent to *is* or *ille* at the start of a sentence)} ‖ which?, what? {(as an {{interrogative adjective|interrogative-pronoun}} — cf. *quis, quid*)} ‖ [[*nesciō quī* ""I don't know what"" → ""some … or other""]] ‖ any {(as an {{indefinite adjective|indefinite-pronoun}} after *sī, nisi, num, nē*)} ‖ by how much {({{ablative|ablative-of-degree-of-difference}} *quō* with a {{comparative}}: *quō magis…, (eō) magis* ""the more…, the more"")}",1
 quia,because,2,Conjunction,,because,1
 "quīcumque, quaecumque, quodcumque","whoever, whatever",4,Pronoun,,"whoever, whatever",1
 quidem,"indeed {(following and emphasising the word it qualifies, often answered by *sed* or *tamen*)}",3,Adverb,,"indeed {(following and emphasising the word it qualifies, often answered by *sed* or *tamen*)}",1
@@ -1616,7 +1616,7 @@ quīn,"why not; indeed {(intensifying, often *quīn etiam*)}; that, from ______-
 "quisquis, quidquid",whoever,3,Pronoun,,whoever,1
 "quīvīs, quaevīs, quodvīs",any (you like),1,Adjective,,any (you like),1
 quō,"to where; {(with a {{comparative}})} by how much, by as much as {(answered by *hōc/eō*, ""by this/that much"")}",5,Adverb,,"to where ‖ {(with a {{comparative}})} by how much, by as much as {(answered by *hōc/eō*, ""by this/that much"")}",1
-quod,because; that {(introducing a fact: the {{clause}} functions as a {{substantive}})},6,Conjunction,,because ‖ that {(introducing a fact: the {{clause}} functions as a {{substantive}})},1
+quod,because; that {(introducing a fact: the {{clause}} functions as a {{substantive}})},5,Conjunction,,because ‖ that {(introducing a fact: the {{clause}} functions as a {{substantive}})},1
 quodsī,but if,2,Conjunction,,but if,1
 quondam,"once {(of past time)}; sometimes {(in a {{simile}}, of what happens from time to time)}",2,Adverb,,"once {(of past time)} ‖ sometimes {(in a {{simile}}, of what happens from time to time)}",1
 quoniam,since,3,Conjunction,,since,1
@@ -2118,7 +2118,7 @@ unde,from where,5,Adverb,,from where,1
 "voluptās, voluptātis, {f.}",pleasure,1,Noun,,pleasure,1
 "vōmer, vōmeris, {m.}",plowshare,2,Noun,,plowshare,1
 "vomō, vomere, vomuī, vomitum",to vomit,1,Verb,,to vomit,1
-"vōs, vestrum/vestrī, vōbīs, vōs, vōbīs","you {({{personal pronoun}}, {{plural}})}",3,Pronoun,,"you {({{personal pronoun}}, {{plural}})}",1
+"vōs, vestrum/vestrī, vōbīs, vōs, vōbīs","y'all {({{personal pronoun}}, {{plural}})}",3,Pronoun,,"y'all {({{personal pronoun}}, {{plural}})}",1
 "vōtum, vōtī, {n.}",vow; prayer; wish,5,Noun,,vow ‖ prayer ‖ wish,1
 "vōx, vōcis, {f.}",voice; word,11,Noun,,voice ‖ word,1
 "urbs, urbis, {f.}",city,23,Noun,,city,1
